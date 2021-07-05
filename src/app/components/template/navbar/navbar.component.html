@@ -1,0 +1,66 @@
+<nav id="nav" class="navbar fixed-top navbar-expand-xl">
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <i class="fas fa-bars"></i>
+        </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Treinos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Instrutores</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Nutrição</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Loja</a>
+            </li>
+        </ul>
+    </div>
+
+    <a class="navbar-brand" href="/"><img src='../../../../assets/navbar/tecfit-logo.png' alt="logo" width="100px"></a>
+
+    <ul class="navbar-nav rigth-list">
+        <li class="nav-item flag">
+            <button class="btn my-2 my-sm-0 btn-2 nav-btn btn-behavior" type="submit">Começar Agora</button>
+            <a class="flag-icone" href="/"><img src='../../../../assets/navbar/nav-pt-flag.png' alt="flag" width="20px"></a>
+        </li>
+    </ul>
+</nav>
+
+<nav id="navMobile" class="navbar fixed-top">
+    <div id="main">
+        <button *ngIf="open" id="hamburger" class="hamburger hamburger--slider is-active" (click)="closeNav()" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <button *ngIf="!open" id="hamburger" class="hamburger hamburger--slider" (click)="openNav()" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a class="nav-link" href="#">Treinos</a>
+        <a class="nav-link" href="#">Instrutores</a>
+        <a class="nav-link" href="#">Nutrição</a>
+        <a class="nav-link" href="#">Loja</a>
+    </div>
+
+    <a *ngIf="!open" class="navbar-brand" href="/"><img src='../../../../assets/navbar/tecfit-logo.png' alt="logo" width="100px"></a>
+
+    <ul *ngIf="!open" id="rigth-side" class="navbar-nav rigth-list">
+        <li class="nav-item flag">
+            <button class="btn my-2 my-sm-0 btn-2 nav-btn btn-behavior" type="submit">Começar Agora</button>
+            <a class="flag-icone" href="/"><img src='../../../../assets/navbar/nav-pt-flag.png' alt="flag" width="20px"></a>
+        </li>
+    </ul>
+</nav>
+<br><br><br>

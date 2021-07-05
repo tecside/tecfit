@@ -1,0 +1,14 @@
+footer {
+    background-color: black;
+}
+
+.list-unstyled > li {
+    padding-top: 10px;
+}
+
+@media (max-width: 750px) {
+    footer {
+        text-align: center;
+        color: #fff;
+    }
+}

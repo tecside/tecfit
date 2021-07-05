@@ -1,0 +1,168 @@
+.flag {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.nav-item {
+  padding-left: 30px;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #bbb;
+}
+
+.navbar-toggler-icon > i {
+  color: #fff;
+  font-size: 30px;
+}
+
+.nav-btn {
+  background-color: rgb(3, 3, 58);
+  color: #fff;
+}
+
+.btn-behavior:hover {
+  background-color: rgb(1, 1, 20);
+}
+
+.rigth-list {
+  position: fixed;
+  right: 7%;
+}
+
+.flag-icone {
+  padding-left: 15px;
+}
+
+.hamburger {
+  padding: 0px;
+}
+
+.hamburger-box {
+  width: 25px;
+}
+
+.hamburger-inner {
+  margin-top: 0px;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 25px;
+}
+
+/* SIDE BAR */
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #000; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #666;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 0px;
+  width: fit-content;
+  margin: 0px;
+}
+
+#navMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #navMobile {
+    display: flex;
+  }
+
+  .navbar-brand > img {
+    width: 70px;
+  }
+
+  .nav-link {
+    font-size: 17px;
+  }
+
+  .nav-btn {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .rigth-list {
+    right: 4%;
+  }
+}
