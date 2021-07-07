@@ -1,0 +1,163 @@
+<header>
+  <app-navbar></app-navbar>
+</header>
+<main class="sobre">
+  <section class="section-1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>História e Missão</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6>Acesso ilimitado para milhares de treinos</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image-box"></div>
+        </div>
+        <div class="col-md-6">
+          <div class="box-text">
+            <h2 class="mb-3">Por trás da Tecfit</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="timeline">
+            <h1>Timeline</h1>
+            <div class="flex-parent">
+              <div class="input-flex-container">
+                <div class="input active">
+                  <span data-year="2018" data-info="Idealização"></span>
+                </div>
+                <div class="input">
+                  <span data-year="2019" data-info="Criação"></span>
+                </div>
+                <div class="input">
+                  <span
+                    data-year="2020"
+                    data-info="Primeiras aulas grátis"
+                  ></span>
+                </div>
+                <div class="input">
+                  <span data-year="2021" data-info="Expansão"></span>
+                </div>
+                <div class="input">
+                  <span data-year="2022" data-info="Plataforma fitness"></span>
+                </div>
+              </div>
+              <div class="description-flex-container d-none">
+                <p class="active">
+                  And future Call of Duty players would thank them.
+                </p>
+                <p>Because every kid should get to be Tarzan for a day.</p>
+                <p>And the world rejoiced.</p>
+                <p>Because building roads is inconvenient.</p>
+                <p>Ain’t nobody got time to rake.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-5">
+    
+          <h1>Viemos para ser os melhores</h1>
+     
+  </section>
+
+  <section class="section-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="mb-5">A nossa missão</h2>
+          <ul>
+            <li>Pôr Angola no mapa</li>
+            <li>Fomentar atividade fitness</li>
+            <li>Lorem ipsum dolor</li>
+            <li>Lorem ipsum dolor</li>
+          </ul>
+        </div>
+        <div class="col-md-3">Pôr Angola no mapa</div>
+        <div class="col-md-3">Fomentar atividade fitness</div>
+        <div class="col-md-3">Lorem ipsum dolor</div>
+        <div class="col-md-3">Lorem ipsum dolor</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-7">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            class="img-fluid"
+            src="../../../assets/about-us/Grupo 4038.png"
+          />
+        </div>
+        <div class="col-md-6">
+          <div class="box-text">
+            <h2 class="mb-3">Treinos criados à tua volta</h2>
+            <p>
+              O teu treinador analisa os teus objetivos. E quanto mais treinas,
+              mais o treino se adapta a ti
+            </p>
+            <button class="btn btn-primary mt-4">
+              Encontre a sua jornada
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <swiper class="swiper"
+    [slidesPerView]="5"
+    [autoplay]="false"
+    (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()"
+  >
+    <ng-template swiperSlide
+      ><img src="../../../assets/about-us/Retângulo -1.png" class="img-fluid" />
+    </ng-template>
+    <ng-template swiperSlide
+      ><img src="../../../assets/about-us/Retângulo -2.png" class="img-fluid"
+    /></ng-template>
+    <ng-template swiperSlide
+      ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
+    /></ng-template>
+    <ng-template swiperSlide
+      ><img src="../../../assets/about-us/Retângulo 40.png" class="img-fluid"
+    /></ng-template>
+    <ng-template swiperSlide
+    ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
+  /></ng-template>
+  </swiper>
+</main>
+<app-footer></app-footer>

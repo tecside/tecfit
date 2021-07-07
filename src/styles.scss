@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '~swiper/swiper-bundle';
 html,
 body {
   height: 100%;
@@ -9,7 +9,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-button {
+button, .btn-primary {
   background-color: rgb(3, 3, 58);
   color: #fff;
   border: 0px;
@@ -18,7 +18,7 @@ button {
   border-radius: 10px;
 }
 
-button:hover {
+button:hover, .btn-primary:hover {
   background-color: rgb(1, 1, 20);
 }
 
