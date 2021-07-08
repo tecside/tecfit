@@ -357,7 +357,7 @@ a:hover {
 }
 
 ul {
-  padding: 0;
+  padding: 0px 50px;
 }
 
 li {
@@ -617,9 +617,10 @@ p {
 }
 
 .planos-card {
-  max-width: 350px;
-  height: 550px;
+  max-width: 520px;
+  height: 430px;
   background-color: #fff;
+  text-align: justify;
   border-radius: 8px;
   box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.75);
   bottom: 0px;
@@ -638,7 +639,8 @@ p {
 }
 
 .list-item {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  padding-left: 50px;
 }
 
 #p-li-icon {
@@ -656,7 +658,7 @@ p {
 .p-price {
   font-weight: 400;
   font-size: 19px;
-  margin: 70px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .p-price b {

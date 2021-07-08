@@ -7,9 +7,9 @@
       <img src="../../../assets/home/tecfit-logo-black.png" alt="Logo">
       <h2 id="page-intro-title">Body-Mind-Soul</h2>
       <h3 id="page-intro-subtitle">Work Smarter. Eat Better. Live Forever</h3>
-      <button type="submit">Entrar</button>
+<!--       <button type="submit">Entrar</button>
       <br>
-      <button type="submit">Cadastre-se</button>
+      <button type="submit">Cadastre-se</button> -->
     </div>
   </div>
   <section id="section-1" class="cards-section">
@@ -25,7 +25,7 @@
       <div class="cards row">
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="card">
-            <img src="../../../assets/home/cards/0.jpg" alt="Coach">
+            <img src="../../../assets/home/cards/Card_1.png" alt="Coach">
             <div class="card-description">
               <h4>YOGA</h4>
               <p>From Alguem bla bla bla...</p>
@@ -36,7 +36,7 @@
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="card">
             <br><br><br>
-            <img src="../../../assets/home/cards/0.jpg" alt="Coach">
+            <img src="../../../assets/home/cards/Card_2.png" alt="Coach">
             <div class="card-description">
               <h4>HITT</h4>
               <p>From Alguem bla bla bla...</p>
@@ -45,7 +45,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="card">
-            <img src="../../../assets/home/cards/0.jpg" alt="Coach">
+            <img src="../../../assets/home/cards/Card_3.png" alt="Coach">
             <div class="card-description">
               <h4>YOGA</h4>
               <p>From Alguem bla bla bla...</p>
@@ -56,7 +56,7 @@
         <div class="col-sm-12 col-md-6 col-lg-3">
           <div class="card">
             <br><br><br>
-            <img src="../../../assets/home/cards/0.jpg" alt="Coach">
+            <img src="../../../assets/home/cards/Card_4.png" alt="Coach">
             <div class="card-description">
               <h4>DANÇA</h4>
               <p>From Alguem bla bla bla...</p>
@@ -219,6 +219,23 @@
         </swiper>
       </div>
     </div>
+  </section>
+
+  <section class="section-5">
+    <br>
+    <h1>Compre os nossos artigos</h1>
+    <div style="position: relative;text-align: center;">
+      <swiper class="swiper" [slidesPerView]="5" [autoplay]="false" (swiper)="onSwiper($event)"
+        (slideChange)="onSlideChange()" [spaceBetween]="20">
+        <ng-template swiperSlide><img src="../../../assets/home/store/1.jpeg" class="img-fluid" /></ng-template>
+        <ng-template swiperSlide><img src="../../../assets/home/store/2.jpeg" class="img-fluid" /></ng-template>
+        <ng-template swiperSlide><img src="../../../assets/home/store/3.jpeg" class="img-fluid" /></ng-template>
+        <ng-template swiperSlide><img src="../../../assets/home/store/4.jpeg" class="img-fluid" /></ng-template>
+        <ng-template swiperSlide><img src="../../../assets/home/store/5.jpeg" class="img-fluid" /></ng-template>
+      </swiper>
+      <button style="background-color: white; color: blue; position: absolute; left: 47%; bottom: 250px; z-index: 1;"><b>Ir para Loja</b></button>
+    </div>
+
   </section>
 </main>
 <app-footer></app-footer>
