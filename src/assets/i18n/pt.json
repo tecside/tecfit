@@ -1,0 +1,14 @@
+{
+  "NAVBAR": {
+    "MENU1": "Treinos",
+    "MENU2": "Nutrição",
+    "MENU3": "Loja",
+    "BTN": "Começar Agora"
+  },
+  "HOME":{
+
+  },
+   "ABOUT":{
+    "TITTLE": "História e Missão"
+  }
+}

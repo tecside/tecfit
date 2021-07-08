@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>História e Missão</h1>
+          <h1>{{ 'ABOUT.TITTLE' | translate}}</h1>
         </div>
       </div>
     </div>
@@ -87,9 +87,7 @@
   </section>
 
   <section class="section-5">
-    
-          <h1>Viemos para ser os melhores</h1>
-     
+    <h1>Viemos para ser os melhores</h1>
   </section>
 
   <section class="section-6">
@@ -97,17 +95,17 @@
       <div class="row">
         <div class="col-md-12">
           <h2 class="mb-5">A nossa missão</h2>
-          <ul>
+          <!-- <ul>
             <li>Pôr Angola no mapa</li>
             <li>Fomentar atividade fitness</li>
             <li>Lorem ipsum dolor</li>
             <li>Lorem ipsum dolor</li>
-          </ul>
+          </ul> -->
         </div>
-        <div class="col-md-3">Pôr Angola no mapa</div>
-        <div class="col-md-3">Fomentar atividade fitness</div>
-        <div class="col-md-3">Lorem ipsum dolor</div>
-        <div class="col-md-3">Lorem ipsum dolor</div>
+        <div class="col-md-3"> <p>Pôr Angola no mapa <i class="bi bi-pin-map"></i></p></div>
+        <div class="col-md-3"><p>Fomentar atividade fitness</p></div>
+        <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
+        <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
       </div>
     </div>
   </section>
@@ -128,16 +126,15 @@
               O teu treinador analisa os teus objetivos. E quanto mais treinas,
               mais o treino se adapta a ti
             </p>
-            <button class="btn btn-primary mt-4">
-              Encontre a sua jornada
-            </button>
+            <button class="btn btn-primary mt-4">Encontre a sua jornada</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <swiper class="swiper"
+  <swiper
+    class="swiper"
     [slidesPerView]="5"
     [autoplay]="false"
     (swiper)="onSwiper($event)"
@@ -156,8 +153,8 @@
       ><img src="../../../assets/about-us/Retângulo 40.png" class="img-fluid"
     /></ng-template>
     <ng-template swiperSlide
-    ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
-  /></ng-template>
+      ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
+    /></ng-template>
   </swiper>
 </main>
 <app-footer></app-footer>

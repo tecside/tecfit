@@ -22,6 +22,16 @@ button:hover, .btn-primary:hover {
   background-color: rgb(1, 1, 20);
 }
 
+.btn-primary:active {
+  background-color: rgb(1, 1, 20);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgb(1, 1, 20);
+  border-color: rgb(1, 1, 20);
+}
+
 .fade-in {
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;

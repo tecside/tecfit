@@ -1,4 +1,6 @@
+import { TranslateModule } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
+ import {TranslateServiceApp} from '../../../services/translate.service'
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +11,7 @@ export class NavbarComponent implements OnInit {
 
   open: boolean = false
 
-  constructor() { }
+  constructor(public translate: TranslateServiceApp) { }
 
   ngOnInit(): void {
   }

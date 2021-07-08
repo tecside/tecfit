@@ -1,3 +1,42 @@
+@import url(hamburguer.scss);
+
+// .mat-form-field{
+//   width: 4rem;
+// }
+
+
+
+// .mat-label{
+//   color: white;
+
+  
+// }
+
+// .mat-option{
+  
+// }
+
+
+.form-select{
+  background-color: black;
+  border: none;
+  color: white;
+
+  .select-option{
+    background-color: white;
+    color: black;
+  }
+
+}
+
+::ng-deep .mat-form-content{
+  background-color: yellow;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+  color: white;
+}
+
 .flag {
   display: flex;
   align-items: center;
@@ -17,6 +56,7 @@
 
 .nav-item {
   padding-left: 30px;
+  align-items: baseline;
 }
 
 .nav-link {
@@ -151,6 +191,7 @@
   button {
     font-size: 10px;
     padding: 5px;
+    width: 100%;
   }
 
   .rigth-list {

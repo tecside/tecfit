@@ -1,0 +1,14 @@
+{
+  "NAVBAR": {
+    "MENU1": "Workouts",
+    "MENU2": "Nutrition",
+    "MENU3": "Store",
+    "BTN": "Start Now"
+  },
+  "HOME":{
+
+  },
+  "ABOUT":{
+    "TITTLE": "History and Mission"
+  }
+}
