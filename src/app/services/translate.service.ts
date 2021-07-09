@@ -1,17 +1,30 @@
-import { Injectable } from '@angular/core';
-import {TranslateService, TranslateModule} from '@ngx-translate/core'
+import { Injectable } from "@angular/core";
+import { TranslateService, TranslateModule } from "@ngx-translate/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class TranslateServiceApp {
 
-  constructor(public translate: TranslateService){
-    translate.addLangs(['pt', 'en']);
-    translate.setDefaultLang('pt');
+  actualLang: string | null;
+
+  constructor(public translate: TranslateService) {
+    translate.addLangs(["pt", "en"]);
+    translate.setDefaultLang("en");
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/pt|en/) ? browserLang: 'en')
-    console.log(translate)
+
+    const lang = localStorage.getItem("lang");
+    translate.use(
+      lang != null ? lang : browserLang.match(/pt|en/) ? browserLang : "en"
+    );
+    localStorage.setItem("lang", translate.currentLang);
+    this.actualLang = localStorage.getItem('lang')
 
   }
+
+  changeLocale(locale: string) {
+    this.translate.use(locale);
+    localStorage.setItem("lang", locale);
+  }
+
 }

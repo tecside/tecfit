@@ -61,9 +61,19 @@
       
 
       <label class="label">
-        <select class="form-select" #langselect (change)="translate.translate.use(langselect.value)">
-          <option class="select-option" *ngFor="let lang of translate.translate.getLangs()" [value]="lang">{{lang | uppercase}}</option>
-        </select>
+        <div *ngIf="translate.actualLang == 'pt'; else langEn" >
+          <select class="form-select" #langselect (change)="translate.changeLocale(langselect.value)">
+            <option class="select-option" *ngFor="let lang of translate.translate.getLangs()" [value]="lang">{{lang | uppercase}}</option>
+          </select>
+        </div>
+
+        <ng-template #langEn>
+          <select class="form-select" #langselect (change)="translate.changeLocale(langselect.value)">
+            <option class="select-option" *ngFor="let lang of translate.translate.getLangs().slice().reverse()" [value]="lang">{{lang | uppercase}}</option>
+          </select>
+        </ng-template>
+       
+       
         
       </label>
     </li>

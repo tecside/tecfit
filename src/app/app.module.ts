@@ -1,3 +1,4 @@
+import { HorizontalTimelineComponent } from './components/horizontal-timeline/horizontal-timeline.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient){
     FooterComponent,
     HomeComponent,
     AboutUsComponent,
-    WorkoutsComponent
+    WorkoutsComponent,
+    HorizontalTimelineComponent
   ],
   imports: [
     BrowserModule,
