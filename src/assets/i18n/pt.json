@@ -2,7 +2,9 @@
   "NAVBAR": {
     "MENU1": "Treinos",
     "MENU2": "Nutrição",
-    "MENU3": "Loja",
+    "MENU3": "Preços",
+    "MENU4": "Corporate",
+    "MENU5": "Loja",
     "BTN": "Começar Agora"
   },
   "HOME":{

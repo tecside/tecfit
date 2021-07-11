@@ -21,6 +21,7 @@
   background-color: black;
   border: none;
   color: white;
+  background-image: none;
 
   .select-option{
     background-color: white;
@@ -54,9 +55,14 @@
   position: absolute;
 }
 
+.navbar-nav a i{
+  color: white;
+  font-size: 2rem;
+}
+
 .nav-item {
   padding-left: 30px;
-  align-items: baseline;
+  align-items: center;
 }
 
 .nav-link {
@@ -77,6 +83,10 @@
 .rigth-list {
   position: fixed;
   right: 7%;
+
+  .nav-item{
+    padding-left: 0;
+  }
 }
 
 .flag-icone {
@@ -198,3 +208,32 @@
     right: 4%;
   }
 }
+
+.dropdown{
+  background-color: transparent;
+  border-right: 1px solid white;
+
+  .dropdown-menu{
+    padding: 0;
+    min-width: 5rem;
+  }
+   
+  .dropdown-toggle{
+    font-size: 1.2rem;
+    background-color: transparent;
+
+    &::after{
+      display: none;
+    }
+  }
+
+  .dropdown-item{
+    padding: .5rem 1rem;
+    margin: 0;
+
+    &:active{
+      background-color: rgb(3, 3, 58);
+    }
+  }
+}
+

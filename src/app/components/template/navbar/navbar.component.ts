@@ -28,4 +28,8 @@ export class NavbarComponent implements OnInit {
     this.open = false
   }
 
+  changeEvent() {
+
+  }
+
 }

@@ -1,8 +1,8 @@
 import { TimelineElement } from "./../horizontal-timeline/timeline-element";
 import { Component, OnInit } from "@angular/core";
-import SwiperCore, { Autoplay } from "swiper/core";
+import SwiperCore, { Autoplay, EffectFade } from "swiper/core";
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use([Autoplay, EffectFade]);
 @Component({
   selector: "app-about-us",
   templateUrl: "./about-us.component.html",

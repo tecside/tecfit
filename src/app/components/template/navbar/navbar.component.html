@@ -16,16 +16,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/workouts">{{ 'NAVBAR.MENU1' | translate}}</a>
-      </li>
-      <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Instrutores</a>
-            </li> -->
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{ 'NAVBAR.MENU2' | translate}}</a>
+        <a class="nav-link" href="/workouts">{{ "NAVBAR.MENU1" | translate}}</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">{{ 'NAVBAR.MENU3' | translate}}</a>
+        <a class="nav-link" href="#">{{ "NAVBAR.MENU2" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">{{ "NAVBAR.MENU3" | translate }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about-us">{{ "NAVBAR.MENU4" | translate }}</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a>
       </li>
     </ul>
   </div>
@@ -39,14 +43,7 @@
 
   <ul class="navbar-nav rigth-list">
     <li class="nav-item flag">
-      <button class="me-3" type="submit">{{ 'NAVBAR.BTN' | translate}}</button>
-      <!-- <a class="flag-icone" href="/"
-        ><img
-          src="../../../../assets/navbar/nav-pt-flag.png"
-          alt="flag"
-          width="20px"
-      /></a> -->
-
+     
       <!-- <mat-form-field floatLabel="never" class="mat-form-field">
         <mat-label class="mat-label">{{translate.translate.getDefaultLang() | uppercase}}</mat-label>
         <mat-select #langselect (selectionChange)="translate.translate.use(langselect.value)">
@@ -58,28 +55,62 @@
           </mat-option>
         </mat-select>
       </mat-form-field> -->
-      
 
-      <label class="label">
-        <div *ngIf="translate.actualLang == 'pt'; else langEn" >
-          <select class="form-select" #langselect (change)="translate.changeLocale(langselect.value)">
-            <option class="select-option" *ngFor="let lang of translate.translate.getLangs()" [value]="lang">{{lang | uppercase}}</option>
+     
+      <div class="dropdown pe-2">
+        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          {{translate.actualLang | uppercase}}
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li  *ngFor="let lang of translate.translate.getLangs()">
+            <button (click)="translate.changeLocale(lang)" class="dropdown-item" >{{lang | uppercase}}</button>
+          </li>
+        </ul>
+      </div>
+
+        <!-- <div *ngIf="translate.actualLang == 'pt'; else langEn">
+          <select
+            class="form-select"
+            #langselect
+            (change)="translate.changeLocale(langselect.value)"
+          >
+            <option
+              class="select-option"
+              *ngFor="let lang of translate.translate.getLangs()"
+              [value]="lang"
+            >
+              {{ lang | uppercase }}
+            </option>
           </select>
         </div>
 
         <ng-template #langEn>
-          <select class="form-select" #langselect (change)="translate.changeLocale(langselect.value)">
-            <option class="select-option" *ngFor="let lang of translate.translate.getLangs().slice().reverse()" [value]="lang">{{lang | uppercase}}</option>
+          <select
+            class="form-select"
+            #langselect
+            (change)="translate.changeLocale(langselect.value)"
+          >
+            <option
+              class="select-option"
+              *ngFor="
+                let lang of translate.translate.getLangs().slice().reverse()
+              "
+              [value]="lang"
+            >
+              {{ lang | uppercase }}
+            </option>
           </select>
-        </ng-template>
-       
-       
-        
-      </label>
+        </ng-template> -->
+    
+      
+    </li>
+    <li class="nav-item flag ms-4 me-4">
+      <a href="#"><i class="bi bi-person-fill"></i></a>
+    </li>
+    <li class="nav-item flag">
+      <button class="" type="submit">{{ "NAVBAR.BTN" | translate }}</button>
     </li>
   </ul>
-
-  
 </nav>
 
 <nav id="navMobile" class="navbar fixed-top">
@@ -109,10 +140,11 @@
   </div>
 
   <div id="mySidebar" class="sidebar">
-    <a class="nav-link" href="#">Treinos</a>
-    <a class="nav-link" href="#">Instrutores</a>
-    <a class="nav-link" href="#">Nutrição</a>
-    <a class="nav-link" href="#">Loja</a>
+    <a class="nav-link" routerLink="/workouts">{{ "NAVBAR.MENU1" | translate}}</a>
+    <a class="nav-link" href="#">{{ "NAVBAR.MENU2" | translate }}</a>
+    <a class="nav-link" href="#">{{ "NAVBAR.MENU3" | translate }}</a>
+    <a class="nav-link" href="#">{{ "NAVBAR.MENU4" | translate }}</a>
+    <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a>
   </div>
 
   <a *ngIf="!open" class="navbar-brand" href="/"
@@ -130,10 +162,8 @@
           src="../../../../assets/navbar/nav-pt-flag.png"
           alt="flag"
           width="20px"
-      /> 
-    </a>
-     
-     
+        />
+      </a>
     </li>
   </ul>
 </nav>

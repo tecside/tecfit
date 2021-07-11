@@ -25,6 +25,7 @@ export class TranslateServiceApp {
   changeLocale(locale: string) {
     this.translate.use(locale);
     localStorage.setItem("lang", locale);
+    this.actualLang = locale;
   }
 
 }

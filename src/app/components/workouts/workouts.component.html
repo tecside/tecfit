@@ -1,62 +1,72 @@
 <header>
-    <app-navbar></app-navbar>
-  </header>
+  <app-navbar></app-navbar>
+</header>
 <main>
-    
-
-    
-    <div class="treinos-banner">
-      <img src="../../../assets/workout/banner.jpeg" alt="">
-      <div class="treinos-banner-txt">
-        <h5>Alcance o seu objectivo fitness agora,  a partir da sua casa</h5>
-      </div>
+  <div class="treinos-banner">
+    <img src="../../../assets/workout/banner.jpeg" alt="" />
+    <div class="treinos-banner-txt">
+      <h5>Alcance o seu objectivo fitness agora, a partir da sua casa</h5>
     </div>
+  </div>
 
-    <div class="benefits">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-6 col-lg-6 col-xs-12 benefit-aside">
-            <div class="benefits-info">
-                  <h2>O que você ganha com a Tecfit</h2>
-                  <p>Defina seus objetivos e trabalhe para alcançá-los de qualquer lugar, a qualquer momento e como quiser.</p>
-                </div>
+  <div class="benefits">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-lg-6 col-xs-12 benefit-aside">
+          <div class="benefits-info">
+            <h2>O que você ganha com a Tecfit</h2>
+            <p>
+              Defina seus objetivos e trabalhe para alcançá-los de qualquer
+              lugar, a qualquer momento e como quiser.
+            </p>
           </div>
+        </div>
 
-          <div class="col-md-6 col-lg-6 col-xs-12 benefit-aside">
-            <div class="benefit-cards">
-              <div class="bnft-card">
-                <div class="bnft-icon">
-                  <img src="../../../assets/workout/progression.svg" alt="">
-                </div>
-                <div class="bnft-txt">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
+        <div class="col-md-6 col-lg-6 col-xs-12 benefit-aside">
+          <div class="benefit-cards">
+            <div class="bnft-card">
+              <div class="bnft-icon">
+                <img src="../../../assets/workout/progression.svg" alt="" />
               </div>
-              <div class="bnft-card">
-                <div class="bnft-icon">
-                  <img src="../../../assets/workout/dumbbell.svg" alt="">
-                </div>
-                <div class="bnft-txt">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
+              <div class="bnft-txt">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
               </div>
-              <div class="bnft-card">
-                <div class="bnft-icon">
-                  <img src="../../../assets/workout/heartbeat.svg" alt="">
-                </div>
-                <div class="bnft-txt">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
+            </div>
+            <div class="bnft-card">
+              <div class="bnft-icon">
+                <img src="../../../assets/workout/dumbbell.svg" alt="" />
+              </div>
+              <div class="bnft-txt">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </div>
+            </div>
+            <div class="bnft-card">
+              <div class="bnft-icon">
+                <img src="../../../assets/workout/heartbeat.svg" alt="" />
+              </div>
+              <div class="bnft-txt">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <a href="/workouts#getknow" class="tec-btn btn-primary" id="benefit-btn">Conheça a plataforma
-      </a>
-
     </div>
-    <div class="getknow" id="getknow">
+    <a href="/workouts#getknow" class="tec-btn btn-primary" id="benefit-btn"
+      >Conheça a plataforma
+    </a>
+  </div>
+
+  <!-- <div class="getknow" id="getknow">
       <h1>Como funciona a plataforma</h1>
       <div class="container-fluid">
         <div class="row">
@@ -128,49 +138,148 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="joincommunity">
-      <h1>Junta-te à comunidade TECFIT</h1>
-      <button class="tec-btn">Começar</button>
-      <swiper
-    class="swiper"
-    [slidesPerView]="5"
-    [autoplay]="true"
-    (swiper)="onSwiper($event)"
-    (slideChange)="onSlideChange()"
+    </div> -->
+
+  <!-- <swiper style="height: 25rem;"
+    [direction]="'vertical'"
+    [slidesPerView]="1"
+    [spaceBetween]="30"
+    [mousewheel]="true"
+    class="mySwiper"
   >
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/1.jpg" class="img-fluid" />
+    <ng-template swiperSlide>
+      <div class="getknow getknow-black">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="getknow-container">
+                <h4>Etapa 3</h4>
+                <h3>Define os seus objectivos</h3>
+                <p>
+                  O seu treinador analisa os teus objectivos. E quanto mais
+                  treina, mais o treino se adapta a si.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="device-1">
+                <img src="../../../assets/workout/Device1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </ng-template>
     <ng-template swiperSlide
-      ><img src=".../../../assets/workout/0.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/1.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/2.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/3.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/4.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/5.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/6.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/workout/7.jpg" class="img-fluid"
-    /></ng-template>
-  </swiper>
-    </div>
+      ><div class="getknow">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="getknow-container">
+                <h4>Etapa 2</h4>
+                <h3>Define os seus objectivos</h3>
+                <p>
+                  O seu treinador analisa os teus objectivos. E quanto mais
+                  treina, mais o treino se adapta a si.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="device-1">
+                <img src="../../../assets/workout/Device1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div></div
+    ></ng-template>
+    <ng-template swiperSlide>
+      <div class="getknow getknow-black">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="getknow-container">
+                <h4>Etapa 3</h4>
+                <h3>Define os seus objectivos</h3>
+                <p>
+                  O seu treinador analisa os teus objectivos. E quanto mais
+                  treina, mais o treino se adapta a si.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="device-1">
+                <img src="../../../assets/workout/Device1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide>
+      <div class="getknow">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="getknow-container">
+                <h4>Etapa 2</h4>
+                <h3>Define os seus objectivos</h3>
+                <p>
+                  O seu treinador analisa os teus objectivos. E quanto mais
+                  treina, mais o treino se adapta a si.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 getknow-aside">
+              <div class="device-1">
+                <img src="../../../assets/workout/Device1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div></div>
+    </ng-template>
+  </swiper> -->
 
-   
-    <!-- <div class="planos">
+  <div class="joincommunity">
+    <h1>Junta-te à comunidade TECFIT</h1>
+    <button class="tec-btn">Começar</button>
+    <swiper
+      class="swiper"
+      [slidesPerView]="5"
+      [autoplay]="true"
+      (swiper)="onSwiper($event)"
+      (slideChange)="onSlideChange()"
+    >
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/1.jpg" class="img-fluid" />
+      </ng-template>
+      <ng-template swiperSlide
+        ><img src=".../../../assets/workout/0.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/1.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/2.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/3.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/4.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/5.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/6.jpg" class="img-fluid"
+      /></ng-template>
+      <ng-template swiperSlide
+        ><img src="../../../assets/workout/7.jpg" class="img-fluid"
+      /></ng-template>
+    </swiper>
+  </div>
+
+  <!-- <div class="planos">
       <div class="planos-bg" style="background-image: url({{asset('img/bg1.jpg)">
         <h1 class="p-header-txt">Escolha os melhores treinos. Treine com os melhores instrutores de Portugal e Angola</h1>
         <div class="planos-card">
@@ -274,5 +383,5 @@
         </div>
       </div>
     </div> -->
-  </main>
-  <app-footer></app-footer>
+</main>
+<app-footer></app-footer>
