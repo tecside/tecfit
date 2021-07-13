@@ -1,4 +1,4 @@
-.top {
+/* .top {
   background-color: black;
   // background-image: url("../../../assets/home/home-img-1.png");
   background-size: cover;
@@ -46,7 +46,7 @@
     font-size: 20px;
   }
 }
-
+ */
 /*******************************/
 
 .titles {
@@ -80,12 +80,28 @@
   .flex {
     display: flex;
     align-items: center;
+    text-align: center;
   }
 
   .description {
-    padding: 0vw 7vw;
+    padding: 0 7vw;
+    color: white;
+
+    h2 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    p {
+      color: white;
+      font-size: x-large;
+      line-height: 35px;
+    }
+
+    .color-black {
+      color: black;
+    }
   }
 }
 
 /*******************************/
-
