@@ -1,145 +1,67 @@
-<nav id="nav" class="navbar fixed-top navbar-expand-xl">
-  <button
-    class="navbar-toggler text-white"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon">
-      <i class="fas fa-bars"></i>
-    </span>
-  </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="/workouts">{{ "NAVBAR.MENU1" | translate}}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{ "NAVBAR.MENU2" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{ "NAVBAR.MENU3" | translate }}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/about-us">{{ "NAVBAR.MENU4" | translate }}</a>
-      </li>
-     
-      <li class="nav-item">
-        <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a>
-      </li>
-    </ul>
+
+<nav class="navbar navbar-dark bg-black fixed-top">
+  <div class="container-fluid" >
+    <div>
+      <button (click)="openNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': false}"  class="" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="center">
+      <a class="navbar-brand" href="/"
+        ><img
+          src="../../../../assets/navbar/tecfit-logo.png"
+          alt="logo"
+          width="100px"
+      /></a>
+    </div>
+
+    <div class="right-side">
+      <ul class="navbar-nav rigth-list">
+        <li class="nav-item flag">
+          <div class="dropdown pe-2">
+            <button
+              class="dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              {{ translate.actualLang | uppercase }}
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li *ngFor="let lang of translate.translate.getLangs()">
+                <button
+                  (click)="translate.changeLocale(lang)"
+                  class="dropdown-item"
+                >
+                  {{ lang | uppercase }}
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item flag ms-4 me-4 d-md-block d-none">
+          <a href="#"><i class="align-middle bi bi-person-fill"></i></a>
+        </li>
+        <li class="nav-item flag d-md-block d-none">
+          <button class="" type="submit">{{ "NAVBAR.BTN" | translate }}</button>
+        </li>
+      </ul>
+    </div>
   </div>
-
-  <a class="navbar-brand" href="/"
-    ><img
-      src="../../../../assets/navbar/tecfit-logo.png"
-      alt="logo"
-      width="100px"
-  /></a>
-
-  <ul class="navbar-nav rigth-list">
-    <li class="nav-item flag">
-     
-      <!-- <mat-form-field floatLabel="never" class="mat-form-field">
-        <mat-label class="mat-label">{{translate.translate.getDefaultLang() | uppercase}}</mat-label>
-        <mat-select #langselect (selectionChange)="translate.translate.use(langselect.value)">
-          <mat-option class="mat-option"
-            *ngFor="let translate of translate.translate.getLangs()"
-            [value]="translate"
-          >
-            {{ translate | uppercase}}
-          </mat-option>
-        </mat-select>
-      </mat-form-field> -->
-
-     
-      <div class="dropdown pe-2">
-        <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-          {{translate.actualLang | uppercase}}
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li  *ngFor="let lang of translate.translate.getLangs()">
-            <button (click)="translate.changeLocale(lang)" class="dropdown-item" >{{lang | uppercase}}</button>
-          </li>
-        </ul>
-      </div>
-
-        <!-- <div *ngIf="translate.actualLang == 'pt'; else langEn">
-          <select
-            class="form-select"
-            #langselect
-            (change)="translate.changeLocale(langselect.value)"
-          >
-            <option
-              class="select-option"
-              *ngFor="let lang of translate.translate.getLangs()"
-              [value]="lang"
-            >
-              {{ lang | uppercase }}
-            </option>
-          </select>
-        </div>
-
-        <ng-template #langEn>
-          <select
-            class="form-select"
-            #langselect
-            (change)="translate.changeLocale(langselect.value)"
-          >
-            <option
-              class="select-option"
-              *ngFor="
-                let lang of translate.translate.getLangs().slice().reverse()
-              "
-              [value]="lang"
-            >
-              {{ lang | uppercase }}
-            </option>
-          </select>
-        </ng-template> -->
-    
-      
-    </li>
-    <li class="nav-item flag ms-4 me-4">
-      <a href="#"><i class="bi bi-person-fill"></i></a>
-    </li>
-    <li class="nav-item flag">
-      <button class="" type="submit">{{ "NAVBAR.BTN" | translate }}</button>
-    </li>
-  </ul>
 </nav>
 
-<nav id="navMobile" class="navbar fixed-top">
-  <div id="main">
-    <button
-      *ngIf="open"
-      id="hamburger"
-      class="hamburger hamburger--slider is-active"
-      (click)="closeNav()"
-      type="button"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <button
-      *ngIf="!open"
-      id="hamburger"
-      class="hamburger hamburger--slider"
-      (click)="openNav()"
-      type="button"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-  </div>
-
-  <div id="mySidebar" class="sidebar">
+<div id="mySidebar" [ngClass]="{'sidebar': true}">
+  <button (click)="closeNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': true, 'd-none': !open}"  class="" type="button">
+    <span [ngClass]="{'hamburger-box': true}">
+      <span [ngClass]="{'hamburger-inner': true}"></span>
+    </span>
+  </button>
+  <div [ngClass]="{'sidebar-itens': true, 'd-none': !open}">
     <a class="nav-link" routerLink="/workouts">{{ "NAVBAR.MENU1" | translate}}</a>
     <a class="nav-link" href="#">{{ "NAVBAR.MENU2" | translate }}</a>
     <a class="nav-link" href="#">{{ "NAVBAR.MENU3" | translate }}</a>
@@ -147,24 +69,6 @@
     <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a>
   </div>
 
-  <a *ngIf="!open" class="navbar-brand" href="/"
-    ><img
-      src="../../../../assets/navbar/tecfit-logo.png"
-      alt="logo"
-      width="100px"
-  /></a>
-
-  <ul *ngIf="!open" id="rigth-side" class="navbar-nav rigth-list">
-    <li class="nav-item flag">
-      <button class="" type="submit">Começar Agora</button>
-      <a class="flag-icone" href="/"
-        ><img
-          src="../../../../assets/navbar/nav-pt-flag.png"
-          alt="flag"
-          width="20px"
-        />
-      </a>
-    </li>
-  </ul>
-</nav>
-<br /><br />
+  
+ 
+</div>

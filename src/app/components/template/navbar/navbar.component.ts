@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./hamburguer.scss', './navbar.component.scss']
+  styleUrls: ['./navbar.component.scss', './hamburguer.scss']
 })
 export class NavbarComponent implements OnInit {
 
@@ -17,15 +17,24 @@ export class NavbarComponent implements OnInit {
   }
 
   openNav() {
-    document.getElementById("mySidebar")!.style.width = "250px";
-    document.getElementById("main")!.style.marginLeft = "250px";
-    this.open = true
+    document.getElementById("mySidebar")!.style.width = "100%";
+    
+
+    setTimeout(() => {  this.open = !this.open }, 300);
+    
+    
+
+    
   }
 
   closeNav() {
-    document.getElementById("mySidebar")!.style.width = "0";
-    document.getElementById("main")!.style.marginLeft = "0";
-    this.open = false
+    
+    //document.getElementById("main")!.style.marginLeft = "0";
+    this.open = !this.open
+    setTimeout(() => {   
+      document.getElementById("mySidebar")!.style.width = "0"
+    }, 50);
+   
   }
 
   changeEvent() {
