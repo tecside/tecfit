@@ -19,6 +19,13 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { WorkoutsComponent } from './components/workouts/workouts.component';
+import { TopComponentComponent } from './components/template/home/top-component/top-component.component';
+import { CardsComponentComponent } from './components/template/home/cards-component/cards-component.component';
+import { GlitchComponentComponent } from './components/template/home/glitch-component/glitch-component.component';
+import { TrainSmarterComponentComponent } from './components/template/home/train-smarter-component/train-smarter-component.component';
+import { RecipesComponentComponent } from './components/template/home/recipes-component/recipes-component.component';
+import { PlansComponentComponent } from './components/template/home/plans-component/plans-component.component';
+import { StoreComponentComponent } from './components/template/home/store-component/store-component.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -32,7 +39,14 @@ export function HttpLoaderFactory(http: HttpClient){
     HomeComponent,
     AboutUsComponent,
     WorkoutsComponent,
-    HorizontalTimelineComponent
+    HorizontalTimelineComponent,
+    TopComponentComponent,
+    CardsComponentComponent,
+    GlitchComponentComponent,
+    TrainSmarterComponentComponent,
+    RecipesComponentComponent,
+    PlansComponentComponent,
+    StoreComponentComponent
   ],
   imports: [
     BrowserModule,
