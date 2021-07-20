@@ -1,17 +1,30 @@
 .titles {
   text-align: center;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0px 200px;
+  }
 }
 
 .cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 
   img {
-    width: 250px;
+    width: 300px;
   }
 }
 
 .card {
-  margin: 0px 50px;
   border: 0px;
+}
+
+#button {
+  text-align: center;
 }

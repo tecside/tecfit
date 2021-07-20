@@ -1,5 +1,15 @@
 .titles {
   text-align: center;
+
+  h2 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0px 200px;
+  }
 }
 
 .cards {
@@ -9,9 +19,20 @@
   img {
     width: 250px;
   }
+
+  h4 {
+    font-size: large;
+    padding-top: 20px;
+    font-weight: bold;
+  }
+
+  p {
+    padding-bottom: 20px;
+    font-size: 15px;
+  }
 }
 
 .card {
-  margin: 0px 50px;
   border: 0px;
+  text-align: center;
 }
