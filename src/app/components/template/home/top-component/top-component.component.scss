@@ -6,7 +6,7 @@ section {
     height: 100vh;
 
     .full-height{
-      height: 96.5%;
+      height: 95.5%;
     }
     .header-left{
         top: 50%;
@@ -84,6 +84,15 @@ section {
       }
     }
 
+    .header-bootom-center{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      p{
+        animation: UpDown 1s infinite;
+      }
+    }
+
     .header-bootom-right{
       position: relative;
       right: 3%;
@@ -104,4 +113,16 @@ section {
 
 
    
+}
+
+@keyframes UpDown{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(0.3rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
