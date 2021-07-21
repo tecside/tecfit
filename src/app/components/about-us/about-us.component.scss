@@ -76,7 +76,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   
 
   
-.sobre{
+.about{
     margin: 0;
     .section-1{
         padding: 5rem 5rem 5rem 5rem;
@@ -400,12 +400,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
             //text-decoration: underline;
         }
 
-        ul{
-            li{
-                font-size: 2rem;
-                margin-top: 1rem;
-            }
+        i{
+            font-size: 5rem;
         }
+
+
+       
     }
 
     .section-7{
@@ -466,6 +466,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
     .swiper{
         .img-fluid{
             height: 30rem;
+
+            @include respond(phone){
+                height: auto;
+            };
         }
     }
 }

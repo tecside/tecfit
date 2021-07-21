@@ -1,4 +1,68 @@
 <section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="container-fluid full-height">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="header-left">
+          <h1>
+            Thousands of workouts for<br /><strong> Body, Mind & Soul </strong>
+          </h1>
+          <p>
+            Get unlimited access to thousands of workouts and programs, created
+            and guided by our certified trainers. Find your journey and start
+            sem mais demoraaaass.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="header-right">
+          <img #headerImage1
+            class="header-image header-image-1"
+            src="../../../assets/home/header-image-01.jpg"
+            alt=""
+          />
+          <img #headerImage2
+            class="header-image header-image-2"
+            src="../../../assets/home/header-image-02.jpg"
+            alt=""
+          />
+          <img #headerImage3
+            class="header-image header-image-3"
+            src="../../../assets/home/header-image-03.jpg"
+            alt=""
+          />
+          <img #headerImage4
+            class="header-image header-image-4"
+            src="../../../assets/home/header-image-04.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12">
+            <div class="header-bottom d-flex justify-content-between">
+                <div class="header-bottom-left d-flex">
+                    <span  >0{{page+1}}</span>
+                    <hr>
+                    <span>{{pageName}}</span>
+                </div>
+                <div class="header-bootom-center">
+                    <p>
+                        <strong>
+                            Scroll
+                        </strong>
+                        
+                    </p>
+                </div>
+                <div class="header-bootom-right">
+                    <i (click)="previus()"  class="bi bi-chevron-left"></i>
+                    <i (click)="next()" class="bi bi-chevron-right"></i>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+ 
 </section>
