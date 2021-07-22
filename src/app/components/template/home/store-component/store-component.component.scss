@@ -1,0 +1,40 @@
+.card {
+  border: 0px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    color: white;
+    line-height: 40px;
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  button {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+#card-1 {
+  background-image: url("../../../../../assets/home/store/women.jpeg");
+  align-items: flex-end;
+}
+#card-2 {
+  background-image: url("../../../../../assets/home/store/men.jpeg");
+  align-items: flex-start;
+}
+#card-3 {
+  background-image: url("../../../../../assets/home/store/women.jpeg");
+  align-items: flex-end;
+}
+#card-4 {
+  background-image: url("../../../../../assets/home/store/men.jpeg");
+  align-items: flex-start;
+}
+#card-5 {
+  background-image: url("../../../../../assets/home/store/women.jpeg");
+  align-items: flex-end;
+}
