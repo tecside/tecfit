@@ -13,6 +13,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { SwiperModule } from 'swiper/angular';
 import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 import {TranslateServiceApp} from './services/translate.service'
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -55,6 +57,8 @@ export function HttpLoaderFactory(http: HttpClient){
     SwiperModule,
     HttpClientModule,
     TranslateModule,
+    MatFormFieldModule,
+    MatInputModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
