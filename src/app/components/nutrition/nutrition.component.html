@@ -1,77 +1,121 @@
 <header>
-    <app-navbar></app-navbar>
-    <section class="header">
-        <h1>Multiprotein</h1>
-    </section>
-  </header>
-    <swiper
-    class="swiper"
-    [spaceBetween]="0"
-    [autoplay]="false"
-    (swiper)="onSwiper($event)"
-    (slideChange)="onSlideChange()"
-    [breakpoints]="{
-      '640': {
-        slidesPerView: 4
-    
-      },
-      '768': {
-        slidesPerView: 4
-      
-      },
-      '1024': {
-        slidesPerView: 4
-      }
-    }"
-  >
-    <ng-template swiperSlide
-      ><img src="../../../assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" />
-    </ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/nutrition/Product.jpg" class="img-fluid"
-    /></ng-template>
-  </swiper>
-  <section class="info-app">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-6">
-                <div class="info">
-                    <h2>
-                        The Nutritionist in your hand
-                    </h2>
-                    <h4>Eat better. Reach your goals.</h4>
-                    <p>
-                        Multiprotein is a clean eating lifestyle tailored to your unique parameters. Its foodie-grade recipes and meal plans help you reach your goals, whether that be weight loss, muscle gain or overall health improvement. The cutting-edge digital Coach motivates you, tracks your progress and adapts your nutrition accordingly.
-                    </p>
-                </div>
-                <div class="d-flex mt-5 justify-content-between">
-                    <a href="#"><img src="../../../assets/home/PlayStore.png" class="img-fluid"></a>
-                    <a href="#" class="text-end"><img src="../../../assets/home/AppStore.png" class="img-fluid"></a>
-                </div>
-                <div class="text-center mt-5">
-                    <button class="btn btn-primary">Comece uma jornada</button>
-                </div>
-              
+  <app-navbar></app-navbar>
+  <section class="header">
+    <h1>Multiprotein</h1>
+  </section>
+</header>
+<swiper
+  class="swiper"
+  [spaceBetween]="0"
+  [autoplay]="false"
+  (swiper)="onSwiper($event)"
+  (slideChange)="onSlideChange()"
+  [breakpoints]="{
+    '0': {
+      slidesPerView: 3
+    },
+    '768': {
+      slidesPerView: 4
+    },
+    '1024': {
+      slidesPerView: 4
+    }
+  }"
+>
+  <ng-template swiperSlide
+    ><img
+      src="../../../assets/nutrition/Grupo de máscara -1.jpg"
+      class="img-fluid"
+    />
+  </ng-template>
+  <ng-template swiperSlide
+    ><img
+      src="../../../assets/nutrition/Grupo de máscara -2.jpg"
+      class="img-fluid"
+  /></ng-template>
+  <ng-template swiperSlide
+    ><img
+      src="../../../assets/nutrition/Grupo de máscara 14.jpg"
+      class="img-fluid"
+  /></ng-template>
+  <ng-template swiperSlide
+    ><img src="../../../assets/nutrition/Product.jpg" class="img-fluid"
+  /></ng-template>
+</swiper>
+<section class="info-app">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="info text-center text-md-start" >
+          <h2>The Nutritionist in your hand</h2>
+          <h4>Eat better. Reach your goals.</h4>
+          <p>
+            Multiprotein is a clean eating lifestyle tailored to your unique
+            parameters. Its foodie-grade recipes and meal plans help you reach
+            your goals, whether that be weight loss, muscle gain or overall
+            health improvement. The cutting-edge digital Coach motivates you,
+            tracks your progress and adapts your nutrition accordingly.
+          </p>
+        </div>
+        <div class="d-xl-flex mt-5 justify-content-between d-none ">
+          <a href="#"
+            ><img src="../../../assets/home/PlayStore.png" class="img-fluid"
+          /></a>
+          <a href="#" class="text-end"
+            ><img src="../../../assets/home/AppStore.png" class="img-fluid"
+          /></a>
+        </div>
+        <div class="text-center mt-5 d-xl-block d-none">
+          <button class="btn btn-primary">Comece uma jornada</button>
+        </div>
+      </div>
 
 
-              </div>
-              <div class="col-md-6">
-                    <div class="d-flex ms-5 justify-content-between app">
-                        <img src="../../../assets/nutrition/Grupo 4068.jpg" class="img-fluid">
-                        <img src="../../../assets/nutrition/Grupo 4074.jpg" class="img-fluid">
-                    </div>
-              </div>
+      <div class="col-md-6">
+        <div class="d-md-flex ms-5 d-none justify-content-between app">
+          <img
+            src="../../../assets/nutrition/Grupo 4068.jpg"
+            class="img-fluid"
+          />
+          <img
+            src="../../../assets/nutrition/Grupo 4074.jpg"
+            class="img-fluid"
+          />
+        </div>
+
+        <div class="d-md-none d-block text-center app">
+            <img
+              src="../../../assets/nutrition/Imagem 40.jpg"
+              class="img-fluid mx-auto"
+            />
           </div>
       </div>
-  </section>
+    </div>
+    <div class="col-md-12">
+        <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
+            <a href="#"c class="text-end me-5"
+              ><img src="../../../assets/home/PlayStore.png" class="img-fluid "
+            /></a>
+            <a href="#" class="text-start ms-5"
+              ><img src="../../../assets/home/AppStore.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="text-center d-block mt-3 d-xl-none">
+            <button class="btn btn-primary">Comece uma jornada</button>
+          </div>
+    </div>
+  </div>
+</section>
 
-  <section class="section-video text-center">
-    <iframe width="90%" height="90%" src="https://www.youtube.com/embed/Acs7ZnIdo4o?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </section>
-  <app-footer></app-footer>
+<section class="section-video text-center">
+  <iframe
+    width="90%"
+    height="90%"
+    src="https://www.youtube.com/embed/Acs7ZnIdo4o?controls=0"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</section>
+<app-footer></app-footer>

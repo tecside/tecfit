@@ -1,6 +1,38 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
 
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
 
+ORDER: Base + typography > general layout + grid > page layout > components
 
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == bootstrap_768{
+    @media only screen and (max-width: 47.8em) { @content };    //768px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content };    //600px
+  }
+
+}
+
+.navbar{
+  @include respond(phone){
+    padding: 0.5rem 0;
+};
+}
 
 .center{
   .navbar-brand{
@@ -35,9 +67,13 @@
     background-color: transparent;
     border-right: 1px solid white;
 
+    @include respond(bootstrap_768){
+      border: none
+  };
+
     .dropdown-menu {
       padding: 0;
-      min-width: 5rem;
+      min-width: 0rem;
       position: absolute;
     }
 
