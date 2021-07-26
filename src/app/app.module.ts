@@ -28,6 +28,7 @@ import { TrainSmarterComponentComponent } from './components/template/home/train
 import { RecipesComponentComponent } from './components/template/home/recipes-component/recipes-component.component';
 import { PlansComponentComponent } from './components/template/home/plans-component/plans-component.component';
 import { StoreComponentComponent } from './components/template/home/store-component/store-component.component';
+import { NutritionComponent } from './components/nutrition/nutrition.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -48,7 +49,8 @@ export function HttpLoaderFactory(http: HttpClient){
     TrainSmarterComponentComponent,
     RecipesComponentComponent,
     PlansComponentComponent,
-    StoreComponentComponent
+    StoreComponentComponent,
+    NutritionComponent
   ],
   imports: [
     BrowserModule,

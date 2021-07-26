@@ -1,0 +1,65 @@
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../assets/nutrition/brooke-lark-nTZOILVZuOg-unsplash.jpg");
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+
+    h1{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 3rem;
+    }
+    
+}
+
+.info-app{
+    padding: 5rem 0;
+    .info{
+        h2{
+            font-size: 2.8rem;
+        }
+
+        h4{
+            font-size: 1.8rem;
+            color: #239F3A;
+        }
+
+        p{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-align: justify;
+        }
+
+        
+    }
+
+    .img-fluid{  
+        max-width: 75%;
+    }
+
+    .btn-primary{
+        background-color: #239F3A;
+        border-color: #239F3A;
+        border-radius: 5px;
+        
+    }
+
+    .btn-primary{
+
+    }
+
+    .app{
+        .img-fluid{
+            max-width: 40%;
+        }
+    }
+}
+
+.section-video{
+    padding: 5rem;
+    background-color: #239F3A;
+    height: 50rem;
+}

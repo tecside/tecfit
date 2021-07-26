@@ -12,6 +12,7 @@ export class AboutUsComponent implements OnInit {
   timeline: TimelineElement[];
 
   constructor() {
+    
     this.timeline = [
       { caption: '2019', date: new Date(2015, 1, 16),selected: true, title: 'Idealização', content: '' },
       { caption: '2020', date: new Date(2016, 5, 16), title: 'Criação', content: '' },
