@@ -1,4 +1,4 @@
-<section class="cards-section">
+<section id="cards2" class="cards-section">
     <div class="titles">
         <br>
         <h2>Faça receitas adaptadas aos seus objetivos</h2>
@@ -13,20 +13,80 @@
         <div class="cards row">
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="card">
-                    <img src="../../../assets/home/cards/recipe_1.jpeg" alt="Coach">
+                    <img src="../../../assets/home/cards/recipe_1.jpeg" alt="recipe">
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="card">
-                    <img src="../../../assets/home/cards/recipe_2.jpeg" alt="Coach">
+                    <img src="../../../assets/home/cards/recipe_2.jpeg" alt="recipe">
                 </div>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-3">
                 <div class="card">
-                    <img src="../../../assets/home/cards/recipe_3.jpeg" alt="Coach">
+                    <img src="../../../assets/home/cards/recipe_3.jpeg" alt="recipe">
                 </div>
             </div>
         </div>
+    </div>
+    <br> <br>
+    <div id="button">
+        <button>Comece uma Jornada</button>
+    </div>
+    <br> <br>
+</section>
+
+<section id="cards2-mobile">
+    <br><br><br><br><br><br>
+    <div>
+        <h2>Faça receitas adaptadas aos seus objetivos</h2>
+        <p>Planos semanais para perda de peso, treinamento para corrida, flexibilidade, maternidade e muito mais. <br>
+            Convenient breakfast, lunch, dinner & snack options, all dietician-approved, wholesome recipes from
+            world-class chefs, Gluten-free, vegetarian, vegan & pescatarian options, Swap meals to suit your taste &
+            mood.
+        </p>
+    </div>
+    <br>
+    <div>
+        <swiper #swiperWrapper2 class="swiper" [slidesPerView]="1" [autoplay]="true" (swiper)="onSwiper($event)"
+            (slideChange)="onSlideChange()" [spaceBetween]="0">
+            <ng-template swiperSlide>
+                <div class="card">
+                    <div class="inner-card">
+                        <a (click)="slidePrev()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/prev.svg" alt="prev"></a>
+                        <img src="../../../assets/home/cards/recipe_1.jpeg" alt="recipe">
+                        <a (click)="slideNext()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/next.svg" alt="next"></a>
+                    </div>
+                    <br>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card">
+                    <div class="inner-card">
+                        <a (click)="slidePrev()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/prev.svg" alt="prev"></a>
+                        <img src="../../../assets/home/cards/recipe_2.jpeg" alt="recipe">
+                        <a (click)="slideNext()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/next.svg" alt="next"></a>
+                    </div>
+                    <br>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div class="card">
+                    <div class="inner-card">
+                        <a (click)="slidePrev()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/prev.svg" alt="prev"></a>
+                        <img src="../../../assets/home/cards/recipe_3.jpeg" alt="recipe">
+                        <a (click)="slideNext()"><img style="width: 24px; height: 24px;"
+                                src="../../../assets/home/plans/next.svg" alt="next"></a>
+                    </div>
+                    <br>
+
+                </div>
+            </ng-template>
+        </swiper>
     </div>
     <br> <br>
     <div id="button">

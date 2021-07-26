@@ -1,4 +1,4 @@
-.cards-section{
+.cards1-section {
   padding: 2rem 0;
 }
 .titles {
@@ -6,7 +6,7 @@
 
   h2 {
     font-size: 2.8rem;
-    color: #01002E;
+    color: #01002e;
   }
 
   p {
@@ -16,7 +16,7 @@
   }
 }
 
-.cards {
+.cards1 {
   display: flex;
   justify-content: center;
 
@@ -40,4 +40,52 @@
 .card {
   border: 0px;
   text-align: center;
+}
+
+#cards1-mobile {
+  display: none;
+}
+
+#cards1 {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  #cards1-mobile {
+    display: block;
+
+    div {
+      text-align: center;
+    }
+
+    img {
+      width: 200px;
+      align-self: center;
+    }
+
+    .inner-card {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        padding: 0px 20px;
+      }
+    }
+
+    .card-description {
+      h4 {
+        font-size: larger;
+        font-weight: 800;
+      }
+
+      p {
+        padding: 0px 100px;
+      }
+    }
+  }
+
+  #cards1 {
+    display: none;
+  }
 }
