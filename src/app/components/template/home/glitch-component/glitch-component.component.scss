@@ -35,7 +35,22 @@
   height: 700px;
 }
 
+#img-mobile {
+  display: none;
+}
+
 @media (max-width: 500px) {
+
+  #img {
+    display: none;
+  }
+
+  #img-mobile {
+    display: block;
+    width: 500px;
+    height: 700px;
+  }
+
   .section-2 {
     background-color: transparent;
   }
