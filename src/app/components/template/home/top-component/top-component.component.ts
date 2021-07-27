@@ -9,7 +9,7 @@ export class TopComponentComponent implements OnInit {
 
   public page: number = 0
   pageName: String
-  pageNameArray: string[] = ['Gym', 'bodyweight'];
+  pageNameArray: string[] = ['Gym', 'Bodyweight'];
   headerImage1: String
   headerImage2: String
   headerImage3: String

@@ -1,8 +1,8 @@
 <section>
   <div class="container-fluid full-height">
     <div class="row">
-      <div class="col-md-6">
-        <div class="header-left text-center text-md-left">
+      <div class="col-md-6 col-12">
+        <div class="header-left text-center text-md-left ">
           <h1>
             Thousands of workouts for<br /><strong> Body, Mind & Soul </strong>
           </h1>
@@ -11,35 +11,61 @@
             and guided by our certified trainers. Find your journey and start
             sem mais demoraaaass.
           </p>
+
+          <button class="btn btn-primary d-block d-md-none">Começar Agora</button>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-12">
         <div class="header-right">
-          <img 
+          <div class="overlay">
+
+          </div>
+          <!-- <div class="d-md-none d-block">
+            <div class="header-img header-img-1" [style]="'background-image:url('+headerImage1+');'">
+
+            </div>
+            <div class="header-img header-img-2" [style]="'background-image:url('+headerImage2+');'">
+  
+            </div>
+            <div class="header-img header-img-3" [style]="'background-image:url('+headerImage3+');'">
+  
+            </div>
+            <div class="header-img header-img-4" [style]="'background-image:url('+headerImage4+');'">
+  
+            </div>
+  
+          </div> -->
+          <div>
+            <img 
             class="header-image header-image-1 fade-in"
             [src]="headerImage1"
             alt=""
-          />
-          <img 
-            class="header-image header-image-2 fade-in"
-            [src]="headerImage2"
-            alt=""
-          />
-          <img 
-            class="header-image header-image-3 fade-in"
-            [src]="headerImage3"
-            alt=""
-          />
-          <img 
-            class="header-image header-image-4 fade-in"
-            [src]="headerImage4"
-            alt=""
-          /> 
+          
+            />
+            <img 
+              class="header-image header-image-2 fade-in"
+              [src]="headerImage2"
+              alt=""
+            />
+            <img 
+              class="header-image header-image-3 fade-in"
+              [src]="headerImage3"
+              alt=""
+            />
+            <img 
+              class="header-image header-image-4 fade-in"
+              [src]="headerImage4"
+              alt=""
+            /> 
+          </div>
+
+
+         
         </div>
       </div>
     </div>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid d-none d-sm-block">
       <div class="row">
           <div class="col-12">
             <div class="header-bottom d-flex justify-content-between">

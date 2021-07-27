@@ -25,7 +25,7 @@
     </ul>
   </div>
 
-  <div class="events-content" *ngIf="showContent">
+  <div class="events-content d-none" *ngIf="showContent">
     <ol>
       <li *ngFor="let item of timelineElements; let index = index"
           [@contentState]="item.selected ? 'active' : (index < selectedIndex ? 'left' : 'right')">

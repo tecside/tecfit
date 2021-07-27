@@ -4,7 +4,7 @@ ol, ul {
 
 .cd-horizontal-timeline {
   opacity: 1;
-  margin: 2em auto;
+  margin: 0.4em auto;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s;
@@ -155,7 +155,7 @@ ol, ul {
 
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
-    margin: 2em auto;
+    margin: 0.4em auto;
   }
 
   .cd-horizontal-timeline::before {

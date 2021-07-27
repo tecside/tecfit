@@ -6,17 +6,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1>{{ 'ABOUT.TITTLE' | translate}}</h1>
+          <h1>{{ "ABOUT.TITTLE" | translate }}</h1>
         </div>
       </div>
     </div>
   </section>
-
-  
-
- 
-   
- 
 
   <section class="section-2">
     <div class="container">
@@ -31,11 +25,21 @@
   <section class="section-3">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-6">
-          <div class="image-box"></div>
+        <div class="col-md-6 col-12">
+          <div class="image-box">
+            <div class="box-text d-block d-md-none">
+              <h2 class="mb-3 text-center">Por trás da Tecfit</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="box-text">
+        <div class="col-md-6 col-12">
+          <div class="box-text d-none d-md-block">
             <h2 class="mb-3">Por trás da Tecfit</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,9 +59,10 @@
         <div class="col-md-12">
           <div class="timeline">
             <h1>Timeline</h1>
-            <horizontal-timeline [timelineElements]="timeline" [showContent]="true"></horizontal-timeline>
- 
-        
+            <horizontal-timeline
+              [timelineElements]="timeline"
+              [showContent]="true"
+            ></horizontal-timeline>
           </div>
         </div>
       </div>
@@ -66,9 +71,20 @@
 
   <section class="section-5">
     <h1>Creative minds work together</h1>
+
+    <div class="mission text-center d-block d-md-none">
+      <h2 class="mb-2">A nossa missão</h2>
+      <div class="col-md-3">
+        <!-- <i class="bi bi-pin-map"></i>  -->
+        <p>Pôr Angola no mapa</p>
+      </div>
+      <div class="col-md-3"><p>Fomentar atividade fitness</p></div>
+      <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
+      <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
+    </div>
   </section>
 
-  <section class="section-6">
+  <section class="section-6 d-md-block d-none">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -76,7 +92,8 @@
         </div>
         <div class="col-md-3">
           <!-- <i class="bi bi-pin-map"></i>  -->
-          <p>Pôr Angola no mapa</p></div>
+          <p>Pôr Angola no mapa</p>
+        </div>
         <div class="col-md-3"><p>Fomentar atividade fitness</p></div>
         <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
         <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
@@ -85,22 +102,28 @@
   </section>
 
   <section class="section-7">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
-        <div class="col-md-6">
-          <img
-            class="img-fluid"
-            src="../../../assets/about-us/Grupo 4038.png"
-          />
-        </div>
-        <div class="col-md-6">
-          <div class="box-text">
-            <h2 class="mb-3">Treinos criados à tua volta</h2>
-            <p>
-              O teu treinador analisa os teus objetivos. E quanto mais treinas,
-              mais o treino se adapta a ti
-            </p>
-            <button class="btn btn-primary mt-4">Encontre a sua jornada</button>
+        <div class="col-12">
+          <h2 class="d-sm-none d-block text-center">Contacte-nos</h2>
+          <p class="d-sm-none d-block text-center">Choose your enquiry below</p>
+          <div class="d-flex justify-content-around align-items-center juify-content-between">
+            <img
+              class="img-fluid"
+              src="../../../assets/about-us/Grupo 4038.png"
+            />
+            <div class="text-center">
+              <h2 class="d-none d-sm-block">Contacte-nos</h2>
+              <p class="d-none d-sm-block">Choose your enquiry below</p>
+              <div class="d-block d-md-flex">
+                <button class="btn btn-primary">Brand <br class="d-none d-md-block">Partnerships</button>
+                <button class="btn btn-primary">PR/Media</button>
+              </div>
+              <div class="d-block d-md-flex">
+                <button class="btn btn-primary">Submit your<br class="d-none d-md-block"> journey</button>
+                <button class="btn btn-primary">Customer <br class="d-none d-md-block">support</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -108,7 +131,7 @@
   </section>
 
   <swiper
-    class="swiper"
+    class="swiper d-none d-md-block"
     [spaceBetween]="0"
     [autoplay]="false"
     (swiper)="onSwiper($event)"
@@ -116,11 +139,9 @@
     [breakpoints]="{
       '640': {
         slidesPerView: 2
-    
       },
       '768': {
         slidesPerView: 3
-      
       },
       '1024': {
         slidesPerView: 5
