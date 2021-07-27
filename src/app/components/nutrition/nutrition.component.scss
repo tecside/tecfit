@@ -17,167 +17,175 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-450 {
+    @media only screen and (max-width: 28.125em) {
+      @content;
+    } //576px
+  }
 
+  @if $breakpoint == bootstrap_576 {
+    @media only screen and (max-width: 36em) {
+      @content;
+    } //576px
+  }
 
-    @if $breakpoint == phone-450{
-      @media only screen and (max-width: 28.125em) { @content };    //576px
-    }
-  
-    @if $breakpoint == bootstrap_576{
-      @media only screen and (max-width: 36em) { @content };    //576px
-    }
-  
-    @if $breakpoint == phone {
-      @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-  
-    @if $breakpoint == bootstrap_768{
-      @media only screen and (max-width: 47.8em) { @content };    //768px
-    }
-  
-    @if $breakpoint == tab-850{
-      @media only screen and (max-width: 53.125em) { @content };    //850px
-    }
-  
-    @if $breakpoint == tab-port {
-      @media only screen and (max-width: 62em) { @content };     //992px
-    }
-  
-    @if $breakpoint == tab-1100 {
-      @media only screen and (max-width: 68.75em) { @content };    //1100px
-    }
-  
-    @if $breakpoint == tab-land {
-      @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-  
-    @if $breakpoint == big-desktop-1 {
-        @media only screen and (max-width: 93.75em) { @content };    //1500
-      }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
 
-    @if $breakpoint == big-desktop-2 {
-      @media only screen and (max-width: 112.5em) { @content };    //1800
+  @if $breakpoint == bootstrap_768 {
+    @media only screen and (max-width: 47.8em) {
+      @content;
+    } //768px
+  }
+
+  @if $breakpoint == tab-850 {
+    @media only screen and (max-width: 53.125em) {
+      @content;
+    } //850px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 62em) {
+      @content;
+    } //992px
+  }
+
+  @if $breakpoint == tab-1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desktop-1 {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+    } //1500
+  }
+
+  @if $breakpoint == big-desktop-2 {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../../assets/nutrition/brooke-lark-nTZOILVZuOg-unsplash.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+
+  h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    @include respond(bootstrap_768) {
+      font-size: 2.2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.8rem;
     }
   }
-  
-
-.header{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../assets/nutrition/brooke-lark-nTZOILVZuOg-unsplash.jpg");
-    height: 80vh;
-    background-position: center;
-    background-size: cover;
-
-    h1{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 3rem;
-        text-transform: uppercase;
-        @include respond(bootstrap_768){
-            font-size: 2.2rem
-        };
-
-        @include respond(phone){
-            font-size: 1.8rem
-        };
-    }
-    
 }
 
-.info-app{
-    padding: 5rem 0;
-    .info{
-        h2{
-            font-size: 2.4rem;
+.info-app {
+  padding: 5rem 0;
+  .info {
+    h2 {
+      font-size: 2.4rem;
 
-            @include respond(tab-port){
-                font-size: 2rem
-            };
-        }
-
-        h4{
-            font-size: 1.8rem;
-            color: #239F3A;
-
-            @include respond(tab-port){
-                font-size: 1.5rem
-            };
-
-        }
-
-        p{
-            font-size: 1.2rem;
-            line-height: 2rem;
-            text-align: justify;
-
-            @include respond(tab-port){
-                font-size: 1rem;
-                line-height: 1.5rem;
-            };
-
-            @include respond(phone){
-                padding: 0 2rem;
-            };
-        }
-
-        
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
 
-    .img-fluid{  
-        max-width: 75%;
+    h4 {
+      font-size: 1.8rem;
+      color: #239f3a;
+
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
     }
 
-    .btn-primary{
-        background-color: #239F3A;
-        border-color: #239F3A;
-        border-radius: 5px;
-        
+    p {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      text-align: justify;
+
+      @include respond(tab-port) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+
+      @include respond(phone) {
+        padding: 0 2rem;
+      }
     }
+  }
 
-    .btn-primary{
+  .img-fluid {
+    max-width: 75%;
+  }
 
+  .btn-primary {
+    background-color: #239f3a;
+    border-color: #239f3a;
+    border-radius: 5px;
+  }
+
+  .btn-primary {
+  }
+
+  .app {
+    .img-fluid {
+      max-width: 40%;
+
+      @include respond(tab-port) {
+        max-width: 46%;
+      }
     }
-
-    .app{
-        .img-fluid{
-            max-width: 40%;
-
-            @include respond(tab-port){
-                max-width: 46%;
-            };
-        }
-    }
+  }
 }
 
-.info-app-mobile{
-    .img-fluid{  
-   
-
-        @include respond(tab-land){
-            max-width: 35%;
-        };
-
-        @include respond(tab-port){
-            max-width: 50%;
-        };
-
-        @include respond(phone){
-            max-width: 100%;
-        };
-
-
+.info-app-mobile {
+  .img-fluid {
+    @include respond(tab-land) {
+      max-width: 35%;
     }
+
+    @include respond(tab-port) {
+      max-width: 50%;
+    }
+
+    @include respond(phone) {
+      max-width: 100%;
+    }
+  }
 }
 
-.section-video{
-    padding: 5rem;
-    background-color: #239F3A;
-    height: 50rem;
+.section-video {
+  padding: 5rem;
+  background-color: #239f3a;
+  height: 50rem;
 
-    @include respond(phone){
-        padding: 1.5rem;
-        height: 30rem;
-    };
+  @include respond(phone) {
+    padding: 1.5rem;
+    height: 30rem;
+  }
 }

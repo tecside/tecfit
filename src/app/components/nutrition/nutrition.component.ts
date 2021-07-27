@@ -10,6 +10,7 @@ export class NutritionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.getElementsByTagName("nav")[0].style.backgroundColor = "#239f3a";
   }
 
   onSwiper(swiper: any) {
