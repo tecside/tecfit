@@ -40,10 +40,10 @@ export class PlansComponentComponent implements OnInit {
   }
 
   onSwiper(swiper: any) {
-    console.log(swiper);
+   
   }
   onSlideChange() {
-    console.log('slide change');
+
   }
 
   slideNext() {

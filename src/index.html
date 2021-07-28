@@ -39,7 +39,12 @@
   let glitch,
     isLoaded = !1;
   function setup() {
-    let i = document.getElementById("img").getBoundingClientRect(), t = i.height, e = i.width;
+    let i = null
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      i = document.getElementById("img").getBoundingClientRect(), t = 700, e = screen.width;
+    } else {
+      i = document.getElementById("img").getBoundingClientRect(), t = i.height, e = i.width;
+    }
     createCanvas(e, t),
       document.getElementById("img").appendChild(canvas),
       loadImage("./assets/home/first.jpeg", function (i) {

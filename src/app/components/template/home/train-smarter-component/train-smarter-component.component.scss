@@ -17,6 +17,10 @@ p {
   padding-left: 5px;
 }
 
+.mobile-img {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   #main-img {
     display: none;
