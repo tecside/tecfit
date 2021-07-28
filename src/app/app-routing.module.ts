@@ -5,11 +5,12 @@ import { HomeComponent } from "./components/home/home.component";
 import { AboutUsComponent } from "./components/about-us/about-us.component";
 import { WorkoutsComponent } from "./components/workouts/workouts.component";
 import { TermsComponent } from './components/terms/terms.component';
+import { PartnershipComponent } from './components/partnership/partnership.component';
 
 const routes: Routes = [
-  { 
-    path: "", 
-    component: HomeComponent 
+  {
+    path: "",
+    component: HomeComponent
   },
   {
     path: "about-us",
@@ -27,10 +28,14 @@ const routes: Routes = [
     path: "terms",
     component: TermsComponent,
   },
+  {
+    path: "partnership",
+    component: PartnershipComponent,
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

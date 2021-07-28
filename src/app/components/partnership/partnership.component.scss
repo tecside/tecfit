@@ -1,0 +1,84 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+header {
+  div {
+    background-image: url("../../../assets/contactos/first.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 200;
+    color: #001658;
+    background: rgba(100%, 100%, 100%, 0.75);
+  }
+}
+
+main {
+  margin: 30px;
+
+  h3 {
+    font-size: 40px;
+    font-weight: 10;
+    color: #001658;
+  }
+
+  form {
+    text-align: center;
+
+    input,
+    textarea {
+      font-family: FontAwesome;
+      width: 100%;
+      margin-top: 20px;
+      background: rgba(175, 175, 175, 0.938);
+      color: white;
+      border: 0px;
+    }
+
+    input {
+      height: 30px;
+    }
+
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: white;
+      font-size: 20px;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: white;
+      font-size: 20px;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: white;
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 30px;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+
+  header {
+    h3 {
+      font-size: 30px;
+      font-weight: 100;
+    }
+  }
+  
+}

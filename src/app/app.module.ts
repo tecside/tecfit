@@ -30,6 +30,7 @@ import { PlansComponentComponent } from './components/template/home/plans-compon
 import { StoreComponentComponent } from './components/template/home/store-component/store-component.component';
 import { NutritionComponent } from './components/nutrition/nutrition.component';
 import { TermsComponent } from './components/terms/terms.component';
+import { PartnershipComponent } from './components/partnership/partnership.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -52,7 +53,8 @@ export function HttpLoaderFactory(http: HttpClient){
     PlansComponentComponent,
     StoreComponentComponent,
     NutritionComponent,
-    TermsComponent
+    TermsComponent,
+    PartnershipComponent
   ],
   imports: [
     BrowserModule,
