@@ -11,6 +11,7 @@ export class NutritionComponent implements OnInit {
 
   ngOnInit(): void {
     document.getElementsByTagName("nav")[0].style.backgroundColor = "#239f3a";
+    document.getElementById("mySidebar")!.style.backgroundColor = "#239f3a";
   }
 
   onSwiper(swiper: any) {
