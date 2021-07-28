@@ -18,6 +18,15 @@
   }
 }
 
+#card-1,
+#card-2,
+#card-3,
+#card-4,
+#card-5 {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #card-1 {
   background-image: url("../../../../../assets/home/store/women.jpeg");
   align-items: flex-end;
@@ -37,4 +46,41 @@
 #card-5 {
   background-image: url("../../../../../assets/home/store/women.jpeg");
   align-items: flex-end;
+}
+
+#shopFor {
+  display: none;
+
+  h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  #shopFor {
+    display: block;
+  }
+
+  #card-1 {
+    background-image: url("../../../../../assets/home/store/women_mobile.jpeg");
+    align-items: center;
+  }
+  #card-2 {
+    background-image: url("../../../../../assets/home/store/men_mobile.jpeg");
+    align-items: center;
+  }
+  #card-3 {
+    background-image: url("../../../../../assets/home/store/women_mobile.jpeg");
+    align-items: center;
+  }
+  #card-4 {
+    background-image: url("../../../../../assets/home/store/men_mobile.jpeg");
+    align-items: center;
+  }
+  #card-5 {
+    background-image: url("../../../../../assets/home/store/women_mobile.jpeg");
+    align-items: center;
+  }
 }
