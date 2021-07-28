@@ -17,11 +17,10 @@ header {
   }
 }
 
-#line {
-  height: 10vw;
-  width: 3px;
+hr {
+  orientation: unset;
+  height: 100px;
   background-color: gray;
-  margin: 10px;
 }
 
 section {
@@ -34,14 +33,19 @@ section {
     color: #001658;
   }
 
-  p, li, h5 {
+  p,
+  li,
+  h5 {
     text-align: left;
     font-size: 20px;
     line-height: 25px;
   }
 
   #right {
-      width: 100%;
+    padding-top: 30px;
+    width: 100%;
+    border: solid 1px;
+    border-color: white white white black;
   }
 }
 
@@ -50,4 +54,13 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
+
+}
+
+
+@media (max-width: 900px) {
+  #right {
+    border: hidden;
+    border-color: white white white white;
+  }
 }
