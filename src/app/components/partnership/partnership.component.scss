@@ -1,7 +1,5 @@
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-
 header {
-  div {
+  #first {
     background-image: url("../../../assets/contactos/first.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,16 +32,26 @@ main {
 
     input,
     textarea {
-      font-family: FontAwesome;
-      width: 100%;
-      margin-top: 20px;
+      width: 95%;
+     
       background: rgba(175, 175, 175, 0.938);
       color: white;
       border: 0px;
     }
 
+    span {
+      height: 60px;
+    }
     input {
-      height: 30px;
+      height: 60px;
+    }
+
+    .input-group {
+      align-items: center;
+    }
+
+    textarea {
+      width: 100%;
     }
 
     ::placeholder {

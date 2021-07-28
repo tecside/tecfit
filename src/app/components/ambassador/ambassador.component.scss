@@ -1,0 +1,53 @@
+header {
+  div {
+    background-image: url("../../../assets/ambassador/first.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 200;
+    color: #fff;
+  }
+}
+
+#line {
+  height: 10vw;
+  width: 3px;
+  background-color: gray;
+  margin: 10px;
+}
+
+section {
+  display: flex;
+  margin: 30px;
+
+  h2 {
+    font-size: 40px;
+    font-weight: 10;
+    color: #001658;
+  }
+
+  p, li, h5 {
+    text-align: left;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  #right {
+      width: 100%;
+  }
+}
+
+#final-section {
+  background-image: url("../../../assets/ambassador/last.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}

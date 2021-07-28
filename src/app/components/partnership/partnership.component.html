@@ -1,7 +1,7 @@
 <header>
     <app-navbar></app-navbar>
     <br><br>
-    <div>
+    <div id="first">
         <h3>Brand Partnership</h3>
     </div>
 </header>
@@ -9,11 +9,20 @@
     <h3>Brand Partnership</h3>
     <hr>
     <form action="" method="POST">
-        <input type="text" name="firstName" placeholder="&nbsp; &#61447; &nbsp;&nbsp;&nbsp; First name">
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+            <input type="text" class="form-control" name="firstName" placeholder="First name" aria-label="First name">
+        </div>
         <br>
-        <input type="text" name="lastName" placeholder="&nbsp; &#61447; &nbsp;&nbsp;&nbsp; Last name">
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+            <input type="text" class="form-control" name="lastName" placeholder="Last name" aria-label="Last name">
+        </div>
         <br>
-        <input type="text" name="company" placeholder="&nbsp; &#61649; &nbsp;&nbsp;&nbsp; Company">
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="bi bi-building"></i></span>
+            <input type="text" class="form-control" name="company" placeholder="Company" aria-label="Company">
+        </div>
         <br>
         <textarea name="more" cols="30" rows="10" placeholder="&nbsp; Tell us more"></textarea>
         <br><br><br>
@@ -21,6 +30,3 @@
     </form>
 </main>
 <app-footer></app-footer>
-
-
-<!-- 61459 -->
