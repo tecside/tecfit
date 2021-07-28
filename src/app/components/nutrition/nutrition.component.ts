@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Autoplay, EffectFade } from "swiper/core";
+
 @Component({
   selector: 'app-nutrition',
   templateUrl: './nutrition.component.html',
