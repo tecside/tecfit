@@ -29,6 +29,7 @@ import { RecipesComponentComponent } from './components/template/home/recipes-co
 import { PlansComponentComponent } from './components/template/home/plans-component/plans-component.component';
 import { StoreComponentComponent } from './components/template/home/store-component/store-component.component';
 import { NutritionComponent } from './components/nutrition/nutrition.component';
+import { TermsComponent } from './components/terms/terms.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -50,7 +51,8 @@ export function HttpLoaderFactory(http: HttpClient){
     RecipesComponentComponent,
     PlansComponentComponent,
     StoreComponentComponent,
-    NutritionComponent
+    NutritionComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,
