@@ -6,7 +6,7 @@
     <br>
   </div>
   <div style="position: relative;text-align: center;">
-    <swiper class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="2" [spaceBetween]="30">
+    <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="2" [spaceBetween]="30">
       <ng-template swiperSlide>
         <div id="card-1" class="card">
           <div>

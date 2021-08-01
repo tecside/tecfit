@@ -14,12 +14,14 @@ body {
   margin: 0;
 }
 
-.mat-h1,.mat-headline,.mat-typography h1,
-.mat-typography h2, 
-.mat-typography h3, 
+.mat-h1,
+.mat-headline,
+.mat-typography h1,
+.mat-typography h2,
+.mat-typography h3,
 .mat-typography h4,
 .mat-typography h5,
-.mat-typography h6{
+.mat-typography h6 {
   font-family: "Unna", serif;
 }
 
@@ -138,3 +140,7 @@ button:hover,
   }
 }
 
+.blur {
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+}
