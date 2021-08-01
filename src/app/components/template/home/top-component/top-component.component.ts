@@ -36,45 +36,22 @@ export class TopComponentComponent implements OnInit {
     if (this.pageNameArray.length <= this.page) {
       this.page = 0
       this.pageName = this.pageNameArray[this.page]
-
     } else {
       this.pageName = this.pageNameArray[this.page]
     }
 
     this.headerImage1 = "../../../assets/home/header-image-" + this.page + "1.jpg"
-    var element = document.getElementsByClassName("header-image")[0];
-    element.classList.remove("fade-in");
-    setTimeout(() => {
-      element.classList.add("fade-in");
-    }, 1)
 
     setTimeout(() => {
       this.headerImage2 = "../../../assets/home/header-image-" + this.page + "2.jpg"
-      var element = document.getElementsByClassName("header-image")[1];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
-
     }, 50);
 
     setTimeout(() => {
       this.headerImage3 = "../../../assets/home/header-image-" + this.page + "3.jpg"
-      var element = document.getElementsByClassName("header-image")[2];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
-
     }, 100);
 
     setTimeout(() => {
       this.headerImage4 = "../../../assets/home/header-image-" + this.page + "4.jpg"
-      var element = document.getElementsByClassName("header-image")[3];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
     }, 150);
 
     clearInterval(this.changeAlone);
@@ -84,7 +61,7 @@ export class TopComponentComponent implements OnInit {
     }, 10000)
   }
 
-  previus() {
+  previous() {
     this.page -= 1;
 
     if (0 > this.page) {

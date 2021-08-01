@@ -36,59 +36,42 @@
   
           </div> -->
           <div>
-            <img 
-            class="header-image header-image-1 fade-in"
-            [src]="headerImage1"
-            alt=""
-          
-            />
-            <img 
-              class="header-image header-image-2 fade-in"
-              [src]="headerImage2"
-              alt=""
-            />
-            <img 
-              class="header-image header-image-3 fade-in"
-              [src]="headerImage3"
-              alt=""
-            />
-            <img 
-              class="header-image header-image-4 fade-in"
-              [src]="headerImage4"
-              alt=""
-            /> 
+            <img class="header-image header-image-1 fade-in" [src]="headerImage1" alt="" />
+            <img class="header-image header-image-2 fade-in" [src]="headerImage2" alt="" />
+            <img class="header-image header-image-3 fade-in" [src]="headerImage3" alt="" />
+            <img class="header-image header-image-4 fade-in" [src]="headerImage4" alt="" />
           </div>
 
 
-         
+
         </div>
       </div>
     </div>
   </div>
   <div class="container-fluid d-none d-sm-block">
-      <div class="row">
-          <div class="col-12">
-            <div class="header-bottom d-flex justify-content-between">
-                <div class="header-bottom-left d-flex">
-                    <span  >0{{page+1}}</span>
-                    <hr>
-                    <span>{{pageName}}</span>
-                </div>
-                <div class="header-bootom-center">
-                    <p>
-                        <strong>
-                            <i class="bi bi-chevron-down"></i>
-                        </strong>
-                        
-                    </p>
-                </div>
-                <div class="header-bootom-right">
-                    <i (click)="previus()"  class="bi bi-chevron-left"></i>
-                    <i (click)="next()" class="bi bi-chevron-right"></i>
-                </div>
-              </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="header-bottom d-flex justify-content-between">
+          <div class="header-bottom-left d-flex">
+            <span>0{{page+1}}</span>
+            <hr>
+            <span>{{pageName}}</span>
           </div>
+          <div class="header-bootom-center">
+            <p>
+              <strong>
+                <i class="bi bi-chevron-down"></i>
+              </strong>
+
+            </p>
+          </div>
+          <div class="header-bootom-right">
+            <i (click)="previous()" class="bi bi-chevron-left"></i>
+            <i (click)="next()" class="bi bi-chevron-right"></i>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
- 
+
 </section>
