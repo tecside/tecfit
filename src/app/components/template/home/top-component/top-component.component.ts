@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class TopComponentComponent implements OnInit {
 
   public page: number = 0
+  public pageWeb: number = 0
   pageName: String
   pageNameArray: string[] = ['Gym', 'Bodyweight'];
+  pageNameWeb: String
+  pageNameArrayWeb: string[] = ['Queen', 'King'];
+  header: string
   headerImage1: String
   headerImage2: String
   headerImage3: String
@@ -18,6 +22,8 @@ export class TopComponentComponent implements OnInit {
 
   constructor() {
     this.pageName = this.pageNameArray[0]
+    this.pageNameWeb = this.pageNameArrayWeb[0]
+    this.header = "../../../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
     this.headerImage1 = "../../../assets/home/header-image-01.jpg"
     this.headerImage2 = "../../../assets/home/header-image-02.jpg"
     this.headerImage3 = "../../../assets/home/header-image-03.jpg"
@@ -27,6 +33,7 @@ export class TopComponentComponent implements OnInit {
   ngOnInit(): void {
     this.changeAlone = setInterval(() => {
       this.next();
+      this.nextWeb();
     }, 10000)
   }
 
@@ -36,45 +43,22 @@ export class TopComponentComponent implements OnInit {
     if (this.pageNameArray.length <= this.page) {
       this.page = 0
       this.pageName = this.pageNameArray[this.page]
-
     } else {
       this.pageName = this.pageNameArray[this.page]
     }
 
     this.headerImage1 = "../../../assets/home/header-image-" + this.page + "1.jpg"
-    var element = document.getElementsByClassName("header-image")[0];
-    element.classList.remove("fade-in");
-    setTimeout(() => {
-      element.classList.add("fade-in");
-    }, 1)
 
     setTimeout(() => {
       this.headerImage2 = "../../../assets/home/header-image-" + this.page + "2.jpg"
-      var element = document.getElementsByClassName("header-image")[1];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
-
     }, 50);
 
     setTimeout(() => {
       this.headerImage3 = "../../../assets/home/header-image-" + this.page + "3.jpg"
-      var element = document.getElementsByClassName("header-image")[2];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
-
     }, 100);
 
     setTimeout(() => {
       this.headerImage4 = "../../../assets/home/header-image-" + this.page + "4.jpg"
-      var element = document.getElementsByClassName("header-image")[3];
-      element.classList.remove("fade-in");
-      setTimeout(() => {
-        element.classList.add("fade-in");
-      }, 1)
     }, 150);
 
     clearInterval(this.changeAlone);
@@ -84,7 +68,26 @@ export class TopComponentComponent implements OnInit {
     }, 10000)
   }
 
-  previus() {
+  nextWeb() {
+
+    this.pageWeb += 1;
+    if (this.pageNameArrayWeb.length <= this.pageWeb) {
+      this.pageWeb = 0
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    } else {
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    }
+
+    this.header = "../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
+
+    clearInterval(this.changeAlone);
+
+    this.changeAlone = setInterval(() => {
+      this.nextWeb();
+    }, 10000)
+  }
+
+  previous() {
     this.page -= 1;
 
     if (0 > this.page) {
@@ -113,6 +116,29 @@ export class TopComponentComponent implements OnInit {
     this.changeAlone = setInterval(() => {
       this.next();
     }, 10000)
+  }
+
+  previousWeb() {
+    this.pageWeb -= 1;
+
+    if (0 > this.pageWeb) {
+      this.pageWeb = this.pageNameArrayWeb.length - 1
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    } else {
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    }
+
+    this.header = "../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
+
+    clearInterval(this.changeAlone);
+
+    this.changeAlone = setInterval(() => {
+      this.nextWeb();
+    }, 10000)
+  }
+
+  discoverMore(): void {
+
   }
 
 

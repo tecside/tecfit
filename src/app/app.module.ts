@@ -33,6 +33,9 @@ import { StoreComponentComponent } from './components/template/home/store-compon
 import { NutritionComponent } from './components/nutrition/nutrition.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { PartnershipComponent } from './components/partnership/partnership.component';
+import { AmbassadorComponent } from './components/ambassador/ambassador.component';
+import { ProgramsComponent } from './components/template/programs/programs.component';
+import { ReceiptsVideoComponent } from './components/template/home/receipts-video/receipts-video.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -56,7 +59,10 @@ export function HttpLoaderFactory(http: HttpClient){
     StoreComponentComponent,
     NutritionComponent,
     TermsComponent,
-    PartnershipComponent
+    PartnershipComponent,
+    AmbassadorComponent,
+    ProgramsComponent,
+    ReceiptsVideoComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+section {
+  background-color: black;
+
+  h2 {
+    color: white;
+    font-size: 2rem;
+  }
+
+  .card {
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;    
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #loseW {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/loseW.jpeg");
+  }
+
+  #stamina {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/stamina.jpeg");
+  }
+
+  #mobility {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/mobility.jpeg");
+  }
+
+  #gainM {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/gainM.jpeg");
+  }
+}

@@ -1,6 +1,6 @@
 import { TranslateModule } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
- import {TranslateServiceApp} from '../../../services/translate.service'
+import { TranslateServiceApp } from '../../../services/translate.service'
 
 @Component({
   selector: 'app-navbar',
@@ -18,17 +18,17 @@ export class NavbarComponent implements OnInit {
 
   openNav() {
     document.getElementById("mySidebar")!.style.width = "16rem";
-    setTimeout(() => {  this.open = !this.open }, 300);  
+    setTimeout(() => { this.open = !this.open }, 300);
+    document.getElementsByTagName("main")[0].classList.add("blur");
   }
 
   closeNav() {
-    
     //document.getElementById("main")!.style.marginLeft = "0";
     this.open = !this.open
-    setTimeout(() => {   
+    setTimeout(() => {
       document.getElementById("mySidebar")!.style.width = "0"
     }, 50);
-   
+    document.getElementsByTagName("main")[0].classList.remove("blur");
   }
 
   changeEvent() {

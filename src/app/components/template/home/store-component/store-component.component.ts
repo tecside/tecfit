@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-store-component',
@@ -7,14 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponentComponent implements OnInit {
 
+  @ViewChild('slides') public slides: any;
+
+  changeAlone: any
+
   constructor() { }
 
   ngOnInit(): void {
+    this.changeAlone = setInterval(() => {
+      this.slides.swiperRef.slideNext();
+      this.onSlideChange();
+    }, 3000)
   }
 
   onSwiper(swiper: any) {
   }
+
   onSlideChange() {
+    clearInterval(this.changeAlone);
+    this.changeAlone = setInterval(() => {
+      this.slides.swiperRef.slideNext();
+      this.onSlideChange();
+    }, 3000)
   }
 
 }

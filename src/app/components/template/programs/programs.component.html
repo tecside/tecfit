@@ -1,0 +1,32 @@
+<section>
+    <br>
+    <h2>
+        &nbsp;&nbsp; Our Programs
+    </h2>
+    <br>
+    <div>
+        <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="4" [spaceBetween]="60">
+            <ng-template swiperSlide>
+                <div id="loseW" class="card">
+                    <h2>Loose Weight</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="stamina" class="card">
+                    <h2>Stamina</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="mobility" class="card">
+                    <h2>Mobility</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="gainM" class="card">
+                    <h2>Gain Muscle</h2>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+    <br><br>
+</section>
