@@ -1,1 +1,13 @@
+.mobile {
+  display: none;
+}
 
+@media (max-width: 700px) {
+  .mobile {
+    display: block;
+  }
+
+  .web {
+    display: none;
+  }
+}
