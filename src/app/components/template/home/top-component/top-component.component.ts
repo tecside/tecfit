@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class TopComponentComponent implements OnInit {
 
   public page: number = 0
+  public pageWeb: number = 0
   pageName: String
   pageNameArray: string[] = ['Gym', 'Bodyweight'];
+  pageNameWeb: String
+  pageNameArrayWeb: string[] = ['Queen', 'King'];
+  header: string
   headerImage1: String
   headerImage2: String
   headerImage3: String
@@ -18,6 +22,8 @@ export class TopComponentComponent implements OnInit {
 
   constructor() {
     this.pageName = this.pageNameArray[0]
+    this.pageNameWeb = this.pageNameArrayWeb[0]
+    this.header = "../../../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
     this.headerImage1 = "../../../assets/home/header-image-01.jpg"
     this.headerImage2 = "../../../assets/home/header-image-02.jpg"
     this.headerImage3 = "../../../assets/home/header-image-03.jpg"
@@ -27,6 +33,7 @@ export class TopComponentComponent implements OnInit {
   ngOnInit(): void {
     this.changeAlone = setInterval(() => {
       this.next();
+      this.nextWeb();
     }, 10000)
   }
 
@@ -61,6 +68,25 @@ export class TopComponentComponent implements OnInit {
     }, 10000)
   }
 
+  nextWeb() {
+
+    this.pageWeb += 1;
+    if (this.pageNameArrayWeb.length <= this.pageWeb) {
+      this.pageWeb = 0
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    } else {
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    }
+
+    this.header = "../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
+
+    clearInterval(this.changeAlone);
+
+    this.changeAlone = setInterval(() => {
+      this.nextWeb();
+    }, 10000)
+  }
+
   previous() {
     this.page -= 1;
 
@@ -90,6 +116,29 @@ export class TopComponentComponent implements OnInit {
     this.changeAlone = setInterval(() => {
       this.next();
     }, 10000)
+  }
+
+  previousWeb() {
+    this.pageWeb -= 1;
+
+    if (0 > this.pageWeb) {
+      this.pageWeb = this.pageNameArrayWeb.length - 1
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    } else {
+      this.pageNameWeb = this.pageNameArrayWeb[this.pageWeb]
+    }
+
+    this.header = "../../../assets/home/" + this.pageNameArrayWeb[this.pageWeb] + ".jpeg"
+
+    clearInterval(this.changeAlone);
+
+    this.changeAlone = setInterval(() => {
+      this.nextWeb();
+    }, 10000)
+  }
+
+  discoverMore(): void {
+
   }
 
 

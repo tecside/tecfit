@@ -1,4 +1,54 @@
-<section>
+<section id="web">
+  <div id="inner-web">
+    <div id="text">
+      <div>
+        <h3>Thousands of workouts for</h3>
+        <br><br><br><br>
+        <h2><b> Kings and Queens </b></h2>
+        <br><br><br><br>
+        <p>
+          Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers. Find
+          your journey or create it using the Soba features. Unleash the king and queen dna inside you, come challenge
+          our
+          royals. <br><br>
+          <span><i (click)="discoverMore()" class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</span>
+        </p>
+        <br><br><br><br><br>
+      </div>
+    </div>
+    <div>
+      <img [src]="header" alt="queen">
+    </div>
+  </div>
+  <br>
+  <div class="container-fluid d-none d-sm-block">
+    <div class="row">
+      <div class="col-12">
+        <div class="header-bottom d-flex justify-content-between">
+          <div class="header-bottom-left d-flex">
+            <span>0{{pageWeb+1}}</span>
+            <hr>
+            <span>{{pageNameWeb}}</span>
+          </div>
+          <div class="header-bootom-center">
+            <p>
+              <strong>
+                <i class="bi bi-chevron-down"></i>
+              </strong>
+  
+            </p>
+          </div>
+          <div class="header-bootom-right">
+            <i (click)="previousWeb()" class="bi bi-chevron-left"></i>
+            <i (click)="nextWeb()" class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="mobile">
   <div class="container-fluid full-height">
     <div class="row">
       <div class="col-md-6 col-12">
@@ -17,24 +67,6 @@
       </div>
       <div class="col-md-6 col-12">
         <div class="header-right">
-          <div class="overlay">
-
-          </div>
-          <!-- <div class="d-md-none d-block">
-            <div class="header-img header-img-1" [style]="'background-image:url('+headerImage1+');'">
-
-            </div>
-            <div class="header-img header-img-2" [style]="'background-image:url('+headerImage2+');'">
-  
-            </div>
-            <div class="header-img header-img-3" [style]="'background-image:url('+headerImage3+');'">
-  
-            </div>
-            <div class="header-img header-img-4" [style]="'background-image:url('+headerImage4+');'">
-  
-            </div>
-  
-          </div> -->
           <div>
             <img class="header-image header-image-1 fade-in" [src]="headerImage1" alt="" />
             <img class="header-image header-image-2 fade-in" [src]="headerImage2" alt="" />
@@ -70,5 +102,4 @@
       </div>
     </div>
   </div>
-
 </section>
