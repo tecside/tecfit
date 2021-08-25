@@ -10,7 +10,8 @@ section {
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10px;    
+    border-radius: 10px;
+    border: none;
 
     display: flex;
     justify-content: center;
@@ -18,22 +19,18 @@ section {
   }
 
   #loseW {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../../assets/programs/loseW.jpeg");
+    background-image: url("../../../../assets/programs/loseW.png");
   }
 
   #stamina {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../../assets/programs/stamina.jpeg");
+    background-image: url("../../../../assets/programs/stamina.png");
   }
 
   #mobility {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../../assets/programs/mobility.jpeg");
+    background-image: url("../../../../assets/programs/mobility.png");
   }
 
   #gainM {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../../assets/programs/gainM.jpeg");
+    background-image: url("../../../../assets/programs/gainM.png");
   }
 }
