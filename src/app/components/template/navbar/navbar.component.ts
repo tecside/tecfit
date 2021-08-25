@@ -17,7 +17,7 @@ export class NavbarComponent implements OnInit {
   }
 
   openNav() {
-    document.getElementById("mySidebar")!.style.width = "16rem";
+    document.getElementById("mySidebar")!.style.width = "100%";
     setTimeout(() => { this.open = !this.open }, 300);
     document.getElementsByTagName("main")[0].classList.add("blur");
   }

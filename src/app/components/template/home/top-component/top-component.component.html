@@ -1,22 +1,23 @@
 <section id="web">
   <div id="inner-web">
-    <div id="text">
-      <div>
-        <h3>Thousands of workouts for</h3>
-        <br><br><br><br>
-        <h2><b> Kings and Queens </b></h2>
-        <br><br><br><br>
-        <p>
+    <div class="d-flex header-items">
+      <div class="header-left">
+        <h1 class="mb-4">Thousands of workouts for</h1>
+        
+        <h2 class="mb-5"> Kings and Queens</h2>
+     
+        <p class="mb-4">
           Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers. Find
           your journey or create it using the Soba features. Unleash the king and queen dna inside you, come challenge
           our
-          royals. <br><br>
-          <span><i (click)="discoverMore()" class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</span>
+          royals.
+         
         </p>
-        <br><br><br><br><br>
+        <button  (click)="discoverMore()"><i class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</button>
+     
       </div>
     </div>
-    <div>
+    <div class="header-right">
       <img [src]="header" alt="queen" width="700vw">
     </div>
   </div>
