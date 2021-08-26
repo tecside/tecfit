@@ -12,4 +12,9 @@ export class ReceiptsVideoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  play(): void {
+    document.getElementsByTagName("video")[0].style.display = "block";
+    document.getElementById("video")!.style.display = "none"
+  }
+
 }
