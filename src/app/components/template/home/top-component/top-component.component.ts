@@ -12,7 +12,7 @@ export class TopComponentComponent implements OnInit {
   pageName: String
   pageNameArray: string[] = ['Gym', 'Bodyweight'];
   pageNameWeb: String
-  pageNameArrayWeb: string[] = ['Queen', 'King'];
+  pageNameArrayWeb: string[] = ['Queen'];
   header: string
   headerImage1: String
   headerImage2: String

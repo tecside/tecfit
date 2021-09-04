@@ -59,12 +59,20 @@
 </nav>
 
 <div id="mySidebar" [ngClass]="{'sidebar': true}">
-  <button (click)="closeNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': true, 'd-none': !open}"  class="" type="button">
+  <div [ngClass]="{'opacity-0': !open}">
+    <a class="navbar-brand"  href="/">
+      <img
+          src="../../../../assets/navbar/tecfit-logo.png"
+          alt="logo"
+          class="logo"
+      />
+    </a>
+  <button (click)="closeNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': true}"  class="" type="button">
     <span [ngClass]="{'hamburger-box': true}">
       <span [ngClass]="{'hamburger-inner': true}"></span>
     </span>
   </button>
-  <div [ngClass]="{'sidebar-itens': true, 'd-none': !open}">
+  <div [ngClass]="{'sidebar-itens': true}">
     <a class="nav-link" href="/workouts">{{ "NAVBAR.MENU1" | translate}}</a>
     <a class="nav-link" href="/nutrition">{{ "NAVBAR.MENU2" | translate }}</a>
     <a class="nav-link" href="#">{{ "NAVBAR.MENU3" | translate }}</a>
@@ -72,6 +80,28 @@
     <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a>
     <a class="nav-link" href="#">{{ "NAVBAR.MENU6" | translate }}</a>
   </div>
+  <div class="sidebar-footer d-flex justify-content-between">
+    <div class="sidebar-footer-left d-flex">
+      <a href=""><i class="bi bi-facebook"></i></a>
+      <a href=""> <i class="bi bi-instagram"></i></a>
+      
+    </div>
+    <div class="sidebar-footer-center">
+      <ul class=" d-flex">
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Terms & conditions</a></li>
+        <li><a href="">FAQS</a></li>
+        <li><a href="">Return & changes</a></li>
+      </ul>
+    </div>
+    <div class="sidebar-footer-right d-flex">
+      <a href=""><i class="bi bi-twitter"></i></a>
+      <a  href=""> <i class="bi bi-linkedin"></i></a>
+     
+    </div>
+  </div>
+  </div>
+   
 
   
  

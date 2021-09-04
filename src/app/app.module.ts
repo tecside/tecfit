@@ -20,6 +20,8 @@ import {TranslateServiceApp} from './services/translate.service'
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+
 import { WorkoutsComponent } from './components/workouts/workouts.component';
 import { TopComponentComponent } from './components/template/home/top-component/top-component.component';
 import { CardsComponentComponent } from './components/template/home/cards-component/cards-component.component';
