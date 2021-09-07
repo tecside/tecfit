@@ -1,0 +1,44 @@
+<section id="benefits">
+    <br><br>
+    <h2>Your benefits with the TECFIT Coach</h2>
+    <br><br><br>
+
+    <div>
+      <img (click)="slide(false)" src="../../../assets/workout/leftArrow.svg" alt="icon" width="30px" class="arrow">
+      <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="3" [spaceBetween]="30">
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/workout/benefit1.svg" alt="icon" width="40px" />
+            <br><br>
+            <p>Track your effort during Cardio classes with Fiit Points. The higher up the zone you are, the more points
+              you earn. Keep coming back to beat your score.</p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/workout/benefit2.svg" alt="icon" width="40px" />
+            <br><br>
+            <p>Customized training sessions that you can do any time, anywhere, with or without equipment</p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
+            <br><br>
+            <p>Training tips for beginners and advanced athletes. You can create
+              your own workouts, share with friends and families </p>
+          </div>
+        </ng-template>
+        <ng-template swiperSlide>
+          <div class="card">
+            <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
+            <br><br>
+            <p>Training tips for beginners and advanced athletes. You can create
+              your own workouts, share with friends and families </p>
+          </div>
+        </ng-template>
+      </swiper>
+      <img (click)="slide(true)" src="../../../assets/workout/rightArrow.svg" alt="icon" width="30px" class="arrow">
+    </div>
+    <br><br>
+  </section>

@@ -18,41 +18,6 @@
   }
 }
 
-#benefits {
-  h2 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 2.5rem;
-  }
-
-  div {
-    display: flex;
-
-    .arrow {
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-
-    .arrow:hover {
-      cursor: pointer;
-    }
-
-    .card {
-      text-align: center;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      border: none;
-
-      img {
-        align-self: center;
-      }
-
-      p {
-        margin: 0 50px;
-      }
-    }
-  }
-}
 
 #plans {
   margin: 0px 30px;
