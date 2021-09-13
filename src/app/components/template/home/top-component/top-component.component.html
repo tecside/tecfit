@@ -12,13 +12,14 @@
           our
           royals.
         </p>
-        <button  (click)="discoverMore()"><i class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</button>
-     
+        <!-- <button  (click)="discoverMore()"><i class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</button>
+      -->
+      <button id="start">{{ "NAVBAR.BTN" | translate }}</button>
       </div>
     </div>
 
     <div class="header-right">
-      <img [src]="header" alt="queen" width="700vw">
+      <img id="queen" [src]="header" alt="queen">
      <!--  <img src="../../../../../assets/vanilson.jpeg" alt=""> -->
     </div>
   </div>
@@ -28,9 +29,9 @@
       <div class="col-12">
         <div class="header-bottom d-flex justify-content-between">
           <div class="header-bottom-left d-flex">
-            <span>0{{pageWeb+1}}</span>
+            <!-- <span>0{{pageWeb+1}}</span> -->
             <hr>
-            <span>{{pageNameWeb}}</span>
+            <!-- <span>{{pageNameWeb}}</span> -->
           </div>
           <div class="header-bootom-center">
             <p>
