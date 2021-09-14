@@ -379,14 +379,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 
-  .header-bootom-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    p {
-      animation: UpDown 1s infinite;
-    }
-  }
+  // .header-bootom-center {
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  //   p {
+  //     animation: UpDown 1s infinite;
+  //   }
+  // }
 
   .header-bootom-right {
     position: relative;
@@ -427,3 +427,30 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: block;
   }
 }
+
+//scrool animation
+
+.arrow {
+  text-align: center;
+  display: inline-block;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+

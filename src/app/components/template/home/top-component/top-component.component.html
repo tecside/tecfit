@@ -21,27 +21,17 @@
       <img [src]="header" alt="queen" width="700vw">
     </div>
   </div>
-  <br>
   <div class="container-fluid d-none d-sm-block">
     <div class="row">
       <div class="col-12">
-        <div class="header-bottom d-flex justify-content-between">
-          <div class="header-bottom-left d-flex">
-            <span>0{{pageWeb+1}}</span>
-            <hr>
-            <span>{{pageNameWeb}}</span>
-          </div>
-          <div class="header-bootom-center">
-            <p>
-              <strong>
+        <div class="header-bottom">
+          <div class="header-bootom-center text-center">
+            <p class="arrow bounce mx-auto">
+              <strong class="text-center">
                 <i class="bi bi-chevron-down"></i>
               </strong>
   
             </p>
-          </div>
-          <div class="header-bootom-right">
-            <i (click)="previousWeb()" class="bi bi-chevron-left"></i>
-            <i (click)="nextWeb()" class="bi bi-chevron-right"></i>
           </div>
         </div>
       </div>
@@ -88,11 +78,11 @@
             <span>{{pageName}}</span>
           </div>
           <div class="header-bootom-center">
-            <p>
-              <strong>
+            <p class="arrow bounce mx-auto">
+              <strong class="text-center">
                 <i class="bi bi-chevron-down"></i>
               </strong>
-
+  
             </p>
           </div>
           <div class="header-bootom-right">
