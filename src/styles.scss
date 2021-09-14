@@ -144,3 +144,13 @@ button:hover,
   filter: blur(10px);
   -webkit-filter: blur(10px);
 }
+
+.mat-dialog-container{
+  padding: 5px;
+  background-color: black;
+  border-radius: 0;
+}
+
+.cdk-overlay-dark-backdrop {
+  background: rgba(0,0,0,0.5);
+}

@@ -15,6 +15,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
 
 import {TranslateServiceApp} from './services/translate.service'
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
@@ -30,12 +31,12 @@ import { TrainSmarterComponentComponent } from './components/template/home/train
 import { RecipesComponentComponent } from './components/template/home/recipes-component/recipes-component.component';
 import { PlansComponentComponent } from './components/template/home/plans-component/plans-component.component';
 import { StoreComponentComponent } from './components/template/home/store-component/store-component.component';
-import { NutritionComponent } from './components/nutrition/nutrition.component';
+import { NutritionComponent, DialogVideoNutritionComponent } from './components/nutrition/nutrition.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { PartnershipComponent } from './components/partnership/partnership.component';
 import { AmbassadorComponent } from './components/ambassador/ambassador.component';
 import { ProgramsComponent } from './components/template/programs/programs.component';
-import { ReceiptsVideoComponent } from './components/template/home/receipts-video/receipts-video.component';
+import { ReceiptsVideoComponent, DialogVideoHomeComponent } from './components/template/home/receipts-video/receipts-video.component';
 import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
@@ -64,7 +65,9 @@ export function HttpLoaderFactory(http: HttpClient){
     AmbassadorComponent,
     ProgramsComponent,
     ReceiptsVideoComponent,
-    BenefitsComponent
+    BenefitsComponent,
+    DialogVideoHomeComponent,
+    DialogVideoNutritionComponent
   ],
   imports: [
     BrowserModule,
@@ -75,6 +78,7 @@ export function HttpLoaderFactory(http: HttpClient){
     TranslateModule,
     MatFormFieldModule,
     MatInputModule,
+    MatDialogModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
