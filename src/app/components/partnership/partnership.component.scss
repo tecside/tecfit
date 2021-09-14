@@ -25,15 +25,18 @@ main {
     font-size: 40px;
     font-weight: 10;
     color: #001658;
+    line-height: 40px;
   }
 
   form {
     text-align: center;
+    display: flex;
+    align-items: center;
 
     input,
     textarea {
-      width: 95%;
-     
+      width: 75% !important;
+
       background: rgba(175, 175, 175, 0.938);
       color: white;
       border: 0px;
@@ -42,16 +45,18 @@ main {
     span {
       height: 60px;
     }
+
     input {
       height: 60px;
     }
 
-    .input-group {
-      align-items: center;
+    textarea {
+      width: 78% !important;
     }
 
-    textarea {
-      width: 100%;
+    .input-group {
+      align-items: center;
+      justify-content: center;
     }
 
     ::placeholder {
@@ -81,12 +86,10 @@ main {
 }
 
 @media (max-width: 900px) {
-
   header {
     h3 {
       font-size: 30px;
       font-weight: 100;
     }
   }
-  
 }

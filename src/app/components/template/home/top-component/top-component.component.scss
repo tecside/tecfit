@@ -88,6 +88,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
     img {
       height: 85vh;
+      width: 50em;
     }
 
     .header-items {
@@ -119,7 +120,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
           display: flex;
           align-items: center;
           background-color: transparent;
-          border: none;
+          border: 1px solid white;
           font-size: 1.2rem;
 
           i {
@@ -129,6 +130,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
           i:hover {
             cursor: pointer;
           }
+        }
+
+        button:hover {
+          background-color: white;
+          color: black;
         }
       }
     }
@@ -418,7 +424,43 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1400px) {
+
+  .header-left {
+    margin: 0px 0px !important;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #queen {
+    height: 65vh !important;
+    width: 40em !important;
+  }
+
+  section {
+    height: 600px !important;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .header-right {
+    display: flex;
+    align-items: center;
+  }
+
+  #queen {
+    height: 55vh !important;
+    width: 30em !important;
+  }
+
+}
+
+@media (max-width: 800px) {
   #web {
     display: none;
   }

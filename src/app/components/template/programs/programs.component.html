@@ -5,7 +5,18 @@
     </h2>
     <br>
     <div>
-        <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="4" [spaceBetween]="60">
+        <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="4" [spaceBetween]="60"
+            [breakpoints]="{
+            '700': {
+              slidesPerView: 2
+            },
+            '1000': {
+              slidesPerView: 3
+            },
+            '1200': {
+              slidesPerView: 4
+            }
+          }">
             <ng-template swiperSlide>
                 <div id="loseW" class="card">
                     <h2>Loose Weight</h2>

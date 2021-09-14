@@ -11,14 +11,16 @@
           your journey or create it using the Soba features. Unleash the king and queen dna inside you, come challenge
           our
           royals.
-         
         </p>
-        <button  (click)="discoverMore()"><i class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</button>
-     
+        <!-- <button  (click)="discoverMore()"><i class="bi bi-play-circle"></i>&nbsp;&nbsp; Discover More</button>
+      -->
+      <button id="start">{{ "NAVBAR.BTN" | translate }}</button>
       </div>
     </div>
+
     <div class="header-right">
-      <img [src]="header" alt="queen" width="700vw">
+      <img id="queen" [src]="header" alt="queen">
+     <!--  <img src="../../../../../assets/vanilson.jpeg" alt=""> -->
     </div>
   </div>
   <div class="container-fluid d-none d-sm-block">

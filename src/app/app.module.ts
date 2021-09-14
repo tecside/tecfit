@@ -36,6 +36,7 @@ import { PartnershipComponent } from './components/partnership/partnership.compo
 import { AmbassadorComponent } from './components/ambassador/ambassador.component';
 import { ProgramsComponent } from './components/template/programs/programs.component';
 import { ReceiptsVideoComponent } from './components/template/home/receipts-video/receipts-video.component';
+import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -62,7 +63,8 @@ export function HttpLoaderFactory(http: HttpClient){
     PartnershipComponent,
     AmbassadorComponent,
     ProgramsComponent,
-    ReceiptsVideoComponent
+    ReceiptsVideoComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,
