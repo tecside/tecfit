@@ -138,7 +138,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 
     .image-box {
-      background-image: url("../../../assets/about-us/imagem.png");
+      background-image: url("../../../assets/about-us/corporate-photos/first.jpg");
       background-size: cover;
       background-position: center;
       height: 100%;
@@ -148,7 +148,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
           ),
-          url("../../../assets/about-us/imagem.png");
+          url("../../../assets/about-us/corporate-photos/first.jpg");
         height: 30rem;
       }
 
@@ -420,7 +420,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
   .section-5 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../assets/about-us/sobre-nos-section4.png");
+      url("../../../assets/about-us/corporate-photos/second.jpg");
     background-size: cover;
     background-position: center;
     height: 30rem;
@@ -428,7 +428,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     background-attachment: fixed;
 
     h1 {
-      background-color: white;
+      background-color: transparent;
+      color: white;
       padding: 2rem;
       position: absolute;
       bottom: 0px;
@@ -487,8 +488,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding: 2rem 0;
     }
 
-    
-
     h2 {
       font-weight: bold;
       font-size: 2rem;
@@ -545,5 +544,31 @@ ORDER: Base + typography > general layout + grid > page layout > components
         height: auto;
       }
     }
+  }
+}
+
+.desc {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+    margin: 0px 20px;
+  }
+}
+
+.hover {
+  display: flex;
+}
+
+.hover:hover {
+  .desc {
+    display: flex;
   }
 }

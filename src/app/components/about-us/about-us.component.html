@@ -59,10 +59,7 @@
         <div class="col-md-12">
           <div class="timeline">
             <h1>Timeline</h1>
-            <horizontal-timeline
-              [timelineElements]="timeline"
-              [showContent]="true"
-            ></horizontal-timeline>
+            <horizontal-timeline [timelineElements]="timeline" [showContent]="true"></horizontal-timeline>
           </div>
         </div>
       </div>
@@ -70,7 +67,7 @@
   </section>
 
   <section class="section-5">
-    <h1>Creative minds work together</h1>
+    <h1>"Creative minds work together"</h1>
 
     <div class="mission text-center d-block d-md-none">
       <h2 class="mb-2">A nossa missão</h2>
@@ -78,9 +75,15 @@
         <!-- <i class="bi bi-pin-map"></i>  -->
         <p>Pôr Angola no mapa</p>
       </div>
-      <div class="col-md-3"><p>Fomentar atividade fitness</p></div>
-      <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
-      <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
+      <div class="col-md-3">
+        <p>Fomentar atividade fitness</p>
+      </div>
+      <div class="col-md-3">
+        <p>Lorem ipsum dolor</p>
+      </div>
+      <div class="col-md-3">
+        <p>Lorem ipsum dolor</p>
+      </div>
     </div>
   </section>
 
@@ -94,9 +97,15 @@
           <!-- <i class="bi bi-pin-map"></i>  -->
           <p>Pôr Angola no mapa</p>
         </div>
-        <div class="col-md-3"><p>Fomentar atividade fitness</p></div>
-        <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
-        <div class="col-md-3"><p>Lorem ipsum dolor</p></div>
+        <div class="col-md-3">
+          <p>Fomentar atividade fitness</p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="col-md-3">
+          <p>Lorem ipsum dolor</p>
+        </div>
       </div>
     </div>
   </section>
@@ -108,10 +117,7 @@
           <h2 class="d-sm-none d-block text-center">Contacte-nos</h2>
           <p class="d-sm-none d-block text-center">Choose your enquiry below</p>
           <div class="d-flex justify-content-around align-items-center juify-content-between">
-            <img
-              class="img-fluid"
-              src="../../../assets/about-us/Grupo 4038.png"
-            />
+            <img class="img-fluid" src="../../../assets/about-us/corporate-photos/third2.png" />
             <div class="text-center">
               <h2 class="d-none d-sm-block">Contacte-nos</h2>
               <p class="d-none d-sm-block">Choose your enquiry below</p>
@@ -130,13 +136,8 @@
     </div>
   </section>
 
-  <swiper
-    class="swiper d-none d-md-block"
-    [spaceBetween]="0"
-    [autoplay]="false"
-    (swiper)="onSwiper($event)"
-    (slideChange)="onSlideChange()"
-    [breakpoints]="{
+  <swiper class="swiper d-none d-md-block" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)"
+    (slideChange)="onSlideChange()" [breakpoints]="{
       '640': {
         slidesPerView: 2
       },
@@ -144,25 +145,124 @@
         slidesPerView: 3
       },
       '1024': {
-        slidesPerView: 5
+        slidesPerView: 4
       }
-    }"
-  >
-    <ng-template swiperSlide
-      ><img src="../../../assets/about-us/Retângulo -1.png" class="img-fluid" />
+    }">
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>Vanilson Maiala</h1>
+            <br>
+            <h4>Co-founder</h4>
+            <br>
+            <p>Vanilson Maiala is a co-founder of TecSide and Tecfit and has served as the partner manager since the
+              foundation of both projects. Vanilson attended the University of East London, where he graduated in
+              Business Management. In 2020, he decided to move to Portugal to open a Tecside’s branch in Portugal while
+              completing his masters. </p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/vanilson.jpg" width="390px" />
+      </div>
     </ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/about-us/Retângulo -2.png" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/about-us/Retângulo 40.png" class="img-fluid"
-    /></ng-template>
-    <ng-template swiperSlide
-      ><img src="../../../assets/about-us/Retângulo -3.png" class="img-fluid"
-    /></ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>Fernando Sapalo</h1>
+            <br>
+            <h4>Co-founder</h4>
+            <br>
+            <p>Fernando Sapalo is a co-founder of Tecfit, he has been involved with all the projects of Tecside since
+              its foundation; and he serves as the Commercial Manager of the company. Fernando attended the University
+              Autónoma de Lisboa (UAL). In 2020 he started a post-graduate course in Banking Management, Insurance and
+              Financial Markets at Lusófona University. </p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/fernando.jpg" width="390px" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>hello</h1>
+            <br>
+            <h4>hello 2</h4>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, veniam nesciunt doloremque vel,
+              obcaecati error alias vitae aspernatur eius iste, optio soluta consectetur id consequatur numquam sunt
+              mollitia sapiente rem?</p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/david.jpg" width="390px" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>hello</h1>
+            <br>
+            <h4>hello 2</h4>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, veniam nesciunt doloremque vel,
+              obcaecati error alias vitae aspernatur eius iste, optio soluta consectetur id consequatur numquam sunt
+              mollitia sapiente rem?</p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/daniel.jpg" width="390px" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>Guilherme Jafar</h1>
+            <br>
+            <h4>Co-founder</h4>
+            <br>
+            <p>Guilherme Jafar is a co-founder of Tecside and Tecfit and has served as a Technology and Information
+              Manager. Known due to their excellent mind and capabilities, Guilherme is a Software Engineer who
+              graduated from Escola Superior de Tecnologia e Gestão de Oliveira do Hospital (ESTGOH).</p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/guilherme.jpg" width="390px" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>Rejanne Napoleão</h1>
+            <br>
+            <h4>Head of the Marketing department</h4>
+            <br>
+            <p>Rejanne Napoleão is the head of the Marketing department. Graduated in Economics from Universidade
+              Autónoma de Lisboa, Rejanne has a long road in the marketing and photography field. She started her
+              photography journey when she was 12, and after few years, she embraced the marketing word, gaining
+              experience in Portuguese and Angola companies. </p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/rejane.jpg" width="390px" />
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="center">
+      <div class="hover">
+        <div class="fade-in fade-out desc">
+          <div>
+            <h1>hello</h1>
+            <br>
+            <h4>hello 2</h4>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, veniam nesciunt doloremque vel,
+              obcaecati error alias vitae aspernatur eius iste, optio soluta consectetur id consequatur numquam sunt
+              mollitia sapiente rem?</p>
+          </div>
+        </div>
+        <img class="person-img" src="../../../assets/about-us/corporate-photos/persons/diego.jpg" width="390px" />
+      </div>
+    </ng-template>
   </swiper>
 </main>
 <app-footer></app-footer>
