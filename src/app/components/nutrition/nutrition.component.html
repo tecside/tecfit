@@ -4,12 +4,7 @@
     <h1>Multiprotein</h1>
   </section>
 </header>
-<swiper
-  class="swiper"
-  [spaceBetween]="0"
-  [autoplay]="false"
-  (swiper)="onSwiper($event)"
-  (slideChange)="onSlideChange()"
+<swiper class="swiper" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
   [breakpoints]="{
     '0': {
       slidesPerView: 3
@@ -20,33 +15,53 @@
     '1024': {
       slidesPerView: 4
     }
-  }"
->
-  <ng-template swiperSlide
-    ><img
-      src="../../../assets/nutrition/Grupo de máscara -1.jpg"
-      class="img-fluid"
-    />
+  }">
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>Comida Saudável</b></h1>
+        </div>
+      </div>
+      <img src="../../../assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" />
+    </div>
   </ng-template>
-  <ng-template swiperSlide
-    ><img
-      src="../../../assets/nutrition/Grupo de máscara -2.jpg"
-      class="img-fluid"
-  /></ng-template>
-  <ng-template swiperSlide
-    ><img
-      src="../../../assets/nutrition/Grupo de máscara 14.jpg"
-      class="img-fluid"
-  /></ng-template>
-  <ng-template swiperSlide
-    ><img src="../../../assets/nutrition/Product.jpg" class="img-fluid"
-  /></ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>Unique Results</b></h1>
+        </div>
+      </div>
+      <img src="../../../assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>Tasty Food</b></h1>
+        </div>
+      </div>
+      <img src="../../../assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>Tailored meals</b></h1>
+        </div>
+      </div>
+      <img src="../../../assets/nutrition/Product.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
 </swiper>
 <section class="info-app">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
-        <div class="info text-center text-md-start" >
+        <div class="info text-center text-md-start">
           <h2>The Nutritionist in your hand</h2>
           <h4>Eat better. Reach your goals.</h4>
           <p>
@@ -58,12 +73,8 @@
           </p>
         </div>
         <div class="d-xl-flex mt-5 justify-content-between d-none ">
-          <a href="#"
-            ><img src="../../../assets/home/PlayStore.png" class="img-fluid"
-          /></a>
-          <a href="#" class="text-end"
-            ><img src="../../../assets/home/AppStore.png" class="img-fluid"
-          /></a>
+          <a href="#"><img src="../../../assets/home/PlayStore.png" class="img-fluid" /></a>
+          <a href="#" class="text-end"><img src="../../../assets/home/AppStore.png" class="img-fluid" /></a>
         </div>
         <div class="text-center mt-5 d-xl-block d-none">
           <button class="btn btn-primary">Comece uma jornada</button>
@@ -73,45 +84,37 @@
 
       <div class="col-md-6">
         <div class="d-md-flex ms-5 d-none justify-content-between app">
-          <img
-            src="../../../assets/nutrition/Grupo 4068.jpg"
-            class="img-fluid"
-          />
-          <img
-            src="../../../assets/nutrition/Grupo 4074.jpg"
-            class="img-fluid"
-          />
+          <img src="../../../assets/nutrition/phone2.png" width="100%" />
+          <!-- <img src="../../../assets/nutrition/Grupo 4068.jpg" class="img-fluid" /> -->
+          <!-- <img src="../../../assets/nutrition/Grupo 4074.jpg" class="img-fluid" /> -->
         </div>
 
         <div class="d-md-none d-block text-center app">
-            <img
-              src="../../../assets/nutrition/Imagem 40.jpg"
-              class="img-fluid mx-auto"
-            />
-          </div>
+          <img src="../../../assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto" />
+        </div>
       </div>
     </div>
     <div class="col-md-12">
-        <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
-            <a href="#"c class="text-end me-5"
-              ><img src="../../../assets/home/PlayStore.png" class="img-fluid "
-            /></a>
-            <a href="#" class="text-start ms-5"
-              ><img src="../../../assets/home/AppStore.png" class="img-fluid"
-            /></a>
-          </div>
-          <div class="text-center d-block mt-3 d-xl-none">
-            <button class="btn btn-primary">Comece uma jornada</button>
-          </div>
+      <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
+        <a href="#" c class="text-end me-5"><img src="../../../assets/home/PlayStore.png" class="img-fluid " /></a>
+        <a href="#" class="text-start ms-5"><img src="../../../assets/home/AppStore.png" class="img-fluid" /></a>
+      </div>
+      <div class="text-center d-block mt-3 d-xl-none">
+        <button class="btn btn-primary">Comece uma jornada</button>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section-video text-center">
+
+  <div id="video">
+    <i class="bi bi-play-circle" (click)="openDialog()"></i>
+  </div>
   
-    <div id="video" >
-        <i class="bi bi-play-circle" (click)="openDialog()"></i>
-    </div>
-  
+</section>
+
+<section style="background-color: #239f3a;">
+  <br><br><br>
 </section>
 <app-footer></app-footer>

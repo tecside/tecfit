@@ -8,10 +8,60 @@
     "MENU6": "Pricing",
     "BTN": "Start Now"
   },
-  "HOME":{
-
-  },
-  "ABOUT":{
-    "TITTLE": "History and Mission"
+  "HOME": {},
+  "ABOUT": {
+    "TITTLE": "History and Mission",
+    "SECONDTITTLE": "First African Fitness App",
+    "BEHINDTECFIT": "Behind Tecfit",
+    "BEHINDTECFITDESC1": "In 2019, Fernando, as a fitness enthusiast, had the desire to create a fitness application with one of his friends. At that time, he did not have the resources to advance the idea, but everything changed when three of his best friends founded TecSide, a software company led by Vanilson, Guilherme and Edson.",
+    "BEHINDTECFITDESC2": "After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications. Due to his desire, Guilherme and Edson, as two founding members of TecSide, agreed that they should be part of the project and create a reliable and affordable fitness application.",
+    "OURMISSION": "Our Mission",
+    "MISSION1": "To empower and inspire the every generation",
+    "MISSION2": "Create products and experiences capable of changing people’ s lives",
+    "MISSION3": "To help everyone to go further by challenging their limits",
+    "CONTACTUS": "Contact Us",
+    "CHOOSEENQUIRY": "Choose your enquiry below",
+    "ENQUERY1-1": "Brand",
+    "ENQUERY1-2": "Partnerships",
+    "ENQUERY2": "PR/Media",
+    "ENQUERY3-1": "Submit",
+    "ENQUERY3-2": "your journey",
+    "ENQUERY4-1": "Customer",
+    "ENQUERY4-2": "support",
+    "VANILSON": {
+      "NAME": "Vanilson Maiala",
+      "ROLE": "Partner Manager",
+      "DESC": "Vanilson Maiala is a co-founder of TecSide and Tecfit and has served as the partner manager since the foundation of both projects. Vanilson attended the University of East London, where he graduated in Business Management. In 2020, he decided to move to Portugal to open a Tecside’s branch in Portugal while completing his masters."
+    },
+    "FERNANDO": {
+      "NAME": "Fernando Sapalo",
+      "ROLE": "Commercial Manager",
+      "DESC": "Fernando Sapalo is a co-founder of Tecfit, he has been involved with all the projects of Tecside since its foundation; and he serves as the Commercial Manager of the company. Fernando attended the University Autónoma de Lisboa (UAL). In 2020 he started a post-graduate course in Banking Management, Insurance and Financial Markets at Lusófona University."
+    },
+    "DAVID": {
+      "NAME": "David Marques",
+      "ROLE": "Developer",
+      "DESC": "David Marques is one of the main developers of Tecside and Tecfit. He is a Software Engineer who graduated from Escola Superior de Tecnologia e Gestão. David is currently finishing his Master in Software Engineer."
+    },
+    "GUILHERME": {
+      "NAME": "Guilherme Jafar",
+      "ROLE": "Technology and Information Manager",
+      "DESC": "Guilherme Jafar is a co-founder of Tecside and Tecfit and has served as a Technology and Information Manager. Known due to their excellent mind and capabilities, Guilherme is a Software Engineer who graduated from Escola Superior de Tecnologia e Gestão de Oliveira do Hospital (ESTGOH)."
+    },
+    "REJANNE": {
+      "NAME": "Rejanne Napoleão",
+      "ROLE": "Head of the Marketing department",
+      "DESC": "Rejanne Napoleão is the head of the Marketing department. Graduated in Economics from Universidade Autónoma de Lisboa, Rejanne has a long road in the marketing and photography field. She started her photography journey when she was 12, and after few years, she embraced the marketing world, gaining experience in Portuguese and Angola companies."
+    },
+    "DIEGO": {
+      "NAME": "Diego Moreso",
+      "ROLE": "something",
+      "DESC": "Diego is something."
+    },
+    "DANIEL": {
+      "NAME": "Daniel Silva",
+      "ROLE": "something",
+      "DESC": "Daniel is something."
+    }
   }
 }

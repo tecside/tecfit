@@ -80,7 +80,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../../../assets/nutrition/brooke-lark-nTZOILVZuOg-unsplash.jpg");
+    url("../../../assets/nutrition/first.jpg");
   height: 80vh;
   background-position: center;
   background-size: cover;
@@ -212,6 +212,38 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
   video {
       display: none;
+  }
+}
+
+.desc {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  div {
+    text-align: center;
+    margin: 0px 20px;
+
+    h1 {
+      b {
+        font-size: larger;
+      }
+    }
+  }
+}
+
+.hover {
+  display: flex;
+}
+
+.hover:hover {
+  .desc {
+    display: flex;
   }
 }
 
