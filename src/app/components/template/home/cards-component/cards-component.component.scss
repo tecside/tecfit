@@ -56,9 +56,14 @@
 @media (max-width: 1200px) {
   #cards1-mobile {
     display: block;
+    margin-bottom: 1.5rem;
 
     div {
       text-align: center;
+    }
+
+    p{
+      font-size: 0.9rem;
     }
 
     img {
@@ -83,7 +88,7 @@
       }
 
       p {
-        padding: 0px 100px;
+        padding: 0px 50px;
       }
     }
   }

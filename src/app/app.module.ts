@@ -23,7 +23,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
-import { WorkoutsComponent } from './components/workouts/workouts.component';
+import { WorkoutsComponent, DialogVideoWorkoutComponent } from './components/workouts/workouts.component';
 import { TopComponentComponent } from './components/template/home/top-component/top-component.component';
 import { CardsComponentComponent } from './components/template/home/cards-component/cards-component.component';
 import { GlitchComponentComponent } from './components/template/home/glitch-component/glitch-component.component';
@@ -67,7 +67,8 @@ export function HttpLoaderFactory(http: HttpClient){
     ReceiptsVideoComponent,
     BenefitsComponent,
     DialogVideoHomeComponent,
-    DialogVideoNutritionComponent
+    DialogVideoNutritionComponent,
+    DialogVideoWorkoutComponent
   ],
   imports: [
     BrowserModule,

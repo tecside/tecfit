@@ -6,64 +6,118 @@
     <h5>Alcance o seu objectivo fitness agora, a partir da sua casa</h5>
   </section>
 
-  <section id="benefits">
-    <br><br>
-    <h2>Your benefits with the TECFIT Coach</h2>
-    <br><br><br>
+  <section class="section-challenge">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <h2>Challenge Yourself</h2>
+        </div>
+        <div class="col-6">
+          <div class="d-flex right-side">
+            <i class="bi bi-arrow-right me-5"></i> 
+            <div class="border-b">
+              <p>Track your progress during your journey </p>
+            </div>
+           
+          </div>
+          <div class="d-flex right-side mt-5">
+            <i class="bi bi-arrow-right me-5"></i> 
+            <div class="border-b">
+              <p>See live stats and track progress week on week </p>
+            </div>
+           
+          </div>
 
-    <div>
-      <img (click)="slide(false)" src="../../../assets/workout/leftArrow.svg" alt="icon" width="30px" class="arrow">
-      <swiper #slides class="swiper" (swiper)="onSwiper($event)" [slidesPerView]="3" [spaceBetween]="30">
-        <ng-template swiperSlide>
-          <div class="card">
-            <img src="../../../assets/workout/benefit1.svg" alt="icon" width="40px" />
-            <br><br>
-            <p>Track your effort during Cardio classes with Fiit Points. The higher up the zone you are, the more points
-              you earn. Keep coming back to beat your score.</p>
+          <div class="d-flex right-side mt-5">
+            <i class="bi bi-arrow-right me-5"></i> 
+            <div class="border-b">
+              <p>Find your ideal Training Journey</p>
+            </div>
+           
           </div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="card">
-            <img src="../../../assets/workout/benefit2.svg" alt="icon" width="40px" />
-            <br><br>
-            <p>Customized training sessions that you can do any time, anywhere, with or without equipment</p>
+
+          <div class="d-flex right-side mt-5">
+            <i class="bi bi-arrow-right me-5"></i> 
+            <div class="border-b">
+              <p>Integrate your trainings into your schedule </p>
+            </div>
+           
           </div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="card">
-            <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
-            <br><br>
-            <p>Training tips for beginners and advanced athletes. You can create
-              your own workouts, share with friends and families </p>
+
+          <div class="d-flex right-side mt-5">
+            <i class="bi bi-arrow-right me-5"></i> 
+            <div class="border-b">
+              <p>Receive customized training sessions </p>
+            </div>
+           
           </div>
-        </ng-template>
-        <ng-template swiperSlide>
-          <div class="card">
-            <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
-            <br><br>
-            <p>Training tips for beginners and advanced athletes. You can create
-              your own workouts, share with friends and families </p>
-          </div>
-        </ng-template>
-      </swiper>
-      <img (click)="slide(true)" src="../../../assets/workout/rightArrow.svg" alt="icon" width="30px" class="arrow">
+          
+        </div>
+      </div>
     </div>
-    <br><br>
   </section>
-
-
-
 
   <app-programs></app-programs>
 
-
-
-  <section id="plans">
-    <br><br>
-    <h2>Junta-te à comunidade TECFIT</h2>
-    <br>
-    <app-plans-component></app-plans-component>
-    <br><br>
+  <section class="info-app">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="info text-center text-md-start pt-5">
+            <h2>The Nutritionist in your hand</h2>
+            <h4>Eat better. Reach your goals.</h4>
+            <p>
+              Multiprotein is a clean eating lifestyle tailored to your unique
+              parameters. Its foodie-grade recipes and meal plans help you reach
+              your goals, whether that be weight loss, muscle gain or overall
+              health improvement. The cutting-edge digital Coach motivates you,
+              tracks your progress and adapts your nutrition accordingly.
+            </p>
+          </div>
+          <div class="d-xl-flex mt-5 justify-content-between d-none ">
+            <a href="#"><img src="../../../assets/home/PlayStore.png" class="img-fluid" /></a>
+            <a href="#" class="text-end"><img src="../../../assets/home/AppStore.png" class="img-fluid" /></a>
+          </div>
+          <!-- <div class="text-center mt-5 d-xl-block d-none">
+            <button class="btn btn-primary">Comece uma jornada</button>
+          </div> -->
+        </div>
+  
+  
+        <div class="col-md-6">
+          <div class="d-md-flex ms-5 d-none justify-content-between app">
+            <img src="../../../assets/nutrition/phone2.png" width="100%" />
+            <!-- <img src="../../../assets/nutrition/Grupo 4068.jpg" class="img-fluid" /> -->
+            <!-- <img src="../../../assets/nutrition/Grupo 4074.jpg" class="img-fluid" /> -->
+          </div>
+  
+          <div class="d-md-none d-block text-center app">
+            <img src="../../../assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
+          <a href="#" c class="text-end me-5"><img src="../../../assets/home/PlayStore.png" class="img-fluid " /></a>
+          <a href="#" class="text-start ms-5"><img src="../../../assets/home/AppStore.png" class="img-fluid" /></a>
+        </div>
+        <div class="text-center d-block mt-3 d-xl-none">
+          <button class="btn btn-primary">Comece uma jornada</button>
+        </div>
+      </div>
+    </div>
   </section>
+ 
+  
+
+
+  <section>
+    <div id="video" >
+        <i class="bi bi-play-circle" (click)="openDialog()"></i>
+    </div>
+  
+</section>
+
+  <app-plans-component></app-plans-component>
 </main>
 <app-footer></app-footer>
