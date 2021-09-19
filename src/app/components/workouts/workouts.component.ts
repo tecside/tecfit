@@ -1,6 +1,7 @@
 import { identifierModuleUrl } from '@angular/compiler';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import SwiperCore, { Autoplay, Mousewheel } from 'swiper/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 SwiperCore.use([Mousewheel]);
 
 @Component({
@@ -12,7 +13,7 @@ export class WorkoutsComponent implements OnInit {
 
   @ViewChild('slides') public slides: any;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
@@ -30,5 +31,20 @@ export class WorkoutsComponent implements OnInit {
     }
   }
 
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogVideoWorkoutComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
 
 }
+
+@Component({
+  selector: 'dialog-delete',
+  styleUrls: ['workouts.component.scss'],
+  templateUrl: 'dialog-video-workout.component.html',
+})
+export class DialogVideoWorkoutComponent {}
