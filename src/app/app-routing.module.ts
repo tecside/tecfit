@@ -18,7 +18,7 @@ const routes: Routes = [
     component: AboutUsComponent,
   },
   {
-    path: "workouts",
+    path: "programs",
     component: WorkoutsComponent,
   },
   {
