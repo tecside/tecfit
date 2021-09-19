@@ -14,7 +14,8 @@
     "SECONDTITTLE": "First African Fitness App",
     "BEHINDTECFIT": "Behind Tecfit",
     "BEHINDTECFITDESC1": "In 2019, Fernando, as a fitness enthusiast, had the desire to create a fitness application with one of his friends. At that time, he did not have the resources to advance the idea, but everything changed when three of his best friends founded TecSide, a software company led by Vanilson, Guilherme and Edson.",
-    "BEHINDTECFITDESC2": "After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications. Due to his desire, Guilherme and Edson, as two founding members of TecSide, agreed that they should be part of the project and create a reliable and affordable fitness application.",
+    "BEHINDTECFITDESC2": "After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications.",
+    "BEHINDTECFITDESC3": "Due to his desire, Guilherme and Edson, as two founding members of TecSide, agreed that they should be part of the project and create a reliable and affordable fitness application.",
     "OURMISSION": "Our Mission",
     "MISSION1": "To empower and inspire the every generation",
     "MISSION2": "Create products and experiences capable of changing people’ s lives",
@@ -55,8 +56,8 @@
     },
     "DIEGO": {
       "NAME": "Diego Moreso",
-      "ROLE": "something",
-      "DESC": "Diego is something."
+      "ROLE": "Business Developer",
+      "DESC": "Diego is the business developer of Tecfit; he attended Salford University, where he graduated in International Business. He was selected to be part of the Tecfit project due to his interpersonal skills and experience as a business developer."
     },
     "DANIEL": {
       "NAME": "Daniel Silva",

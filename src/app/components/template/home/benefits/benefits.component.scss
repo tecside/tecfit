@@ -13,6 +13,13 @@
       margin-right: 30px;
     }
 
+    @media (max-width: 700px) {
+      .arrow {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+    }
+
     .arrow:hover {
       cursor: pointer;
     }
@@ -29,8 +36,16 @@
 
       p {
         margin: 0 50px;
-        line-height: 40px;
+        line-height: 30px;
         text-align: center;
+      }
+
+      @media (max-width: 700px) {
+        p {
+          margin: 0px 10px;
+          line-height: 30px;
+          text-align: center;
+        }
       }
     }
   }
