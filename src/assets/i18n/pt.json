@@ -8,15 +8,13 @@
     "MENU6": "Preços",
     "BTN": "Começar Agora"
   },
-  "HOME":{
-
-  },
-   "ABOUT":{
+  "HOME": {},
+  "ABOUT": {
     "TITTLE": "História e Missão",
     "SECONDTITTLE": "Primeira Aplicação Fitness Africana",
     "BEHINDTECFIT": "A História Tecfit",
     "BEHINDTECFITDESC1": "In 2019, Fernando, as a fitness enthusiast, had the desire to create a fitness application with one of his friends. At that time, he did not have the resources to advance the idea, but everything changed when three of his best friends founded TecSide, a software company led by Vanilson, Guilherme and Edson.",
-    "BEHINDTECFITDESC2":"After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications.",
+    "BEHINDTECFITDESC2": "After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications.",
     "BEHINDTECFITDESC3": "Due to his desire, Guilherme and Edson, as two founding members of TecSide, agreed that they should be part of the project and create a reliable and affordable fitness application.",
     "OURMISSION": "Nossa Missão",
     "MISSION1": "To empower and inspire the every generation",
@@ -63,8 +61,8 @@
     },
     "DANIEL": {
       "NAME": "Daniel Silva",
-      "ROLE": "Alguma coisa",
-      "DESC": "Daniel is something."
+      "ROLE": "Market Analyst",
+      "DESC": "Daniel is the Market Analyst. He started by graduating from the best Portuguese school of sports as a sports manager, called FMH. Then, he decided to take his talents up a notch and join the Lisbon School of Economics and Management to do his MIM. He is a member of the company due to his networking skillset, work ethic and ambitious personality."
     }
   }
 }
