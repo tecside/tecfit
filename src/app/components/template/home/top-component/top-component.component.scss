@@ -77,6 +77,101 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+#mobile {
+
+  display: none;
+
+  .description {
+
+    text-align: center;
+
+    h1, h2 {
+      font-size: 1.6rem;
+      line-height: 2rem;
+      color: white;
+      text-align: center;
+      margin: 0px;
+    }
+
+    p {
+      font-size: 1.1rem !important;
+      color: white;
+      text-align: center !important;
+      margin: 0px 1rem;
+    }
+
+    button {
+      background-color: black;
+      border: 1px solid #707070;
+      color: white;
+      font-size: 1.5em;
+      padding: 0.6rem 2.2rem;
+      border-radius: 0.1rem;
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      background-color: white;
+      border: 1px solid black;
+      color: black;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    img {
+      width: 100%;
+      filter: brightness(50%);
+    }
+
+    .section-2 {
+      background-color: transparent;
+    }
+
+    .flex {
+      position: absolute;
+      z-index: 2;
+    }
+    .description {
+      background-color: transparent;
+    }
+
+    #img {
+      z-index: 1;
+      background-color: black !important;
+    }
+
+    .description {
+      h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        width: 100%;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.3rem;
+      }
+
+      button {
+        background-color: black;
+        border: 1px solid #707070;
+        color: white;
+        font-size: 1.5em;
+        padding: 0.6rem 2.2rem;
+        border-radius: 0.1rem;
+        transition: all 0.3s;
+      }
+
+      button:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+      }
+    }
+  }
+}
+
 #web {
   background-color: black;
   color: white;
@@ -113,8 +208,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
           line-height: 2rem;
           font-weight: 200;
           text-align: left;
-
-         
         }
 
         button {
@@ -127,7 +220,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
           margin-right: 10px;
           width: 135px;
-          
 
           i {
             font-size: 40px;
@@ -147,277 +239,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
-#mobile {
-  display: none;
-
-  background-color: black;
-  color: white;
-
-  padding-top: 5rem;
-  height: 100vh;
-
-  @include respond(phone) {
-    height: 90vh;
-  }
-
-  .full-height {
-    height: 95.5%;
-  }
-  .header-left {
-    top: 50%;
-    position: relative;
-    transform: translateY(-50%);
-    padding-left: 2rem;
-    z-index: 3;
-    left: 0;
-
-    @include respond(tab-land) {
-      font-size: 2.2rem;
-      line-height: 3rem;
-    }
-
-    @include respond(bootstrap_768) {
-      position: absolute;
-      width: 100%;
-      padding-left: 0rem;
-      height: 100vh;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      line-height: 3rem;
-
-      @include respond(tab-land) {
-        font-size: 2.2rem;
-        line-height: 2.5rem;
-      }
-
-      @include respond(tab-port) {
-        font-size: 2rem;
-        line-height: 2.2rem;
-      }
-
-      @include respond(bootstrap_768) {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        font-size: 1.8rem;
-        top: 50%;
-      }
-
-      @include respond(phone) {
-        font-size: 1.4rem;
-        width: 100%;
-      }
-    }
-
-    p {
-      font-size: 1.4rem;
-      line-height: 1.5rem;
-      width: 90%;
-
-      @include respond(tab-land) {
-        font-size: 1.2rem;
-      }
-
-      @include respond(tab-port) {
-        font-size: 1rem;
-        line-height: 1.4rem;
-      }
-
-      @include respond(bootstrap_768) {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        top: 70%;
-      }
-
-      @include respond(phone) {
-        font-size: 0.9rem;
-        width: 80%;
-      }
-    }
-
-    .btn {
-      @include respond(phone) {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        font-size: 1rem;
-        transform: translate(-50%, 0);
-      }
-    }
-  }
-
-  .header-right {
-    padding-top: 2rem;
-    z-index: 2;
-
-    @include respond(bootstrap_768) {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    @include respond(phone) {
-      width: 100%;
-    }
-
-    .overlay {
-      width: 100%;
-      height: 70vh;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: black;
-      z-index: 4;
-      opacity: 0.5;
-    }
-  }
-
-  .header-image {
-    width: 5rem;
-
-    @include respond(big-desktop) {
-      width: 7rem;
-    }
-
-    @include respond(big-big-desktop) {
-      width: 9rem;
-    }
-
-    @include respond(tab-port) {
-      width: 4.3rem;
-    }
-
-    @include respond(phone) {
-      width: 3.5rem;
-      //opacity: 0.5;
-    }
-
-    &-1 {
-      position: relative;
-      top: 5rem;
-
-      @include respond(phone) {
-        left: 14%;
-      }
-    }
-
-    &-2 {
-      position: relative;
-
-      left: 8%;
-
-      @include respond(phone) {
-        left: 18%;
-      }
-    }
-
-    &-3 {
-      position: relative;
-      left: 16%;
-      top: 5rem;
-
-      @include respond(phone) {
-        left: 22%;
-      }
-    }
-
-    &-4 {
-      position: relative;
-
-      left: 24%;
-
-      @include respond(phone) {
-        left: 26%;
-      }
-    }
-  }
-
-  .header-img {
-    width: 5rem;
-    height: 20rem;
-    position: relative;
-
-    @include respond(big-desktop) {
-      width: 7rem;
-    }
-
-    @include respond(big-big-desktop) {
-      width: 9rem;
-    }
-
-    @include respond(tab-port) {
-      width: 4.3rem;
-    }
-
-    &-1 {
-      top: 5rem;
-    }
-
-    &-2 {
-      left: 8%;
-      top: 0;
-    }
-
-    &-3 {
-      left: 16%;
-      top: 5rem;
-    }
-
-    &-4 {
-      top: 0;
-      left: 24%;
-    }
-  }
-
-  .header-bottom-left {
-    position: relative;
-    left: 3%;
-    span {
-    }
-
-    hr {
-      height: 1px;
-      width: 100px;
-      background-color: white;
-      position: relative;
-      opacity: 1;
-      border-top: none;
-      margin-right: 0.1rem;
-      margin-left: 0.1rem;
-      top: -20%;
-    }
-  }
-
-  // .header-bootom-center {
-  //   position: absolute;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   p {
-  //     animation: UpDown 1s infinite;
-  //   }
-  // }
-
-  .header-bootom-right {
-    position: relative;
-    right: 3%;
-
-    i {
-      cursor: pointer;
-      transition: all 0.5s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-
-    .bi-chevron-left {
-      margin-right: 5rem;
-    }
-  }
-}
-
 @keyframes UpDown {
   0% {
     transform: translateY(0);
@@ -431,7 +252,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 @media (max-width: 1400px) {
-
   .header-left {
     margin: 0px 0px !important;
   }
@@ -449,11 +269,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   section {
     height: 600px !important;
   }
-
 }
 
 @media (max-width: 900px) {
-
   .header-right {
     display: flex;
     align-items: center;
@@ -463,10 +281,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
     height: 55vh !important;
     width: 30em !important;
   }
-
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 600px) {
   #web {
     display: none;
   }
@@ -475,7 +292,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: block;
   }
 }
- */
+
 //scrool animation
 
 .arrow {
@@ -501,4 +318,3 @@ ORDER: Base + typography > general layout + grid > page layout > components
     transform: translateY(-10px);
   }
 }
-
