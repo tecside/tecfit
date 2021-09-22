@@ -35,7 +35,11 @@ export class TranslateServiceApp {
         document.getElementById("timeline-pt")!.style.display = "none";
         document.getElementById("timeline-en")!.style.display = "block";
       }
+
+      window.location.reload();
     }
+
+    
 
 
   }
