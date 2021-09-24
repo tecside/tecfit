@@ -38,9 +38,5 @@ export class TranslateServiceApp {
 
       window.location.reload();
     }
-
-    
-
-
   }
 }
