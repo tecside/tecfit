@@ -7,6 +7,7 @@ import { WorkoutsComponent } from "./components/workouts/workouts.component";
 import { TermsComponent } from './components/terms/terms.component';
 import { PartnershipComponent } from './components/partnership/partnership.component';
 import { AmbassadorComponent } from './components/ambassador/ambassador.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: "ambassador",
     component: AmbassadorComponent,
+  },
+  {
+    path: "login",
+    component: LoginComponent,
   },
   {
     path: "partnership",

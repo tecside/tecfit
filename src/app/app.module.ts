@@ -38,6 +38,7 @@ import { AmbassadorComponent } from './components/ambassador/ambassador.componen
 import { ProgramsComponent } from './components/template/programs/programs.component';
 import { ReceiptsVideoComponent, DialogVideoHomeComponent } from './components/template/home/receipts-video/receipts-video.component';
 import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
+import { LoginComponent } from './components/login/login.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http)
 }
@@ -68,7 +69,8 @@ export function HttpLoaderFactory(http: HttpClient){
     BenefitsComponent,
     DialogVideoHomeComponent,
     DialogVideoNutritionComponent,
-    DialogVideoWorkoutComponent
+    DialogVideoWorkoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
