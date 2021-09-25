@@ -485,6 +485,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     i {
       font-size: 5rem;
     }
+
+    .mission {
+      p {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+    }
   }
 
   .section-7 {
@@ -578,3 +585,5 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: flex;
   }
 }
+
+

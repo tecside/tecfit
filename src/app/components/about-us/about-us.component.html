@@ -63,8 +63,10 @@
         <div class="col-md-12">
           <div class="timeline">
             <h1>Timeline</h1>
-            <horizontal-timeline id="timeline-pt" [timelineElements]="timeline" [showContent]="true"></horizontal-timeline>
-            <horizontal-timeline id="timeline-en" [timelineElements]="timeline2" [showContent]="true"></horizontal-timeline>
+            <horizontal-timeline id="timeline-pt" [timelineElements]="timeline" [showContent]="true">
+            </horizontal-timeline>
+            <horizontal-timeline id="timeline-en" [timelineElements]="timeline2" [showContent]="true">
+            </horizontal-timeline>
           </div>
         </div>
       </div>
@@ -98,14 +100,14 @@
         <div class="col-md-12">
           <h2 class="mb-5">{{ "ABOUT.OURMISSION" | translate }}</h2>
         </div>
-        <div class="col-md-4">
+        <div class="row mb-4 mission">
           <!-- <i class="bi bi-pin-map"></i>  -->
           <p>{{ "ABOUT.MISSION1" | translate }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="row mb-4 mission">
           <p>{{ "ABOUT.MISSION2" | translate }}</p>
         </div>
-        <div class="col-md-4">
+        <div class="row mb-4 mission">
           <p>{{ "ABOUT.MISSION3" | translate }}</p>
         </div>
         <!-- <div class="col-md-3">
@@ -127,12 +129,15 @@
               <h2 class="d-none d-sm-block">{{ "ABOUT.CONTACTUS" | translate }}</h2>
               <p class="d-none d-sm-block">{{ "ABOUT.CHOOSEENQUIRY" | translate }}</p>
               <div class="d-block d-md-flex">
-                <button class="btn btn-primary">{{ "ABOUT.ENQUERY1-1" | translate }} <br class="d-none d-md-block">{{ "ABOUT.ENQUERY1-2" | translate }}</button>
+                <button class="btn btn-primary">{{ "ABOUT.ENQUERY1-1" | translate }} <br class="d-none d-md-block">{{
+                  "ABOUT.ENQUERY1-2" | translate }}</button>
                 <button class="btn btn-primary">{{ "ABOUT.ENQUERY2" | translate }}</button>
               </div>
               <div class="d-block d-md-flex">
-                <button class="btn btn-primary">{{ "ABOUT.ENQUERY3-1" | translate }}<br class="d-none d-md-block"> {{ "ABOUT.ENQUERY3-2" | translate }}</button>
-                <button class="btn btn-primary">{{ "ABOUT.ENQUERY4-1" | translate }} <br class="d-none d-md-block">{{ "ABOUT.ENQUERY4-2" | translate }}</button>
+                <button class="btn btn-primary">{{ "ABOUT.ENQUERY3-1" | translate }}<br class="d-none d-md-block"> {{
+                  "ABOUT.ENQUERY3-2" | translate }}</button>
+                <button class="btn btn-primary">{{ "ABOUT.ENQUERY4-1" | translate }} <br class="d-none d-md-block">{{
+                  "ABOUT.ENQUERY4-2" | translate }}</button>
               </div>
             </div>
           </div>
@@ -141,7 +146,7 @@
     </div>
   </section>
 
-  <swiper class="swiper d-none d-md-block" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)"
+  <swiper class="swiper d-none d-md-block" [autoplay]="true" (swiper)="onSwiper($event)"
     (slideChange)="onSlideChange()" [breakpoints]="{
       '640': {
         slidesPerView: 2
