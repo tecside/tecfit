@@ -35,10 +35,10 @@ const routes: Routes = [
     path: "ambassador",
     component: AmbassadorComponent,
   },
-  {
+  /* {
     path: "login",
     component: LoginComponent,
-  },
+  }, */
   {
     path: "partnership",
     component: PartnershipComponent,

@@ -8,7 +8,20 @@
     "MENU6": "Pricing",
     "BTN": "Start Now"
   },
-  "HOME": {},
+  "HOME": {
+    "TITLE1": "Choose your warrior path emerge into the journey",
+    "DESC1": "Get access to thousands of workouts inspired by African most ruthless warriors and royals. Soba is here to help you find the perfect training program.",
+    "BTN1": "Register",
+    "BTN2": "Log In",
+    "OURPROGRAMS": "Our Programs",
+    "LOSEW": "Lose Weight",
+    "STAMINA": "Stamina",
+    "MOBILITY": "Mobility",
+    "GAINMUSCLE": "Gain Muscle",
+    "TAKEPROGRAMS": "Take programs tailored to your fitness goal",
+    "DESC2": "Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers. Find your journey and start sem mais demoraaaass. Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers",
+    "BTN3": "Discover" 
+  },
   "ABOUT": {
     "TITTLE": "History and Mission",
     "SECONDTITTLE": "First African Fitness App",
