@@ -153,7 +153,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       }
 
       @include respond(phone) {
-        height: 23rem;
+        height: 10rem;
       }
     }
 
@@ -161,16 +161,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding: 5% 10%;
 
       @include respond(tab-land) {
-        padding: 15% 20%;
+        padding: 5% 5%;
       }
 
       @include respond(tab-port) {
-        padding: 10% 15%;
+        padding: 5px 5px;
       }
 
       @include respond(bootstrap_768) {
         color: white;
-        position: absolute;
+      //  position: absolute;
       }
 
       h2 {
@@ -178,10 +178,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-weight: 400;
         text-align: center;
         padding-bottom: 20px;  
-        color: #001B69;     
+        color: white;     
 
         @include respond(phone) {
           font-size: 1.5rem;
+          padding-bottom: 10px;  
         }
       }
       p {
@@ -189,11 +190,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-size: 1.3rem;
         line-height: 40px;
         font-weight: 500;
-        font-family: "amiri";
+        
 
         @include respond(phone) {
           font-size: 1rem;
-          margin-top: 3rem;
+          margin-top: 0.5rem;
         }
       }
     }

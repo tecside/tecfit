@@ -306,11 +306,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 * {
-  font-family: "Raleway", serif;
+  font-family: "Inter", serif;
 }
 
 body {
-  font-family: "Raleway", serif;
+  font-family: "Inter", serif;
   scroll-behavior: smooth;
 }
 
@@ -344,7 +344,7 @@ html {
 
 p {
   font-size: 2rem;
-  font-family: Georgia, sans-serif;
+  font-family: "Inter", sans-serif;
   color: #2c2525;
 }
 
@@ -368,7 +368,7 @@ li {
 
 h1 {
   color: #000;
-  font-family: "Gilroy";
+  font-family: "Inter";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
@@ -377,12 +377,12 @@ h1 {
 
 h4,
 h3 {
-  font-family: "Gilroy";
+  font-family: "Inter";
 }
 
 h5 {
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Inter";
   font-style: italic;
   font-weight: 800;
   font-size: 32px;
@@ -390,7 +390,7 @@ h5 {
 
 h6 {
   color: #333333;
-  font-family: "Raleway";
+  font-family: "Inter";
   font-weight: 400;
   font-size: 15px;
 }
@@ -409,7 +409,7 @@ p {
   border-radius: 8px;
   background-color: #001657;
   color: #fff;
-  font-family: "Raleway";
+  font-family: "Inter";
   font-weight: 600;
   font-size: 17px;
   align-items: center;
@@ -446,7 +446,7 @@ p {
 
 .benefits-info h2 {
   color: #000;
-  font-family: "Gilroy";
+  font-family: "Inter";
   font-weight: 700;
   font-size: 30px;
   width: auto;
@@ -522,7 +522,7 @@ p {
 
 .getknow h4,
 .getknow h3 {
-  font-family: "Gilroy";
+  font-family: "Inter";
   color: #021b69;
 }
 
@@ -650,7 +650,7 @@ p {
 }
 
 .see-d a {
-  font-family: "Gilroy";
+  font-family: "Inter";
   font-weight: 500;
   font-size: 15px;
 }
@@ -662,7 +662,7 @@ p {
 }
 
 .p-price b {
-  font-family: "Gilroy";
+  font-family: "Inter";
   font-weight: 800;
 }
 
