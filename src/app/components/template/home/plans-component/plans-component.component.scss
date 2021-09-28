@@ -12,7 +12,9 @@
 }
 
 .planos-bg{
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/assets/home/plans/bg1.jpg')
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("/../../../assets/home/plans/bg1.jpg");
+
+   
 }
 
 @media (max-width: 700px) {
