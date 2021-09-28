@@ -1,11 +1,11 @@
 <section id="benefits">
   
-  <h2 class="pt-5 pb-5">Your benefits with the TECFIT Coach</h2>
+  <h2 class="pt-5 pb-5">{{ "BENEFITS.TITLE" | translate }}</h2>
 
 
   <div>
     <img (click)="slide(false)" src="../../../assets/home/plans/prev.svg" alt="icon" width="30px" class="arrow">
-    <swiper #slides class="swiper" (swiper)="onSwiper($event)" [spaceBetween]="30" [breakpoints]="{
+    <swiper #slides class="swiper" (swiper)="onSwiper($event)" [loop]="true" [spaceBetween]="30" [breakpoints]="{
         '700': {
           slidesPerView: 1
         },
@@ -20,31 +20,28 @@
         <div class="card">
           <img src="../../../assets/workout/benefit1.svg" alt="icon" width="40px" />
           <br><br>
-          <p>Track your effort during Cardio classes with Fiit Points. The higher up the zone you are, the more points
-            you earn. Keep coming back to beat your score.</p>
+          <p>{{ "BENEFITS.BENEFIT1" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
           <img src="../../../assets/workout/benefit2.svg" alt="icon" width="40px" />
           <br><br>
-          <p>Customized training sessions that you can do any time, anywhere, with or without equipment</p>
+          <p>{{ "BENEFITS.BENEFIT2" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
           <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
           <br><br>
-          <p>Training tips for beginners and advanced athletes. You can create
-            your own workouts, share with friends and families </p>
+          <p>{{ "BENEFITS.BENEFIT3" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
           <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
           <br><br>
-          <p>Training tips for beginners and advanced athletes. You can create
-            your own workouts, share with friends and families </p>
+          <p>{{ "BENEFITS.BENEFIT4" | translate }}</p>
         </div>
       </ng-template>
     </swiper>

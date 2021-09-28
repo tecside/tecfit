@@ -34,8 +34,6 @@
               </p>
               <p>
                 {{ "ABOUT.BEHINDTECFITDESC2" | translate }}
-                <br>
-                {{ "ABOUT.BEHINDTECFITDESC3" | translate }}
               </p>
             </div>
           </div>
@@ -48,8 +46,6 @@
             </p>
             <p>
               {{ "ABOUT.BEHINDTECFITDESC2" | translate }}
-              <br>
-              {{ "ABOUT.BEHINDTECFITDESC3" | translate }}
             </p>
           </div>
         </div>
@@ -146,7 +142,7 @@
     </div>
   </section>
 
-  <swiper class="swiper d-none d-md-block" [autoplay]="true" (swiper)="onSwiper($event)"
+  <swiper class="swiper d-none d-md-block" [autoplay]="false" (swiper)="onSwiper($event)"
     (slideChange)="onSlideChange()" [breakpoints]="{
       '640': {
         slidesPerView: 2

@@ -17,18 +17,20 @@ export class AboutUsComponent implements OnInit {
   constructor() {
 
     this.timeline = [
-      { caption: '2019', date: new Date(2015, 1, 16), selected: true, title: 'Idealização', content: '' },
-      { caption: '2020', date: new Date(2016, 5, 16), title: 'Criação', content: '' },
-      { caption: '2021', date: new Date(2017, 5, 16), title: 'Prmeiras', content: '' },
-      { caption: '2021', date: new Date(2018, 5, 16), title: 'Expansão', content: '' },
-      { caption: '2020', date: new Date(2019, 5, 16), title: 'Plataforma Fitness', content: '' },
+      { caption: '2019', date: new Date(2019, 12, 1), selected: true, title: 'A ideia nasce', content: 'A ideia nasce' },
+      { caption: '2020', date: new Date(2020, 6, 1), title: 'A ideia ganha um nome', content: 'A ideia ganha um nome' },
+      { caption: '2020', date: new Date(2021, 12, 1), title: 'A equipa foi criada', content: 'A equipa foi criada' },
+      { caption: '2021', date: new Date(2022, 6, 1), title: 'Primeira sessão ao vivo no Instagram', content: 'Primeira sessão ao vivo no Instagram' },
+      { caption: '2021', date: new Date(2023, 12, 1), title: 'Última sessão ao vivo no Instagram', content: 'Última sessão ao vivo no Instagram' },
+      { caption: '2021', date: new Date(2024, 12, 1), title: 'O grupo é reduzido para os actuais membros', content: 'O grupo é reduzido para os actuais membros' },
     ];
     this.timeline2 = [
-      { caption: '2019', date: new Date(2015, 1, 16), selected: true, title: 'Idealization', content: '' },
-      { caption: '2020', date: new Date(2016, 5, 16), title: 'Creation', content: '' },
-      { caption: '2021', date: new Date(2017, 5, 16), title: 'First', content: '' },
-      { caption: '2021', date: new Date(2018, 5, 16), title: 'Expansion', content: '' },
-      { caption: '2020', date: new Date(2019, 5, 16), title: 'Fitness Platform', content: '' },
+      { caption: '2019', date: new Date(2019, 12, 1), selected: true, title: 'The idea is born', content: 'The idea is born' },
+      { caption: '2020', date: new Date(2020, 6, 1), title: 'The idea gains a name', content: 'The idea gains a name' },
+      { caption: '2020', date: new Date(2021, 12, 1), title: 'The team is created', content: 'The team is created' },
+      { caption: '2021', date: new Date(2022, 6, 1), title: 'First live session on Instagram', content: 'First live session on Instagram' },
+      { caption: '2021', date: new Date(2023, 12, 1), title: 'Last live session on Instagram', content: 'Last live session on Instagram' },
+      { caption: '2021', date: new Date(2024, 12, 1), title: 'The group is reduced to the current members', content: 'The group is reduced to the current members' },
     ];
   }
 

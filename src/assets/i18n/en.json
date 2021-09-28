@@ -9,8 +9,8 @@
     "BTN": "Start Now"
   },
   "HOME": {
-    "TITLE1": "Choose your warrior path emerge into the journey",
-    "DESC1": "Get access to thousands of workouts inspired by African most ruthless warriors and royals. Soba is here to help you find the perfect training program.",
+    "TITLE1": "Choose your warrior path and emerge into the journey of the ancient",
+    "DESC1": "Get access to thousands of workouts inspired by African royals. Soba is here to help you find the perfect training program.",
     "BTN1": "Register",
     "BTN2": "Log In",
     "OURPROGRAMS": "Our Programs",
@@ -18,21 +18,89 @@
     "STAMINA": "Stamina",
     "MOBILITY": "Mobility",
     "GAINMUSCLE": "Gain Muscle",
-    "TAKEPROGRAMS": "Take programs tailored to your fitness goal",
-    "DESC2": "Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers. Find your journey and start sem mais demoraaaass. Get unlimited access to thousands of workouts and programs, created and guided by our certified trainers",
-    "BTN3": "Discover" 
+    "TAKEPROGRAMS": "Take programs tailored to your fitness goals",
+    "DESC2": "Fitness programs are not one size fits all, and Soba is aware of this. So instead, transform your health, fitness and mindset with a program tailored to your goals.",
+    "BTN3": "Discover"
+  },
+  "AMBASSADORS": {
+    "TOP": "Ambassador",
+    "TITLE": "Become one of ours ambassadors",
+    "TEXT1":"We proactively seek athletes, influencers and gym enthusiasts to wear our products and represent the principles and values of our company.",
+    "TEXT2": "We usually do not accept unsolicited sponsorship requests, but if you have been training with us for a reasonable period and believe that you can represent us, get in contact."
+  },
+  "BENEFITS": {
+    "TITLE": "Your fitness benefits with Soba",
+    "BENEFIT1": "Track your progress and record your transformation by adding photos of your journey.",
+    "BENEFIT2": "We have customised training sessions that can be done any time, anywhere, with or without equipment.",
+    "BENEFIT3": "Soba gives training hints for beginners and advanced athletes. ",
+    "BENEFIT4": "You can create your workouts and share them with friends and family."
+  },
+  "WORKOUTS": {
+    "TITLE": "Achieve your fitness goal now, from your home",
+    "CHALENGE": "Challenge Yourself",
+    "POINT1": "Track your progress during your journey",
+    "POINT2": "See live stats and track progress week on week",
+    "POINT3": "Find your ideal Training Journey",
+    "POINT4": "Integrate your trainings into your schedule",
+    "POINT5": "Receive customized training sessions"
+  },
+  "MULTIPROTEIN": {
+    "TITLE1": "Be the fitness Masterchef.",
+    "TITLE2": "Eat better. Reach your goals.",
+    "CARD1": "Heathy Food",
+    "CARD2": "Unique Results",
+    "CARD3": "Tasty Food",
+    "CARD4": "Tailored Meals",
+    "TEXT": "Multiprotein is the perfect combination of tasteful and healthy meals. Our goal is to prove that more nutritious food does not necessarily mean tasteless food. With Multiprotein, you can create your shopping list, track what you have been eaten and more importantly, be the fitness MasterChef."
+  },
+  "PLANS": {
+    "TITLE": "Transform your health, fitness and mindset",
+    "PLAN1": {
+      "TITLE": "Wagadu Plan",
+      "POINT1": "Custom training plans",
+      "POINT2": "Unlimited Recipes",
+      "POINT3": "Calorie tracker",
+      "PRICE": "XX €"
+    },
+    "PLAN2": {
+      "TITLE": "Songhai Plan",
+      "SUBTITLE": "Family Subscription",
+      "POINT1": "Custom training plans",
+      "POINT2": "Unlimited Recipes",
+      "POINT3": "Calorie tracker",
+      "POINT4": "Training creator tool",
+      "PRICE": "XX €"
+    },
+    "PLAN3": {
+      "TITLE": "Kush Plan",
+      "SUBTITLE": "Student Subscription",
+      "POINT1": "Custom training plans",
+      "POINT2": "Unlimited Recipes",
+      "POINT3": "Calorie tracker",
+      "POINT4": "Training creator tool",
+      "PRICE": "XX €"
+    },
+    "PLAN4": {
+      "TITLE": "Mutapa Plan",
+      "POINT1": "100 recipes",
+      "POINT2": "Calorie Tracker",
+      "POINT3": "Training creator tool",
+      "PRICE": "XX €"
+    },
+    "SEEMORE": "See More",
+    "FORONLY": "For Only",
+    "PERMONTH": "per Month"
   },
   "ABOUT": {
     "TITTLE": "History and Mission",
     "SECONDTITTLE": "First African Fitness App",
     "BEHINDTECFIT": "Behind Tecfit",
-    "BEHINDTECFITDESC1": "In 2019, Fernando, as a fitness enthusiast, had the desire to create a fitness application with one of his friends. At that time, he did not have the resources to advance the idea, but everything changed when three of his best friends founded TecSide, a software company led by Vanilson, Guilherme and Edson.",
-    "BEHINDTECFITDESC2": "After listening to his friend, Vanilson was amazed by the idea and aimed to make Tecfit one of the first African fitness applications.",
-    "BEHINDTECFITDESC3": "Due to his desire, Guilherme and Edson, as two founding members of TecSide, agreed that they should be part of the project and create a reliable and affordable fitness application.",
+    "BEHINDTECFITDESC1": "In 2019, one of our friends, a fitness enthusiast, wanted to create a fitness application with one of his friends. At that time, he did not have the resources to advance the idea, but everything changed when Vanilson, Guilherme and Edson founded Tecside. ",
+    "BEHINDTECFITDESC2": "After listening to our friend, we were amazed by the idea and aimed to make Tecfit one of the first African fitness applications, and the rest is... body, mind and soul.",
     "OURMISSION": "Our Mission",
-    "MISSION1": "To empower and inspire the every generation",
-    "MISSION2": "Create products and experiences capable of changing people’ s lives",
-    "MISSION3": "To help everyone to go further by challenging their limits",
+    "MISSION1": "To empower and inspire the younger generation to have a healthier and more productive life.",
+    "MISSION2": "Design products and experiences capable of changing people’s lives.",
+    "MISSION3": "To help everyone to go further and beyond by challenging them not to let nobody define them.",
     "CONTACTUS": "Contact Us",
     "CHOOSEENQUIRY": "Choose your enquiry below",
     "ENQUERY1-1": "Brand",
@@ -45,12 +113,7 @@
     "VANILSON": {
       "NAME": "Vanilson Maiala",
       "ROLE": "Partner Manager",
-      "DESC": "Vanilson Maiala is a co-founder of TecSide and Tecfit and has served as the partner manager since the foundation of both projects. Vanilson attended the University of East London, where he graduated in Business Management. In 2020, he decided to move to Portugal to open a Tecside’s branch in Portugal while completing his masters."
-    },
-    "FERNANDO": {
-      "NAME": "Fernando Sapalo",
-      "ROLE": "Commercial Manager",
-      "DESC": "Fernando Sapalo is a co-founder of Tecfit, he has been involved with all the projects of Tecside since its foundation; and he serves as the Commercial Manager of the company. Fernando attended the University Autónoma de Lisboa (UAL). In 2020 he started a post-graduate course in Banking Management, Insurance and Financial Markets at Lusófona University."
+      "DESC": "Vanilson Maiala is a co-founder of TecSide and Tecfit and has served as the partner manager since the foundation of both projects. Vanilson attended the University of East London, where he graduated in Business Management. In 2020 he started to manage Tecside’s office in Portugal while concluding his Masters in Management and Information Systems."
     },
     "DAVID": {
       "NAME": "David Marques",
@@ -60,22 +123,22 @@
     "GUILHERME": {
       "NAME": "Guilherme Jafar",
       "ROLE": "Technology and Information Manager",
-      "DESC": "Guilherme Jafar is a co-founder of Tecside and Tecfit and has served as a Technology and Information Manager. Known due to their excellent mind and capabilities, Guilherme is a Software Engineer who graduated from Escola Superior de Tecnologia e Gestão de Oliveira do Hospital (ESTGOH)."
+      "DESC": "Guilherme Jafar is a co-founder of Tecside and Tecfit and has served as a Technology and Information Manager. Known for their excellent mind and capabilities, he is a Software Engineer who graduated from Escola Superior de Tecnologia e Gestão de Oliveira do Hospital (ESTGOH)."
     },
     "REJANNE": {
       "NAME": "Rejanne Napoleão",
       "ROLE": "Head of the Marketing department",
-      "DESC": "Rejanne Napoleão is the head of the Marketing department. Graduated in Economics from Universidade Autónoma de Lisboa, Rejanne has a long road in the marketing and photography field. She started her photography journey when she was 12, and after few years, she embraced the marketing world, gaining experience in Portuguese and Angola companies."
+      "DESC": "Rejanne Napoleão is the head of the Marketing department. Graduated in Economics from Universidade Autónoma de Lisboa, Rejanne has a long road in the marketing and photography field. She started her photography journey when she was 12, and after few years, and embraced the marketing world, gaining experience in Portuguese and Angola companies."
     },
     "DIEGO": {
       "NAME": "Diego Moreso",
       "ROLE": "Business Developer",
-      "DESC": "Diego is the business developer of Tecfit; he attended Salford University, where he graduated in International Business. He was selected to be part of the Tecfit project due to his interpersonal skills and experience as a business developer."
+      "DESC": "Diego Moreso is the business developer of Tecfit; he attended Salford University, where he graduated in International Business. He was selected to be part of the Tecfit project due to his interpersonal skills and experience as a business developer."
     },
     "DANIEL": {
       "NAME": "Daniel Silva",
       "ROLE": "Market Analyst",
-      "DESC": "Daniel is the Market Analyst. He started by graduating from the best Portuguese school of sports as a sports manager, called FMH. Then, he decided to take his talents up a notch and join the Lisbon School of Economics and Management to do his MIM. He is a member of the company due to his networking skillset, work ethic and ambitious personality."
+      "DESC": "Daniel Silva is the Market Analyst. He started by graduating from the best Portuguese school of sports as a sports manager, called FMH. Then, he decided to take his talents up a notch and join the Lisbon School of Economics and Management to do his MIM. He is a member of the company due to his networking skill set, work ethic and ambitious personality."
     }
   }
 }
