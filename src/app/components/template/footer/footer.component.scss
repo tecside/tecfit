@@ -17,151 +17,153 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-450 {
+    @media only screen and (max-width: 28.125em) {
+      @content;
+    } //576px
+  }
 
+  @if $breakpoint == bootstrap_576 {
+    @media only screen and (max-width: 36em) {
+      @content;
+    } //576px
+  }
 
-    @if $breakpoint == phone-450{
-      @media only screen and (max-width: 28.125em) { @content };    //576px
-    }
-  
-    @if $breakpoint == bootstrap_576{
-      @media only screen and (max-width: 36em) { @content };    //576px
-    }
-  
-    @if $breakpoint == phone {
-      @media only screen and (max-width: 37.5em) { @content };    //600px
-    }
-  
-    @if $breakpoint == bootstrap_768{
-      @media only screen and (max-width: 47.8em) { @content };    //768px
-    }
-  
-    @if $breakpoint == tab-850{
-      @media only screen and (max-width: 53.125em) { @content };    //850px
-    }
-  
-    @if $breakpoint == tab-port {
-      @media only screen and (max-width: 62em) { @content };     //992px
-    }
-  
-    @if $breakpoint == tab-1100 {
-      @media only screen and (max-width: 68.75em) { @content };    //1100px
-    }
-  
-    @if $breakpoint == tab-land {
-      @media only screen and (max-width: 75em) { @content };    //1200px
-    }
-  
-    @if $breakpoint == big-desktop {
-      @media only screen and (max-width: 112.5em) { @content };    //1800
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint == bootstrap_768 {
+    @media only screen and (max-width: 47.8em) {
+      @content;
+    } //768px
+  }
+
+  @if $breakpoint == tab-850 {
+    @media only screen and (max-width: 53.125em) {
+      @content;
+    } //850px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 62em) {
+      @content;
+    } //992px
+  }
+
+  @if $breakpoint == tab-1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+.footer {
+  background-color: #0f0f0f;
+  padding: 6rem 5rem 2rem 5rem;
+
+  @include respond(bootstrap_768) {
+    padding: 3rem 0.5rem;
+  }
+
+  .footer-left {
+    border-top: 2px solid #ffffff;
+    width: 100%;
+
+    @include respond(bootstrap_768) {
+      border-top: none;
+      border-right: 1px solid white;
     }
   }
 
-.footer {
-
-    background-color: #0F0F0F;
-    padding: 6rem 5rem 2rem 5rem;
-
-    @include respond(bootstrap_768){
-        padding: 3rem 0.5rem;
-      };
-
-
-    .footer-left{
-        border-top: 2px solid #FFFFFF;
-        width: 100%;
-
-        @include respond(bootstrap_768){
-          border-top: none;
-          border-right: 1px solid white;
-        };
-    }
-    
-    .footer-center{
-        img{
-            position: relative;
-            top: -1rem;
-            width: 6rem;
-        }
-    
-        i{
-            color: white;
-            font-size: 1.2rem;
-        }
-    
-        hr{
-            width: 1px;
-            height: 6rem;
-            background-color: white;
-            opacity: 1;
-            box-shadow: none;
-            position: relative;
-            left: 50%;
-        }
-    
-        @include respond(bootstrap_768){
-            div{
-                border-top: 1px solid white;
-                border-bottom: 1px solid white;
-                padding: 0.5rem 0;
-                width: 13rem;
-
-            }
-        };
-    }
-    
-    
-    .footer-right{
-        border-top: 2px solid #FFFFFF;
-        width: 100%;
-    
-        .store-image{
-            margin-top: 2rem;
-            
-        }
-
-        @include respond(bootstrap_768){
-            border-top: none;
-          };
-    }
-    
-
-  
-    ul{
-        
-        padding: 1.5rem 0 0 0;
-     
+  .footer-center {
+    img {
+      position: relative;
+      top: -1rem;
+      width: 6rem;
     }
 
-    li{
-        list-style: none;
-        margin-bottom: 0.5rem;
+    i {
+      color: white;
+      font-size: 1.2rem;
     }
 
-    a{
-        color: white;
-        font-size: 1rem;
-        transition: all 0.2s;
-
-        &:hover{
-            color: #42454d;
-            text-decoration: none;
-            
-        }
+    hr {
+      width: 1px;
+      height: 6rem;
+      background-color: white;
+      opacity: 1;
+      box-shadow: none;
+      position: relative;
+      left: 50%;
     }
 
-    .store-image{
-        margin-top: 4rem;
-        width: 8rem;
+    @include respond(bootstrap_768) {
+      div {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 0.5rem 0;
+        width: 13rem;
+      }
     }
+  }
+
+  .footer-right {
+    border-top: 2px solid #ffffff;
+    width: 100%;
+
+    .store-image {
+      margin-top: 32px;
+    }
+
+    @include respond(bootstrap_768) {
+      border-top: none;
+    }
+  }
+
+  ul {
+    padding: 1.5rem 0 0 0;
+  }
+
+  li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    color: white;
+    font-size: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      color: #42454d;
+      text-decoration: none;
+    }
+  }
+
+  .store-image {
+    margin-top: 32px;
+    width: 8rem;
+  }
 }
 
-
-
-
-
 @media (max-width: 750px) {
-    footer {
-        text-align: center;
-        color: #fff;
-    }
+  footer {
+    text-align: center;
+    color: #fff;
+  }
 }
