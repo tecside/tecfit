@@ -40,7 +40,7 @@ import { ReceiptsVideoComponent, DialogVideoHomeComponent } from './components/t
 import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
 import { LoginComponent } from './components/login/login.component';
 export function HttpLoaderFactory(http: HttpClient){
-  return new TranslateHttpLoader(http)
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
 
 @NgModule({

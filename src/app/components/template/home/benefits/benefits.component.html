@@ -4,7 +4,7 @@
 
 
   <div>
-    <img (click)="slide(false)" src="../../../assets/home/plans/prev.svg" alt="icon" width="30px" class="arrow">
+    <img (click)="slide(false)" src="assets/home/plans/prev.svg" alt="icon" width="30px" class="arrow">
     <swiper #slides class="swiper" (swiper)="onSwiper($event)" [loop]="true" [spaceBetween]="30" [breakpoints]="{
         '700': {
           slidesPerView: 1
@@ -18,34 +18,34 @@
       }">
       <ng-template swiperSlide>
         <div class="card">
-          <img src="../../../assets/workout/benefit1.svg" alt="icon" width="40px" />
+          <img src="assets/workout/benefit1.svg" alt="icon" width="40px" />
           <br><br>
           <p>{{ "BENEFITS.BENEFIT1" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
-          <img src="../../../assets/workout/benefit2.svg" alt="icon" width="40px" />
+          <img src="assets/workout/benefit2.svg" alt="icon" width="40px" />
           <br><br>
           <p>{{ "BENEFITS.BENEFIT2" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
-          <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
+          <img src="assets/workout/benefit3.svg" alt="icon" width="40px" />
           <br><br>
           <p>{{ "BENEFITS.BENEFIT3" | translate }}</p>
         </div>
       </ng-template>
       <ng-template swiperSlide>
         <div class="card">
-          <img src="../../../assets/workout/benefit3.svg" alt="icon" width="40px" />
+          <img src="assets/workout/benefit3.svg" alt="icon" width="40px" />
           <br><br>
           <p>{{ "BENEFITS.BENEFIT4" | translate }}</p>
         </div>
       </ng-template>
     </swiper>
-    <img (click)="slide(true)" src="../../../assets/home/plans/next.svg" alt="icon" width="30px" class="arrow">
+    <img (click)="slide(true)" src="assets/home/plans/next.svg" alt="icon" width="30px" class="arrow">
   </div>
   <br><br><br><br><br><br>
 </section>

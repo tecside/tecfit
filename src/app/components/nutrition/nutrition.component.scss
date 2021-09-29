@@ -196,7 +196,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/assets/home/receipt-image.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../../../assets/home/receipt-image.jpg');
     background-position: center;
     background-size: cover;
 
