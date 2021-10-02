@@ -8,6 +8,7 @@ import { TermsComponent } from './components/terms/terms.component';
 import { PartnershipComponent } from './components/partnership/partnership.component';
 import { AmbassadorComponent } from './components/ambassador/ambassador.component';
 import { LoginComponent } from './components/login/login.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: "partnership",
     component: PartnershipComponent,
+  },
+  {
+    path: "faqs",
+    component: FaqsComponent,
   }
 ];
 

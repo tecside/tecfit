@@ -39,6 +39,7 @@ import { ProgramsComponent } from './components/template/programs/programs.compo
 import { ReceiptsVideoComponent, DialogVideoHomeComponent } from './components/template/home/receipts-video/receipts-video.component';
 import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
 import { LoginComponent } from './components/login/login.component';
+import { FaqsComponent } from './components/faqs/faqs.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -70,7 +71,8 @@ export function HttpLoaderFactory(http: HttpClient){
     DialogVideoHomeComponent,
     DialogVideoNutritionComponent,
     DialogVideoWorkoutComponent,
-    LoginComponent
+    LoginComponent,
+    FaqsComponent
   ],
   imports: [
     BrowserModule,

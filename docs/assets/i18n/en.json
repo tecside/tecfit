@@ -145,5 +145,17 @@
       "ROLE": "General Secretary",
       "DESC": "Rafael Graça is the General Secretary of TecSide and TecFit. Currently a second-year BCom financial management student at the IEE Varsity College Cape Town, South Africa. For two years, he was part of his university student body and an active member of Tecside projects, including Tecfit."
     }
+  },
+  "FAQS": {
+    "TOP": "FAQS",
+    "FREQUENTQUESTIONS": "Frequently asked questions",
+    "QUESTION1": "Account and details",
+    "QUESTION2": "Get to know the app",
+    "QUESTION3": "Soba experience",
+    "QUESTION4": "Training experience",
+    "QUESTION5": "Subscriptions ",
+    "QUESTION6": "Royals",
+    "QUESTION7": "Nutrition",
+    "QUESTION8": "Weight training"
   }
 }

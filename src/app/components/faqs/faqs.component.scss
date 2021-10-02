@@ -1,0 +1,82 @@
+header {
+  div {
+    background-image: url("../../../assets/ambassador/first.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    padding: 20px;
+    font-size: 2.2rem;
+
+    color: #fff;
+  }
+}
+
+hr {
+  orientation: unset;
+  height: 100px;
+  background-color: gray;
+}
+
+section {
+  display: flex;
+  margin: 30px;
+
+  h2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    color: #001658;
+  }
+
+  p,
+  li,
+  h5 {
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 25px;
+  }
+
+  p {
+    line-height: 35px;
+    font-size: 1rem;
+  }
+
+  #right {
+    border: solid 1px;
+    border-color: white white white black;
+  }
+}
+
+@media (max-width: 900px) {
+  #right {
+    border: hidden;
+    border-color: white white white white;
+  }
+}
+
+.accordion-button:hover {
+    background-color: white;
+  }
+  
+  .accordion-button {
+    background: white;
+  }
+  
+  .accordion-button:focus {
+    font-weight: bold;
+    color: rgb(3, 3, 58);
+  }
+  
+  .accordion-item {
+    border: 0px;
+  }
+  
+  .accordion-header {
+    border: 0px;
+  }
