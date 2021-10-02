@@ -173,19 +173,19 @@ ORDER: Base + typography > general layout + grid > page layout > components
         h2 {
           color: white !important;
         }
-      //  position: absolute;
+        //  position: absolute;
       }
 
       h2 {
         font-size: 2.5rem;
         font-weight: 400;
         text-align: center;
-        padding-bottom: 20px;  
-        color: #001658;     
+        padding-bottom: 20px;
+        color: #001658;
 
         @include respond(phone) {
           font-size: 1.5rem;
-          padding-bottom: 10px;   
+          padding-bottom: 10px;
         }
       }
       p {
@@ -193,7 +193,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
         font-size: 1.3rem;
         line-height: 40px;
         font-weight: 500;
-        
 
         @include respond(phone) {
           font-size: 1rem;
@@ -553,41 +552,87 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 
-  .swiper {
-    .img-fluid {
-      height: 30rem;
+  .desc {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+  }
 
-      @include respond(phone) {
-        height: auto;
-      }
+  .card {
+    border-radius: 10px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 85%;
+
+    margin-left: 30px;
+  }
+
+  .card:hover {
+    .desc {
+      display: flex;
     }
   }
-}
 
-.desc {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  display: none;
-  align-items: center;
-  justify-content: center;
+  ng-template {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-  div {
-    text-align: center;
-    margin: 0px 20px;
+  #vanilson {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/vanilson.jpg");
+    height: 90vh;
+  }
+
+  #guilherme {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/guilherme.jpg");
+    height: 90vh;
+  }
+
+  #rejanne {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/rejane.jpg");
+    height: 90vh;
+  }
+
+  #david {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/david.jpg");
+    height: 90vh;
+  }
+
+  #diego {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/diego.jpg");
+    height: 90vh;
+  }
+
+  #daniel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/daniel.jpg");
+    height: 90vh;
+  }
+
+  #rafael {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/teste.png");
+    height: 90vh;
   }
 }
-
-.hover {
-  display: flex;
-}
-
-.hover:hover {
-  .desc {
-    display: flex;
-  }
-}
-
-

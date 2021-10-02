@@ -207,3 +207,11 @@ button:hover,
 .cdk-overlay-dark-backdrop {
   background: rgba(0, 0, 0, 0.5);
 }
+
+.swiper-container-3d, .swiper-slide-shadow-left, .swiper-slide-shadow-right{
+  background-image: none !important;
+}
+
+.swiper-container-3d {
+  background-image: rgba(0,0,0,0.5);
+}
