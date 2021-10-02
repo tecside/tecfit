@@ -7,15 +7,21 @@ section {
   }
 
   .card {
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 10px;
     border: none;
 
     display: flex;
     justify-content: center;
     text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    width: 80%;
+
+    margin-left: 60px;
+    
   }
 
   #loseW {
