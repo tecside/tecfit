@@ -274,6 +274,15 @@ iframe {
   background-color: white;
 }
 
+.accordion-button {
+  background: white;
+}
+
+.accordion-button:focus {
+  font-weight: bold;
+  color: rgb(3, 3, 58);
+}
+
 .accordion-item {
   border: 0px;
 }
