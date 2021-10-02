@@ -79,7 +79,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 #treinos-banner {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../../../assets/workout/banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../../../assets/workout/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -88,11 +89,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: flex;
   align-items: flex-end;
 
-  @include respond(tab-port){
+  @include respond(tab-port) {
     height: 50vh;
   }
 
-  @include respond(phone){
+  @include respond(phone) {
     height: 30vh;
   }
 
@@ -102,54 +103,48 @@ ORDER: Base + typography > general layout + grid > page layout > components
     margin-left: 5rem;
     margin-bottom: 3rem;
     width: 40%;
-    line-height
-    : 100%;
+    line-height: 100%;
     font-weight: bold;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       font-size: 3rem;
     }
 
-    @include respond(tab-port){
+    @include respond(tab-port) {
       font-size: 2rem;
     }
 
-    @include respond(phone){
+    @include respond(phone) {
       font-size: 1.5rem;
       width: 100%;
       margin-left: 0;
       padding: 0.5rem;
     }
-
   }
 }
 
-
 .section-challenge {
   margin: 4rem 0;
-  h2{
+  h2 {
     font-weight: bolder;
     font-size: 1.5rem;
     font-style: italic;
 
-    @include respond( bootstrap_768){
+    @include respond(bootstrap_768) {
       text-align: center;
       margin-bottom: 2rem;
     }
   }
-  .right-side{
-  
-
-    p{
-      font-size: 1.2rem;
-      
-    }
-
-    .bi{
+  .right-side {
+    p {
       font-size: 1.2rem;
     }
 
-    .border-b{
+    .bi {
+      font-size: 1.2rem;
+    }
+
+    .border-b {
       border-bottom: 2px solid rgb(3, 3, 58);
       /* padding-right: 2rem;
       padding-left: 2rem; */
@@ -157,7 +152,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
   }
 }
-
 
 .info-app {
   padding: 5rem 0;
@@ -241,7 +235,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), url('/assets/workout/workout-image-video.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("/assets/workout/workout-image-video.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 2rem;
@@ -251,28 +246,39 @@ ORDER: Base + typography > general layout + grid > page layout > components
     color: black;
   }
   i:hover {
-
     color: white;
     cursor: pointer;
   }
 }
 
 video {
-    display: none;
+  display: none;
 }
 
+iframe {
+  width: 560px;
+  height: 315px;
 
-iframe{
-  width:560px;
-  height:315px;
-
-  @include respond(tab-850){
+  @include respond(tab-850) {
     width: 460px;
     height: 215px;
   }
 
-  @include respond(phone){
+  @include respond(phone) {
     width: 100%;
     height: 100%;
   }
+}
+
+.accordion-button:hover {
+  background-color: white;
+}
+
+.accordion-item {
+  border: 0px;
+}
+
+.accordion-header {
+  border: 0px;
+  border-bottom: 2px solid rgb(3, 3, 58);
 }

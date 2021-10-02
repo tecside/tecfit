@@ -11,53 +11,105 @@
       <div class="row">
         <div class="col-md-6">
           <!-- <h2 class="text-md-center mb-md-5 -md mt-5">{{ "WORKOUTS.CHALENGE" | translate }}</h2> -->
-          <img class="text-md-center mb-md-5 -md" width="70%" src="assets/workout/chalenge.jpeg" alt="chalenge">
+          <img class="text-md-center mb-md-5 -md" width="80%" src="assets/workout/chalenge.jpeg" alt="chalenge">
         </div>
         <div class="col-md-6">
-          <div class="d-flex right-side">
-
-            <i class="bi bi-arrow-right me-3"></i> 
+          <!-- <div class="d-flex right-side">
             <div class="border-b">
-              <p>{{ "WORKOUTS.POINT1" | translate }}</p>
+              <p>01 - {{ "WORKOUTS.POINT1" | translate }}</p>
             </div>
-           
-          </div>
-          <div class="d-flex right-side mt-5">
-
-            <i class="bi bi-arrow-right me-3"></i> 
-            <div class="border-b">
-              <p>{{ "WORKOUTS.POINT2" | translate }}</p>
-            </div>
-           
           </div>
 
           <div class="d-flex right-side mt-5">
-
-            <i class="bi bi-arrow-right me-3"></i> 
             <div class="border-b">
-              <p>{{ "WORKOUTS.POINT3" | translate }}</p>
+              <p>02 - {{ "WORKOUTS.POINT2" | translate }}</p>
             </div>
-           
           </div>
 
           <div class="d-flex right-side mt-5">
-
-            <i class="bi bi-arrow-right me-3"></i> 
             <div class="border-b">
-              <p>{{ "WORKOUTS.POINT4" | translate }}</p>
+              <p>03 - {{ "WORKOUTS.POINT3" | translate }}</p>
             </div>
-           
           </div>
 
           <div class="d-flex right-side mt-5">
-            
-            <i class="bi bi-arrow-right me-3"></i> 
             <div class="border-b">
-              <p>{{ "WORKOUTS.POINT5" | translate }}</p>
+              <p>04 - {{ "WORKOUTS.POINT4" | translate }}</p>
             </div>
-           
           </div>
-          
+
+          <div class="d-flex right-side mt-5">
+            <div class="border-b">
+              <p>05 - {{ "WORKOUTS.POINT5" | translate }}</p>
+            </div>
+          </div> -->
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                  01 - {{ "WORKOUTS.POINT1" | translate }}
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus, repudiandae accusantium tempora sint provident doloribus perferendis atque laboriosam illo, quo accusamus vero iure ullam, pariatur blanditiis vitae deserunt eos.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  02 - {{ "WORKOUTS.POINT2" | translate }}
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla obcaecati itaque aspernatur vitae consectetur voluptatem assumenda nesciunt alias maiores debitis? Atque repellendus cum laborum exercitationem neque aliquam dignissimos quaerat impedit?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  03 - {{ "WORKOUTS.POINT3" | translate }}
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates unde odit soluta aperiam. Quo consequatur ab sed eaque assumenda corrupti modi, dolore debitis, pariatur vel aspernatur nisi, deleniti dolores! Perspiciatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  04 - {{ "WORKOUTS.POINT4" | translate }}
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates unde odit soluta aperiam. Quo consequatur ab sed eaque assumenda corrupti modi, dolore debitis, pariatur vel aspernatur nisi, deleniti dolores! Perspiciatis.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                  05 - {{ "WORKOUTS.POINT5" | translate }}
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates unde odit soluta aperiam. Quo consequatur ab sed eaque assumenda corrupti modi, dolore debitis, pariatur vel aspernatur nisi, deleniti dolores! Perspiciatis.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -85,15 +137,15 @@
             <button class="btn btn-primary">Comece uma jornada</button>
           </div> -->
         </div>
-  
-  
+
+
         <div class="col-md-6">
           <div class="d-md-flex ms-5 d-none justify-content-between app">
             <img src="assets/nutrition/phone2.png" width="100%" />
             <!-- <img src="assets/nutrition/Grupo 4068.jpg" class="img-fluid" /> -->
             <!-- <img src="assets/nutrition/Grupo 4074.jpg" class="img-fluid" /> -->
           </div>
-  
+
           <div class="d-md-none d-block text-center app">
             <img src="assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto" />
           </div>
@@ -110,16 +162,16 @@
       </div>
     </div>
   </section>
- 
-  
+
+
 
 
   <section>
-    <div id="video" >
-        <i class="bi bi-play-circle" (click)="openDialog()"></i>
+    <div id="video">
+      <i class="bi bi-play-circle" (click)="openDialog()"></i>
     </div>
-  
-</section>
+
+  </section>
 
   <app-plans-component></app-plans-component>
 </main>

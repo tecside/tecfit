@@ -140,6 +140,11 @@
       "NAME": "Daniel Silva",
       "ROLE": "Market Analyst",
       "DESC": "Daniel Silva é o Analista de Mercado. Começou por se formar na melhor escola portuguesa de desporto como gestor desportivo, a FMH. Decidiu então levar os seus talentos para um nível superior e ingressar na Escola Superior de Economia e Gestão de Lisboa para fazer o seu Mestrado em Gestão."
+    },
+    "RAFAEL": {
+      "NAME": "Rafael Graça",
+      "ROLE": "Secretário Geral",
+      "DESC": "Rafael Graça é o Secretário Geral da TecSide e TecFit. Actualmente, estudante do segundo ano de Gestão Financeira no IIE Varsity College Cape Town, África do Sul. Por dois anos, ele fez parte da Associação de Estudantes da sua universidade e é um membro activo dos projectos da Tecside, incluindo a Tecfit."
     }
   }
 }
