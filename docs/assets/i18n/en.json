@@ -157,5 +157,14 @@
     "QUESTION6": "Royals",
     "QUESTION7": "Nutrition",
     "QUESTION8": "Weight training"
+  },
+  "CONTACTS": {
+    "TOP": "Contacts",
+    "TITLE": "Get in touch with us ",
+    "TEXT1": "We proactively seek athletes, influencers and gym enthusiast to wear our products and represent the principles and values of our company. We usually do not accepts unsolicited  sponsorships requests, but if you have been training with us for a good period and you believe that you can represent us get in contact with us."
+  },
+  "COOKIES": {
+    "TOP": "Cookies",
+    "TEXT1": "Below are some of the cookies that we and our partners use on Tecfit services. The specific cookies we use change over time and may vary from those described below. For more information on why we use cookies and the choices you have, please read our Cookie Use statement."
   }
 }

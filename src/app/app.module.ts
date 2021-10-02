@@ -40,6 +40,8 @@ import { ReceiptsVideoComponent, DialogVideoHomeComponent } from './components/t
 import { BenefitsComponent } from './components/template/home/benefits/benefits.component';
 import { LoginComponent } from './components/login/login.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -72,7 +74,9 @@ export function HttpLoaderFactory(http: HttpClient){
     DialogVideoNutritionComponent,
     DialogVideoWorkoutComponent,
     LoginComponent,
-    FaqsComponent
+    FaqsComponent,
+    ContactsComponent,
+    CookiesComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,8 @@ import { PartnershipComponent } from './components/partnership/partnership.compo
 import { AmbassadorComponent } from './components/ambassador/ambassador.component';
 import { LoginComponent } from './components/login/login.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
 
 const routes: Routes = [
   {
@@ -47,6 +49,14 @@ const routes: Routes = [
   {
     path: "faqs",
     component: FaqsComponent,
+  },
+  {
+    path: "contacts",
+    component: ContactsComponent,
+  },
+  {
+    path: "cookies",
+    component: CookiesComponent,
   }
 ];
 

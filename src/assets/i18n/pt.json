@@ -158,5 +158,14 @@
     "QUESTION6": "Realeza",
     "QUESTION7": "Nutrição",
     "QUESTION8": "Treino com pesos"
+  },
+  "CONTACTS": {
+    "TOP": "Contactos",
+    "TITLE": "Fale connosco",
+    "TEXT1": "Buscamos proativamente atletas, influenciadores e entusiastas da academia para vestir nossos produtos e representar os princípios e valores de nossa empresa. Normalmente não aceitamos pedidos de patrocínios não solicitados, mas se você já treina conosco há um bom período e acredita que pode nos representar, entre em contato conosco."
+  },
+  "COOKIES": {
+    "TOP": "Cookies",
+    "TEXT1": "Abaixo estão alguns dos cookies que nós e nossos parceiros usamos nos serviços da Tecfit. Os cookies específicos que nós Use a mudança ao longo do tempo e pode variar daquelas descritas abaixo. Para obter mais informações sobre por que usamos cookies e as opções que você tem, leia nossa declaração de uso de cookies."
   }
 }
