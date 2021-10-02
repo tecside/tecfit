@@ -4,7 +4,7 @@
         &nbsp;&nbsp; {{ "HOME.OURPROGRAMS" | translate }}
     </h2>
     <br>
-    <div>
+    <div id="swiper-div">
         <!-- <swiper #slides class="swiper" (swiper)="onSwiper($event)" [spaceBetween]="60"
             [breakpoints]="{
             '700': {
@@ -40,7 +40,7 @@
         </swiper> -->
 
         <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true"
-            [slidesPerView]="2" [loop]="false" [coverflowEffect]="{
+            [slidesPerView]="2" [loop]="true" [coverflowEffect]="{
           rotate: 0,
           stretch: 0,
           depth: 500,

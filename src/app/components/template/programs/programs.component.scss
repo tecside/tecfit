@@ -17,13 +17,13 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 75vh;
-    width: 80%;
+    height: 80vh;
+    width: 70%;
 
-    margin-left: 60px;
+    margin-left: 80px;
     
   }
-  
+
   #loseW {
     background-image: url("../../../../assets/programs/loseW.png");
   }
@@ -39,4 +39,9 @@ section {
   #gainM {
     background-image: url("../../../../assets/programs/gainM.png");
   }
+}
+
+#swiper-div {
+  width: 80%;
+  margin: auto;
 }
