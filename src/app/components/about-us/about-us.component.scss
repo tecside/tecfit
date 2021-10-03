@@ -138,7 +138,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 
     .image-box {
-      background-image: url("../../../assets/about-us/corporate-photos/first.jpg");
+      /* background-image: url("../../../assets/about-us/corporate-photos/first.jpg"); */
+      background-image: url("../../../assets/about-us/first.jpeg");
       background-size: cover;
       background-position: center;
       height: 100%;
