@@ -120,50 +120,45 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 #mobile {
-
   display: none;
 
-  .desc {
+  h2,
+  h1 {
+    color: white;
     text-align: center;
-    p,
-    h2 {
-      color: white;
+    font-size: 1.5rem;
+    margin-top: 5.5rem;
+  }
+
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #btn-div {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  #scroll-div {
+    text-align: center;
+    margin-bottom: 1rem;
+
+    img {
+      animation: go-down 1s infinite alternate;
     }
 
-    h2 {
-      padding-top: 5%;
-      padding-bottom: 4%;
-      font-size: 1.5rem;
-      line-height: 1.7rem;
-    }
-
-    p {
-      padding-bottom: 5%;
-      line-height: 1.5rem;
-      font-size: 1.1rem;
-    }
-
-    .btn-container {
-      display: flex;
-      justify-content: space-around;
-      padding-bottom: 10%;
-
-      button {
-        width: 7rem;
-        font-size: 1rem;
-        background-color: transparent;
-        border: 1px solid white;
+    @keyframes go-down {
+      from {
+        transform: translateY(15px);
       }
-
-      button:hover {
-        color: black;
-        background-color: white;
+      to {
+        transform: translateY(0);
       }
     }
   }
 
   img {
-    padding-top: 15%;
   }
 }
 

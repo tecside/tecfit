@@ -20,7 +20,7 @@ section {
     height: 80vh;
     width: 70%;
 
-    margin-left: 80px;
+    margin-left: 15%;
     
   }
 
@@ -44,5 +44,34 @@ section {
 #swiper-div {
   width: 80%;
   margin: auto;
+
+  margin-bottom: 5rem;
 }
 
+@media (max-width: 1000px) {
+  section {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  #swiper-div {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    .card {
+      height: 70vh;
+    }
+  }
+
+  #swiper-div {
+    margin-bottom: 1rem;
+  }
+}

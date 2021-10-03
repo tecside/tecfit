@@ -39,8 +39,16 @@
             </ng-template>
         </swiper> -->
 
-        <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [navigation]="true"
-            [slidesPerView]="2" [loop]="true" [coverflowEffect]="{
+        <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [navigation]="true" [loop]="true" [breakpoints]="{
+                '700': {
+                  slidesPerView: 1
+                },
+                '1000': {
+                  slidesPerView: 1
+                },
+                '1200': {
+                  slidesPerView: 2
+                }}" [coverflowEffect]="{
           rotate: 0,
           stretch: 0,
           depth: 500,
@@ -68,7 +76,5 @@
                 </div>
             </ng-template>
         </swiper>
-
     </div>
-    <br><br>
 </section>
