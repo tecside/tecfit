@@ -433,9 +433,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       url("../../../assets/about-us/corporate-photos/second.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 30rem;
-    position: relative;
-    background-attachment: fixed;
+    /* position: relative;
+    background-attachment: fixed; */
 
     h1 {
       background-color: transparent;
