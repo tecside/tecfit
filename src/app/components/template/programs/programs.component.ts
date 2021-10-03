@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { EffectCoverflow } from "swiper";
+import SwiperCore, { EffectCoverflow, Navigation } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([EffectCoverflow]);
+SwiperCore.use([EffectCoverflow, Navigation]);
 
 @Component({
   selector: 'app-programs',

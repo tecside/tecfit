@@ -1,8 +1,8 @@
 /* import { TimelineElement } from "./../horizontal-timeline/timeline-element"; */
 import { Component, OnInit } from "@angular/core";
-import SwiperCore, { EffectCoverflow } from "swiper/core";
+import SwiperCore, { EffectCoverflow, Navigation } from "swiper/core";
 
-SwiperCore.use([EffectCoverflow]);
+SwiperCore.use([EffectCoverflow, Navigation]);
 
 @Component({
   selector: "app-about-us",
@@ -44,6 +44,7 @@ export class AboutUsComponent implements OnInit {
   }
 
   onSwiper(swiper: any) {
+    
     
   }
   onSlideChange() {

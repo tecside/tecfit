@@ -3,7 +3,6 @@
 
 * {
   font-family: "Inter", serif;
-  
 }
 
 html,
@@ -208,10 +207,21 @@ button:hover,
   background: rgba(0, 0, 0, 0.5);
 }
 
-.swiper-container-3d, .swiper-slide-shadow-left, .swiper-slide-shadow-right{
+.swiper-container-3d,
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
   background-image: none !important;
 }
 
 .swiper-container-3d {
-  background-image: rgba(0,0,0,0.5);
+  background-image: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  border-radius: 10%;
 }
