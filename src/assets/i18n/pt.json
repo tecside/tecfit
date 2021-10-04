@@ -112,6 +112,9 @@
     "ENQUERY3-2": "tua jornada",
     "ENQUERY4-1": "Suporte ao",
     "ENQUERY4-2": "cliente",
+    "WORDS": [
+      "Stamina", "Mobilidade", "Ganhar Musculo", "Perder Gordura"
+    ],
     "VANILSON": {
       "NAME": "Vanilson Maiala",
       "ROLE": "Sócio Gerente",
