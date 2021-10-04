@@ -111,9 +111,12 @@
     "ENQUERY3-2": "your journey",
     "ENQUERY4-1": "Customer",
     "ENQUERY4-2": "support",
-    "WORDS": [
-      "Stamina", "Mobility", "Gain Muscle", "Lose Fat"
-    ],
+    "WORDS": {
+      "WORD1": "Stamina", 
+      "WORD2": "Mobility", 
+      "WORD3": "Gain Muscle", 
+      "WORD4": "Lose Fat"
+    },
     "VANILSON": {
       "NAME": "Vanilson Maiala",
       "ROLE": "Partner Manager",
