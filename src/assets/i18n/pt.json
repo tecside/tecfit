@@ -113,10 +113,13 @@
     "ENQUERY4-1": "Suporte ao",
     "ENQUERY4-2": "cliente",
     "WORDS": {
-      "WORD1": "Stamina", 
-      "WORD2": "Mobilidade", 
-      "WORD3": "Ganhar Musculo", 
-      "WORD4": "Perder Gordura"
+      "WORD1": "ENERGIA", 
+      "WORD2": "STAMINA", 
+      "WORD3": "CONDICIONAMENTO", 
+      "WORD4": "FORÇA",
+      "WORD5": "PESO",
+      "WORD6": "ESTILO DE VIDA",
+      "WORD7": "MENTE"
     },
     "VANILSON": {
       "NAME": "Vanilson Maiala",
