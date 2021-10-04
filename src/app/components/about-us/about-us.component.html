@@ -69,6 +69,23 @@
     </div>
   </section> -->
 
+  <section class="section-4">
+    <swiper [slidesPerView]="4" [loop]="true" [autoplay]="true" [spaceBetween]="0" [freeMode]="true" class="mySwiper">
+      <ng-template swiperSlide>
+        <h2>Stamina</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>Mobility</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>Gain Muscle</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>Lose Fat</h2>
+      </ng-template>
+    </swiper>
+  </section>
+
   <section class="section-5">
     <h1>"Creative minds work together"</h1>
 
@@ -258,8 +275,8 @@
     </ng-template>
   </swiper> -->
 
-  <swiper [effect]="'coverflow'" [navigation]="true" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="3" [spaceBetween]="0" [loop]="true"
-    [coverflowEffect]="{
+  <swiper [effect]="'coverflow'" [navigation]="true" [grabCursor]="true" [centeredSlides]="true" [slidesPerView]="3"
+    [spaceBetween]="0" [loop]="true" [coverflowEffect]="{
           rotate: 0,
           stretch: 0,
           depth: 300,
