@@ -14,6 +14,16 @@ export class NavbarComponent implements OnInit {
   constructor(public translate: TranslateServiceApp) { }
 
   ngOnInit(): void {
+    var navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 0) {
+        navbar!.style.backgroundColor = 'black'
+      } // > 0 ou outro valor desejado
+      else {
+        navbar!.style.backgroundColor = 'transparent'
+      }
+    });
   }
 
   openNav() {
