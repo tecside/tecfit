@@ -10,7 +10,7 @@
   margin: auto;
 }
 .glitch .glitch__item {
-  background: url("../../../../../assets/home/top.jpeg") no-repeat 50% 50% /cover;
+  background: url("../../../../../assets/home/teste/teste1.jpg") no-repeat 50% 50% /cover;
   background-position: center;
   height: 90%;
   width: 100%;
@@ -57,7 +57,7 @@
 
 @media (max-width: 450px) {
   .glitch {
-    height: 20vh;
+    height: 60vh;
   }
   .glitch .glitch__item {
     height: 100%;
