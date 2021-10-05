@@ -10,14 +10,60 @@
   margin: auto;
 }
 .glitch .glitch__item {
-  background: url("../../../../../assets/home/top.jpeg") no-repeat 50% 50% /
-    cover;
+  background: url("../../../../../assets/home/top.jpeg") no-repeat 50% 50% /cover;
+  background-position: center;
   height: 90%;
   width: 100%;
   top: 0;
   left: 0;
   position: absolute;
 }
+
+@media (max-width: 1200px) {
+  .glitch {
+    height: 90vh;
+  }
+  .glitch .glitch__item {
+    height: 80%;
+  }
+}
+
+@media (max-width: 950px) {
+  .glitch {
+    height: 50vh;
+  }
+  .glitch .glitch__item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .glitch {
+    height: 40vh;
+  }
+  .glitch .glitch__item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .glitch {
+    height: 30vh;
+  }
+  .glitch .glitch__item {
+    height: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .glitch {
+    height: 20vh;
+  }
+  .glitch .glitch__item {
+    height: 100%;
+  }
+}
+
 .glitch .glitch__item:nth-child(n + 2) {
   opacity: 0;
   animation-duration: var(--time-anim);
