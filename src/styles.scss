@@ -1,6 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~swiper/swiper-bundle";
 
+:root {
+  --color-text: #fff;
+  --color-bg: #000;
+  --color-link: #f9d77e;
+  --color-link-hover: #fff;
+  --color-info: #efc453;
+  --glitch-width: 100vw;
+  --glitch-height: 100vh;
+  --gap-horizontal: 10px;
+  --gap-vertical: 5px;
+  --time-anim: 4s;
+  --delay-anim: 2s;
+  --blend-mode-1: none;
+  --blend-mode-2: none;
+  --blend-mode-3: none;
+  --blend-mode-4: none;
+  --blend-mode-5: overlay;
+  --blend-color-1: transparent;
+  --blend-color-2: transparent;
+  --blend-color-3: transparent;
+  --blend-color-4: transparent;
+  --blend-color-5: #af4949;
+}
+
 * {
   font-family: "Inter", serif;
 }
@@ -217,7 +241,8 @@ button:hover,
   background-image: rgba(0, 0, 0, 0.5);
 }
 
-.swiper-button-prev:after, .swiper-button-next:after {
+.swiper-button-prev:after,
+.swiper-button-next:after {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   font-size: 30px;
