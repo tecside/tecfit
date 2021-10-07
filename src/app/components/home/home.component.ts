@@ -11,6 +11,15 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-  
+    var navbar = document.getElementById('navbar');
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > 0) {
+        navbar!.style.backgroundColor = 'black'
+      } // > 0 ou outro valor desejado
+      else {
+        navbar!.style.backgroundColor = 'transparent'
+      }
+    });
   }
 }
