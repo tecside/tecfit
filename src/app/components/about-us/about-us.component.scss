@@ -139,20 +139,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
     .image-box {
       /* background-image: url("../../../assets/about-us/corporate-photos/first.jpg"); */
-      background-image: url("../../../assets/about-us/first.jpeg");
+      /* background-image: url("../../../assets/about-us/first.jpeg");
       background-size: cover;
-      background-position: center;
+      background-position: center; */
       height: 100%;
+      color: black !important;
 
-      /*@include respond(bootstrap_768) {
-        background-image: linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
-          ),
-          url("../../../assets/about-us/corporate-photos/first.jpg");
-        height: 30rem;
-      }
-
+      /* @include respond(bootstrap_768) {
+        background-image: none;
+      } */
+      /*
       @include respond(phone) {
         height: 10rem;
       } */
@@ -603,42 +599,35 @@ ORDER: Base + typography > general layout + grid > page layout > components
   #vanilson {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/vanilson.jpg");
-    
   }
 
   #guilherme {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/guilherme.jpg");
-
   }
 
   #rejanne {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/rejane.jpg");
-
   }
 
   #david {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/david.jpg");
-
   }
 
   #diego {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/diego.jpg");
-
   }
 
   #daniel {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/daniel.jpg");
-
   }
 
   #rafael {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/teste.png");
-
   }
 }

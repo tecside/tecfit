@@ -1,6 +1,7 @@
 import { TranslateModule } from '@ngx-translate/core';
 import { Component, OnInit } from '@angular/core';
 import { TranslateServiceApp } from '../../../services/translate.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -11,11 +12,10 @@ export class NavbarComponent implements OnInit {
 
   open: boolean = false
 
-  constructor(public translate: TranslateServiceApp) { }
+  constructor(public translate: TranslateServiceApp, public router: Router) { }
 
   ngOnInit(): void {
-    var navbar = document.getElementById('navbar');
-    navbar!.style.backgroundColor = 'black'
+    
   }
 
   openNav() {

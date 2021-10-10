@@ -26,17 +26,13 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6 col-12">
-          <div class="image-box">
-            <div class="box-text d-none">
-              <h2 class="mb-3 text-center">{{ "ABOUT.BEHINDTECFIT" | translate }}</h2>
-              <p>
-                {{ "ABOUT.BEHINDTECFITDESC1" | translate }}
-              </p>
-              <p>
-                {{ "ABOUT.BEHINDTECFITDESC2" | translate }}
-              </p>
-            </div>
+          <div class="box-text" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+            <b>
+              <h1 style="font-size: 4rem; line-height: 5rem;">#THATS WHY <br>
+                WE MADE TECFIT</h1>
+            </b>
           </div>
+
         </div>
         <div class="col-md-6 col-12">
           <div class="box-text">
@@ -182,121 +178,6 @@
     </div>
   </section>
 
-  <!-- <swiper class="swiper d-none d-md-block" [autoplay]="false" (swiper)="onSwiper($event)"
-    (slideChange)="onSlideChange()" [breakpoints]="{
-      '640': {
-        slidesPerView: 2
-      },
-      '768': {
-        slidesPerView: 2
-      },
-      '1024': {
-        slidesPerView: 3
-      },
-      '1200': {
-        slidesPerView: 4
-      }
-    }">
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.VANILSON.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.VANILSON.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.VANILSON.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/vanilson.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.GUILHERME.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.GUILHERME.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.GUILHERME.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/guilherme.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.REJANNE.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.REJANNE.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.REJANNE.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/rejane.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.DAVID.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.DAVID.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.DAVID.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/david.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.DANIEL.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.DANIEL.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.DANIEL.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/daniel.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.DIEGO.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.DIEGO.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.DIEGO.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/diego.jpg" width="390px" />
-      </div>
-    </ng-template>
-    <ng-template swiperSlide class="center">
-      <div class="hover">
-        <div class="fade-in fade-out desc">
-          <div>
-            <h1>{{ "ABOUT.RAFAEL.NAME" | translate }}</h1>
-            <br>
-            <h4>{{ "ABOUT.RAFAEL.ROLE" | translate }}</h4>
-            <br>
-            <p>{{ "ABOUT.RAFAEL.DESC" | translate }}</p>
-          </div>
-        </div>
-        <img class="person-img" src="assets/about-us/corporate-photos/persons/teste.png" width="390px" />
-      </div>
-    </ng-template>
-  </swiper> -->
-
   <swiper [effect]="'coverflow'" [navigation]="true" [grabCursor]="true" [centeredSlides]="true" [breakpoints]="{
     '700': {
       slidesPerView: 2
@@ -305,7 +186,7 @@
       slidesPerView: 3
     },
     '1200': {
-      slidesPerView: 5
+      slidesPerView: 3
     }}" [spaceBetween]="0" [loop]="true" [coverflowEffect]="{
           rotate: 0,
           stretch: 0,

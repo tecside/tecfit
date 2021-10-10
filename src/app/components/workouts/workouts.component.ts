@@ -7,7 +7,7 @@ SwiperCore.use([Mousewheel]);
 @Component({
   selector: 'app-workouts',
   templateUrl: './workouts.component.html',
-  styleUrls: ['./workouts.component.scss']
+  styleUrls: ['./workouts.component.scss', './glitch.scss']
 })
 export class WorkoutsComponent implements OnInit {
 
