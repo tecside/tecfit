@@ -1,10 +1,18 @@
 section {
-    background-image: url("../../../../../assets/home/newtop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-image: url("../../../../../assets/home/newtop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    height: 170vh;
+  height: 170vh;
 
-    color: white;
+  color: white;
+}
+
+#teste {
+  height: 85vh;
+  background-image: url("../../../../../assets/teste.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
