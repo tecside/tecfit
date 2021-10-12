@@ -42,6 +42,10 @@ import { LoginComponent } from './components/login/login.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { CookiesComponent } from './components/cookies/cookies.component';
+import { NewTopComponent } from './components/template/home/new-top/new-top.component';
+import { NewProgramsComponent } from './components/template/new-programs/new-programs.component';
+import { WordsSlideComponent } from './components/template/home/words-slide/words-slide.component';
+import { MeetAmbassadorsComponent } from './components/template/home/meet-ambassadors/meet-ambassadors.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -76,7 +80,11 @@ export function HttpLoaderFactory(http: HttpClient){
     LoginComponent,
     FaqsComponent,
     ContactsComponent,
-    CookiesComponent
+    CookiesComponent,
+    NewTopComponent,
+    NewProgramsComponent,
+    WordsSlideComponent,
+    MeetAmbassadorsComponent
   ],
   imports: [
     BrowserModule,

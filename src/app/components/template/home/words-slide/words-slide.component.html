@@ -1,0 +1,37 @@
+<section>
+    <swiper [breakpoints]="{
+      '400': {
+        slidesPerView: 2
+      },
+      '700': {
+        slidesPerView: 2
+      },
+      '1000': {
+        slidesPerView: 4
+      },
+      '1200': {
+        slidesPerView: 5
+      }}" [loop]="true" [autoplay]="true" [spaceBetween]="0" [centeredSlides]="true" class="mySwiper">
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD1" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD2" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD3" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD4" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD5" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD6" | translate }}</h2>
+      </ng-template>
+      <ng-template swiperSlide>
+        <h2>{{ "ABOUT.WORDS.WORD7" | translate }}</h2>
+      </ng-template>
+    </swiper>
+  </section>

@@ -1,0 +1,40 @@
+<section id="programs">
+    <br>
+    <h2>
+        &nbsp;&nbsp; {{ "HOME.OURPROGRAMS" | translate }}
+    </h2>
+    <br>
+    <div id="swiper-div">
+        <swiper [grabCursor]="true" [navigation]="true" [spaceBetween] = "0" [loop]="true" [breakpoints]="{
+                '700': {
+                  slidesPerView: 2
+                },
+                '1000': {
+                  slidesPerView: 3
+                },
+                '1200': {
+                  slidesPerView: 5
+                }}" class="mySwiper">
+            <ng-template swiperSlide>
+                <div id="loseW" class="card">
+                    <h2>{{ "HOME.LOSEW" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="stamina" class="card">
+                    <h2>{{ "HOME.STAMINA" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="mobility" class="card">
+                    <h2>{{ "HOME.MOBILITY" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="gainM" class="card">
+                    <h2>{{ "HOME.GAINMUSCLE" | translate }}</h2>
+                </div>
+            </ng-template>
+        </swiper>
+    </div>
+</section>
