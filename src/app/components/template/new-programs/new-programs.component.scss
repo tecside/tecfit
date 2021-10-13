@@ -2,12 +2,13 @@ section {
   background-color: black;
 
   h2 {
-    color: white;
+    color: rgba($color: #fff, $alpha: 0.5);
     font-size: 2rem;
+    margin: 0px;
   }
 
   .card {
-    border-radius: 10px;
+
     border: none;
 
     display: flex;
