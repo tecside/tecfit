@@ -1,30 +1,109 @@
 <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
+    <br>
+
+    <swiper [breakpoints]="{
+        '400': {
+          slidesPerView: 1
+        },
+        '700': {
+          slidesPerView: 1
+        },
+        '1000': {
+          slidesPerView: 1
+        },
+        '1200': {
+          slidesPerView: 1
+        }}" [loop]="true" 
+        [autoplay] = "{
+            delay: 0
+          }" [spaceBetween]="0" [speed]="22000" [freeMode]="true" class="mySwiper">
+        <ng-template swiperSlide>
+            <div class="container-fluid">
                 <div class="row">
-                    <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
-                </div>
-                <br>
-                <div class="row">
-                    <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                    <div class="col">
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="../../../../../assets/home/exemplos/3.jpeg" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="../../../../../assets/home/exemplos/3.jpeg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <img class="img-fluid" src="../../../../../assets/home/exemplos/3.jpeg" alt="">
-            </div>
-            <div class="col">
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="container-fluid">
                 <div class="row">
-                    <img class="img-fluid" src="../../../../../assets/home/exemplos/1.jpeg" alt="">
-                </div>
-                <br>
-                <div class="row">
-                    <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                    <div class="col">
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="../../../../../assets/home/exemplos/6.jpeg" alt="">
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <img class="img-fluid" src="../../../../../assets/home/exemplos/2.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="../../../../../assets/home/exemplos/6.jpeg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="col">
-                <img class="img-fluid" src="../../../../../assets/home/exemplos/3.jpeg" alt="">
+        </ng-template>
+      </swiper>
+
+   <!--  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+                
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                
             </div>
         </div>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div> -->
+
+
+
+
+
+
+    <br>
 </section>
