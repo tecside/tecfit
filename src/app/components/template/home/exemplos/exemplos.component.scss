@@ -1,3 +1,75 @@
 section {
     background-color: black;
 }
+
+#pic-1,
+#pic-2,
+#pic-4,
+#pic-5,
+#pic-7,
+#pic-8,
+#pic-10,
+#pic-11 {
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pic-3,
+#pic-6,
+#pic-9,
+#pic-12 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 20px;
+}
+
+#pic-1 {
+    background-image: url("../../../../../assets/home/exemplos/1.jpeg");
+}
+
+#pic-2 {
+    background-image: url("../../../../../assets/home/exemplos/2.jpeg");
+}
+
+#pic-3 {
+    background-image: url("../../../../../assets/home/exemplos/3.jpeg");
+}
+
+#pic-4 {
+    background-image: url("../../../../../assets/home/exemplos/4.jpeg");
+}
+
+#pic-5 {
+    background-image: url("../../../../../assets/home/exemplos/5.jpeg");
+}
+
+#pic-6 {
+    background-image: url("../../../../../assets/home/exemplos/6.jpeg");
+}
+
+#pic-7 {
+    background-image: url("../../../../../assets/home/exemplos/1.jpeg");
+}
+
+#pic-8 {
+    background-image: url("../../../../../assets/home/exemplos/2.jpeg");
+}
+
+#pic-9 {
+    background-image: url("../../../../../assets/home/exemplos/3.jpeg");
+}
+
+#pic-10 {
+    background-image: url("../../../../../assets/home/exemplos/4.jpeg");
+}
+
+#pic-11 {
+    background-image: url("../../../../../assets/home/exemplos/5.jpeg");
+}
+
+#pic-12 {
+    background-image: url("../../../../../assets/home/exemplos/6.jpeg");
+}
