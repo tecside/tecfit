@@ -4,22 +4,29 @@ section {
   background-position: center;
   background-size: cover;
 */
-  height: 190vh; 
+  
 
   color: white;
 }
 
 #teste {
-  height: 80vh;
-  background-image: url("../../../../../assets/teste.svg");
+  background-color: #000000;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+
+  height: 80vh;
+
+  position: absolute;
+  top: 50%;
 }
+
+
+//////////////////////////////////////////
 
 .glitch {
   width: 100vw;
-  height: 110vh;
+  height: 180vh;
   max-width: 100%;
   position: relative;
   display: flex;
@@ -70,7 +77,7 @@ section {
 }
 
 .glitch .glitch__item {
-  background: url("../../../../../assets/home/teste/teste1.1.jpg") no-repeat 50%
+  background: url("../../../../../assets/home/newtop.jpg") no-repeat 50%
     50% / cover;
   background-position: center;
   height: 100%;
