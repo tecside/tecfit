@@ -9,12 +9,13 @@
             style="position: absolute; bottom: 0px; background-color: rgba(0, 0, 0, 0.6); min-height: 80vh; display: flex; align-items: center; max-width: 100%;">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col col-lg-7 col-md-7" style="display: flex; flex-direction: column; justify-content: center; padding-left: 6%;">
+                    <div class="col col-lg-7 col-md-7"
+                        style="display: flex; flex-direction: column; justify-content: center; padding-left: 6%;">
                         <div class="row">
                             <div style="display: flex; align-items: center;">
                                 <i style="margin-right: 2rem;"><img width="90%" src="assets/home/icons/1.svg"
                                         alt=""></i>
-                                <div>
+                                <div id="title-1" class="active">
                                     <h1>More than 150 workouts</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores
                                         placeat
@@ -28,7 +29,7 @@
                             <div style="display: flex; align-items: center;">
                                 <i style="margin-right: 2rem;"><img width="90%" src="assets/home/icons/2.svg"
                                         alt=""></i>
-                                <div>
+                                <div id="title-2">
                                     <h1>More than 150 workouts</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores
                                         placeat
@@ -42,7 +43,7 @@
                             <div style="display: flex; align-items: center;">
                                 <i style="margin-right: 2rem;"><img width="90%" src="assets/home/icons/3.svg"
                                         alt=""></i>
-                                <div>
+                                <div id="title-3">
                                     <h1>More than 150 workouts</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores
                                         placeat
@@ -56,7 +57,7 @@
                             <div style="display: flex; align-items: center;">
                                 <i style="margin-right: 2rem;"><img width="90%" src="assets/home/icons/4.svg"
                                         alt=""></i>
-                                <div>
+                                <div id="title-4">
                                     <h1>More than 150 workouts</h1>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores
                                         placeat
@@ -69,7 +70,8 @@
                     </div>
                     <div class="col col-lg-5 col-md-5">
                         <!-- <img class="fade-in" [src]="phone" alt=""> -->
-                        <swiper [effect]="'fade'" [autoplay]="true" [navigation]="false" [centeredSlides]="true" [breakpoints]="{
+                        <swiper [effect]="'fade'" [autoplay]="true" [navigation]="false" [centeredSlides]="true"
+                            [breakpoints]="{
                             '700': {
                               slidesPerView: 1
                             },
@@ -78,7 +80,8 @@
                             },
                             '1200': {
                               slidesPerView: 1
-                            }}" [spaceBetween]="0" [loop]="true" [pagination]="false">
+                            }}" [spaceBetween]="0" [loop]="false" [pagination]="false"
+                            (slideChange)="onSlideChange()">
                             <ng-template swiperSlide>
                                 <div style="text-align: center;">
                                     <img width="100%" src="assets/home/phones/phone1.png" alt="">
@@ -89,16 +92,16 @@
                                     <img width="100%" src="assets/home/phones/phone2.png" alt="">
                                 </div>
                             </ng-template>
-                            <!-- <ng-template swiperSlide>
+                            <ng-template swiperSlide>
                                 <div style="text-align: center;">
-                                    <img src="assets/home/phones/phone3.png" alt="">
+                                    <img width="100%" src="assets/home/phones/phone1.png" alt="">
                                 </div>
                             </ng-template>
                             <ng-template swiperSlide>
                                 <div style="text-align: center;">
-                                    <img src="assets/home/phones/phone4.png" alt="">
+                                    <img width="100%" src="assets/home/phones/phone2.png" alt="">
                                 </div>
-                            </ng-template> -->
+                            </ng-template>
                         </swiper>
                     </div>
                 </div>

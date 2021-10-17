@@ -12,30 +12,26 @@ SwiperCore.use([EffectFade, Autoplay]);
 export class NewTopComponent implements OnInit {
 
   actual: number = 0;
+  texts: Array<any> = [];
 
-  paths: string[] = [
-    'assets/home/phones/phone1.png', 
-    'assets/home/phones/phone2.png', 
-    'assets/home/phones/phone3.png', 
-    'assets/home/phones/phone4.png'
-  ]
-
-  phone: string = this.paths[this.actual];
-
-  constructor() { }
-
-  ngOnInit(): void {
-    this.changeAlone()
+  constructor() {
   }
 
-  changeAlone(): void {
-    setTimeout(() => {
-      this.actual++; 
-      if(this.actual == 4) {
-        this.actual = 0;
-      }
-      this.phone = this.paths[this.actual]      
-      this.changeAlone()
-    }, 3000)
+  ngOnInit(): void {
+    this.texts = [
+      document.getElementById("title-1"),
+      document.getElementById("title-2"),
+      document.getElementById("title-3"),
+      document.getElementById("title-4")
+    ]
+  }
+
+  onSlideChange(): void { 
+    this.texts[this.actual]?.classList.remove("active")
+    this.actual++;
+    if (this.actual == 4) {
+      this.actual = 0;
+    }
+    this.texts[this.actual]?.classList.add("active")
   }
 }

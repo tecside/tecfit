@@ -21,6 +21,25 @@ section {
   top: 50%;
 }
 
+#title-1,
+#title-2,
+#title-3,
+#title-4 {
+  color: rgba($color: #fff, $alpha: 0.6);
+}
+
+.active {
+
+  color: white !important;
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
 
 //////////////////////////////////////////
 
