@@ -156,6 +156,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
     .box-text {
       padding: 5% 10%;
+      padding-top: 3%;
 
       @include respond(tab-land) {
         padding: 5% 5%;

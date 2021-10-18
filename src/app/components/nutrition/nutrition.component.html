@@ -1,73 +1,20 @@
 <header>
   <app-navbar></app-navbar>
   <section class="header">
-    <h1>Multiprotein</h1>
+    <h1>Nutrilife</h1>
   </section>
 </header>
-<swiper class="swiper" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
-  [breakpoints]="{
-    '0': {
-      slidesPerView: 3
-    },
-    '768': {
-      slidesPerView: 4
-    },
-    '1024': {
-      slidesPerView: 4
-    }
-  }">
-  <ng-template swiperSlide>
-    <div class="hover">
-      <div class="fade-in fade-out desc">
-        <div>
-          <h1><b>{{ "MULTIPROTEIN.CARD1" | translate }}</b></h1>
-        </div>
-      </div>
-      <img src="assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" />
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div class="hover">
-      <div class="fade-in fade-out desc">
-        <div>
-          <h1><b>{{ "MULTIPROTEIN.CARD2" | translate }}</b></h1>
-        </div>
-      </div>
-      <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" />
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div class="hover">
-      <div class="fade-in fade-out desc">
-        <div>
-          <h1><b>{{ "MULTIPROTEIN.CARD3" | translate }}</b></h1>
-        </div>
-      </div>
-      <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" />
-    </div>
-  </ng-template>
-  <ng-template swiperSlide>
-    <div class="hover">
-      <div class="fade-in fade-out desc">
-        <div>
-          <h1><b>{{ "MULTIPROTEIN.CARD4" | translate }}</b></h1>
-        </div>
-      </div>
-      <img src="assets/nutrition/Product.jpg" class="img-fluid" />
-    </div>
-  </ng-template>
-</swiper>
 <section class="info-app">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div class="info text-center text-md-start">
-          <h2>{{ "MULTIPROTEIN.TITLE1" | translate }}</h2>
+          <h2>{{ "NUTRILIFE.TITLE1" | translate }}</h2>
           <br>
-          <h4>{{ "MULTIPROTEIN.TITLE2" | translate }}</h4>
+          <h4>{{ "NUTRILIFE.TITLE2" | translate }}</h4>
           <br>
           <p>
-            {{ "MULTIPROTEIN.TEXT" | translate }}
+            {{ "NUTRILIFE.TEXT" | translate }}
           </p>
         </div>
         <div class="d-xl-flex mt-5 justify-content-between d-none ">
@@ -115,4 +62,57 @@
 <section style="background-color: #239f3a;">
   <br>
 </section>
+<swiper class="swiper" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
+  [breakpoints]="{
+    '0': {
+      slidesPerView: 3
+    },
+    '768': {
+      slidesPerView: 4
+    },
+    '1024': {
+      slidesPerView: 4
+    }
+  }">
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>{{ "NUTRILIFE.CARD1" | translate }}</b></h1>
+        </div>
+      </div>
+      <img src="assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>{{ "NUTRILIFE.CARD2" | translate }}</b></h1>
+        </div>
+      </div>
+      <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>{{ "NUTRILIFE.CARD3" | translate }}</b></h1>
+        </div>
+      </div>
+      <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+  <ng-template swiperSlide>
+    <div class="hover">
+      <div class="fade-in fade-out desc">
+        <div>
+          <h1><b>{{ "NUTRILIFE.CARD4" | translate }}</b></h1>
+        </div>
+      </div>
+      <img src="assets/nutrition/Product.jpg" class="img-fluid" />
+    </div>
+  </ng-template>
+</swiper>
 <app-footer></app-footer>
