@@ -62,7 +62,7 @@
 <section style="background-color: #239f3a;">
   <br>
 </section>
-<swiper class="swiper" [spaceBetween]="0" [autoplay]="false" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
+<swiper class="swiper" [loop]="true" [spaceBetween]="0" [autoplay]="true" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
   [breakpoints]="{
     '0': {
       slidesPerView: 3
@@ -81,7 +81,8 @@
           <h1><b>{{ "NUTRILIFE.CARD1" | translate }}</b></h1>
         </div>
       </div>
-      <img src="assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" />
+      <!-- <img src="assets/nutrition/Grupo de máscara -1.jpg" class="img-fluid" /> -->
+      <img src="assets/nutrition/1.jpeg" class="img-fluid" />
     </div>
   </ng-template>
   <ng-template swiperSlide>
@@ -91,7 +92,8 @@
           <h1><b>{{ "NUTRILIFE.CARD2" | translate }}</b></h1>
         </div>
       </div>
-      <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" />
+     <!--  <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" /> -->
+      <img src="assets/nutrition/2.jpeg" class="img-fluid" />
     </div>
   </ng-template>
   <ng-template swiperSlide>
@@ -101,7 +103,8 @@
           <h1><b>{{ "NUTRILIFE.CARD3" | translate }}</b></h1>
         </div>
       </div>
-      <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" />
+<!--       <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" /> -->
+      <img src="assets/nutrition/3.jpeg" class="img-fluid" />
     </div>
   </ng-template>
   <ng-template swiperSlide>
@@ -111,7 +114,8 @@
           <h1><b>{{ "NUTRILIFE.CARD4" | translate }}</b></h1>
         </div>
       </div>
-      <img src="assets/nutrition/Product.jpg" class="img-fluid" />
+<!--       <img src="assets/nutrition/Product.jpg" class="img-fluid" /> -->
+      <img src="assets/nutrition/4.jpeg" class="img-fluid" />
     </div>
   </ng-template>
 </swiper>
