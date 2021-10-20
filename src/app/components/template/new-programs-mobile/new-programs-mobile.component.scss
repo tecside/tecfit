@@ -10,6 +10,7 @@ section {
   }
 
   .card {
+    border-radius: 10px;
     border: none;
 
     display: flex;
@@ -20,8 +21,15 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     height: 70vh;
-    width: 80%;
-    margin-left: 2rem;
+    width: 85%;
+
+    margin-left: 30px;
+  }
+
+  @media (max-width: 400px) {
+    .card {
+      height: 55vh;
+    }
   }
 
   #loseW {
