@@ -47,6 +47,8 @@ import { NewProgramsComponent } from './components/template/new-programs/new-pro
 import { WordsSlideComponent } from './components/template/home/words-slide/words-slide.component';
 import { MeetAmbassadorsComponent } from './components/template/home/meet-ambassadors/meet-ambassadors.component';
 import { ExemplosComponent } from './components/template/home/exemplos/exemplos.component';
+import { TopSlidesMobileComponent } from './components/template/home/top-slides-mobile/top-slides-mobile.component';
+import { NewProgramsMobileComponent } from './components/template/new-programs-mobile/new-programs-mobile.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -86,7 +88,9 @@ export function HttpLoaderFactory(http: HttpClient){
     NewProgramsComponent,
     WordsSlideComponent,
     MeetAmbassadorsComponent,
-    ExemplosComponent
+    ExemplosComponent,
+    TopSlidesMobileComponent,
+    NewProgramsMobileComponent
   ],
   imports: [
     BrowserModule,

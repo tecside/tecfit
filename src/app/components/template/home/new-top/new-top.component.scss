@@ -1,24 +1,29 @@
 section {
-  /* background-image: url("../../../../../assets/home/newtop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-*/
-  
-
   color: white;
 }
 
-#teste {
-  background-color: #000000;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
+#mobile {
+  display: none;
 
-  height: 80vh;
+  position: relative;
 
+  .top-slide {
+    text-align: center;
+
+    p {
+      margin: 0px 2.5rem;
+    }
+  }
+}
+
+#web-slides {
   position: absolute;
-  top: 50%;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
 }
 
 #title-1,
@@ -29,7 +34,6 @@ section {
 }
 
 .active {
-
   color: white !important;
 
   h1 {
@@ -38,6 +42,27 @@ section {
 
   p {
     font-size: 1rem;
+  }
+}
+
+#top-button {
+  position: absolute;
+  left: 70%;
+  top: 45%;
+  text-align: left;
+
+  h2 {
+    margin: 0px;
+  }
+
+  button {
+    background-color: transparent;
+    text-align: left;
+    padding: 0px;
+
+    img {
+      width: 50%;
+    }
   }
 }
 
@@ -96,8 +121,8 @@ section {
 }
 
 .glitch .glitch__item {
-  background: url("../../../../../assets/home/newtop.jpg") no-repeat 50%
-    50% / cover;
+  background: url("../../../../../assets/home/newtop.jpg") no-repeat 50% 50% /
+    cover;
   background-position: center;
   height: 100%;
   width: 100%;
@@ -108,19 +133,58 @@ section {
 
 @media (max-width: 1200px) {
   .glitch {
-    height: 90vh;
+    height: 180vh;
   }
   .glitch .glitch__item {
     height: 100%;
+  }
+  #title-1,
+  #title-2,
+  #title-3,
+  #title-4 {
+    color: rgba($color: #fff, $alpha: 0.6);
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  .active {
+    color: white !important;
+
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
 @media (max-width: 950px) {
   .glitch {
-    height: 50vh;
+    height: 100vh;
   }
   .glitch .glitch__item {
     height: 100%;
+  }
+
+  #web-slides {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  #outter-top-button {
+    display: none;
   }
 }
 
@@ -184,7 +248,6 @@ section {
   animation-name: glitch-anim-flash;
 }
 
-
 #buttons {
   position: relative;
   top: -50%;
@@ -197,14 +260,13 @@ section {
     padding: 1rem 0px;
     text-transform: uppercase;
   }
-  
+
   button:hover {
     color: #000000;
     background-color: rgba($color: #fff, $alpha: 0.6);
     border: 1px solid white;
   }
 }
-
 
 @keyframes glitch-anim-flash {
   0%,
@@ -496,4 +558,3 @@ section {
     clip-path: polygon(0 0, 0 0, 0 0, 0 0);
   }
 }
-
