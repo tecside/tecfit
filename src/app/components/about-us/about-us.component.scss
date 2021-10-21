@@ -629,6 +629,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
   #rafael {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("../../../assets/about-us/corporate-photos/persons/teste.png");
+      url("../../../assets/about-us/corporate-photos/persons/rafael.png");
+  }
+
+  #edson {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/edson.jpg");
+  }
+
+  #telson {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../assets/about-us/corporate-photos/persons/telson.jpg");
   }
 }

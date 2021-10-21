@@ -155,6 +155,16 @@
       "NAME": "Rafael Graça",
       "ROLE": "General Secretary",
       "DESC": "Rafael Graça is the General Secretary of TecSide and TecFit. Currently a second-year BCom financial management student at the IEE Varsity College Cape Town, South Africa. For two years, he was part of his university student body and an active member of Tecside projects, including Tecfit."
+    },
+    "EDSON": {
+      "NAME": "Edson Rocha",
+      "ROLE": "Cofounder",
+      "DESC": "Edson Rocha is a cofounder of Tecside and Tecfit and has served as the partner manager in Angola since the foundation of both projects. Edson attended the Instituto Superior Politécnico de Tecnologias e Ciências were he graduated in Computing Engineering (ISPTEC)."
+    },
+    "TELSON": {
+      "NAME": "Telson Kapassola",
+      "ROLE": "Technology and Business Developer",
+      "DESC": "Telson Kapassola is a Technology and Business Developer. Telson attended the Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC). Graduating in Computing Engineering is known for his ability and influence in the tech ecosystem and bringing innovative companies to the market."
     }
   },
   "FAQS": {

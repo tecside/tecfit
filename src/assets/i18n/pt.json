@@ -156,6 +156,16 @@
       "NAME": "Rafael Graça",
       "ROLE": "Secretário Geral",
       "DESC": "Rafael Graça é o Secretário Geral da TecSide e TecFit. Actualmente, estudante do segundo ano de Gestão Financeira no IIE Varsity College Cape Town, África do Sul. Por dois anos, ele fez parte da Associação de Estudantes da sua universidade e é um membro activo dos projectos da Tecside, incluindo a Tecfit."
+    },
+    "EDSON": {
+      "NAME": "Edson Rocha",
+      "ROLE": "Cofundador",
+      "DESC": "Edson Rocha é cofundador da Tecside e da Tecfit e atua como Sócio-gerente em Angola desde a fundação de ambos os projetos. O Edson frequentou o Instituto Superior Politécnico de Tecnologias e Ciências onde se licenciou em Engenharia Informática (ISPTEC)."
+    },
+    "TELSON": {
+      "NAME": "Telson Kapassola",
+      "ROLE": "Desenvolvedor de Tecnologia e Negócios",
+      "DESC": "Telson Kapassola é Desenvolvedor de Tecnologia e Negócios. Telson estudou o Instituto Superior Politécnico de Tecnologias e Ciências (ISPTEC). Formado em Engenharia de Computação, é conhecido por sua capacidade e influência no ecossistema tecnológico e por sua capacidade de trazer empresas inovadoras para o mercado."
     }
   },
   "FAQS": {
