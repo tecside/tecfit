@@ -250,3 +250,12 @@ button:hover,
   text-align: center;
   border-radius: 10%;
 }
+
+.swiper-pagination-bullet {
+  background: rgba(#fff, 0.8) !important;
+}
+
+
+.swiper-pagination-bullet-active {
+  color: white !important;
+}

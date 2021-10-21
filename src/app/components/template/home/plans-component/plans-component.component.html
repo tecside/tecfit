@@ -3,7 +3,7 @@
         <div class="planos-bg">
             <h1 class="p-header-txt" style="line-height: 2.6rem;">{{ "PLANS.TITLE" | translate }}</h1>
             <br>
-            <swiper #swiperWrapper class="swiper planos-card" [config]="config">
+            <swiper #swiperWrapper class="swiper planos-card" [config]="config" [pagination]="false">
                 <ng-template swiperSlide>
                     <div class="swiper-slide plano-slide">
                         <div class="tec-swiper-controllers">

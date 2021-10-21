@@ -19,7 +19,7 @@ export class PlansComponentComponent implements OnInit {
     watchSlidesProgress: true,
     navigation: false,
     keyboard: true,
-    pagination: { clickable: true },
+    pagination: { clickable: false },
     centeredSlides: true,
     loop: true,
     roundLengths: false,
