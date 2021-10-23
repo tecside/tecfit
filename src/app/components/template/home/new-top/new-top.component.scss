@@ -183,16 +183,16 @@ section {
   #outter-top-button {
     position: absolute;
     top: 30%;
-    right: 40%;
+    right: 43%;
     text-align: center;
     z-index: 1000;
 
     #top-button {
-      width: fit-content;
+      width: 15rem;
     }
 
     img {
-      width: 40% !important;
+      width: 80% !important;
     }
   }
 }
