@@ -4,7 +4,6 @@ section {
 
 #mobile {
   display: none;
-
   position: relative;
 
   .top-slide {
@@ -179,12 +178,22 @@ section {
 
   #mobile {
     display: block;
-    position: absolute;
-    bottom: 0px;
   }
 
   #outter-top-button {
-    display: none;
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    text-align: center;
+    z-index: 1000;
+
+    #top-button {
+      width: fit-content;
+    }
+
+    img {
+      width: 40% !important;
+    }
   }
 }
 
