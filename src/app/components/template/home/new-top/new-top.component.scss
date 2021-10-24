@@ -182,13 +182,25 @@ section {
 
   #outter-top-button {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 43%;
     text-align: center;
     z-index: 1000;
 
     #top-button {
       width: 15rem;
+
+      hr, h1 {
+        margin-bottom: 4rem !important;
+      }
+
+      h2, hr, h1 {
+        font-weight: bolder;
+      }
+
+      #wt {
+        display: none;
+      }
     }
 
     img {
