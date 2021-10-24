@@ -31,6 +31,7 @@
             </ul>
         </div>
     </section>
+    <app-exemplos class="web"></app-exemplos>
     <section id="mobile">
         <div id="black-section">
             <h2>{{ "AMBASSADOR.TITLE" | translate }}</h2>
@@ -55,9 +56,41 @@
                 </li>
             </ul>
         </div>
+        <swiper class="swiper" [loop]="true" [spaceBetween]="0" [autoplay]="true" [breakpoints]="{
+    '0': {
+      slidesPerView: 2
+    },
+    '768': {
+      slidesPerView: 4
+    },
+    '1024': {
+      slidesPerView: 4
+    }
+  }">
+            <ng-template swiperSlide>
+                <div>
+                    <img src="assets/nutrition/1.jpeg" class="img-fluid" />
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div>
+                    <img src="assets/nutrition/2.jpeg" class="img-fluid" />
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div>
+                    <img src="assets/nutrition/1.jpeg" class="img-fluid" />
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div>
+                    <img src="assets/nutrition/2.jpeg" class="img-fluid" />
+                </div>
+            </ng-template>
+        </swiper>
     </section>
-    <div id="final-section">
-    </div>
+    <!-- <div id="final-section">
+    </div> -->
 </main>
 <app-footer>
 </app-footer>

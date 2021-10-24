@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import Swiper, {Autoplay} from 'swiper';
+
+Swiper.use([Autoplay])
 
 @Component({
   selector: 'app-ambassador',

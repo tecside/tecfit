@@ -1,14 +1,16 @@
 <header>
   <app-navbar></app-navbar>
   <section class="header">
-    <h1>Nutrilife</h1>
+    <h1 style="text-align: center;">Nutrilife <br>
+      <button style="margin-top: 2rem; height: 3rem; padding: 0px; width: 9rem; font-size: 1rem;">{{ "NAVBAR.BTN" | translate }}</button>
+    </h1>
   </section>
 </header>
-<section id="mobile">
+<!-- <section id="mobile">
 
   <button>{{ "NAVBAR.BTN" | translate }}</button>
 
-</section>
+</section> -->
 <section class="info-app">
   <div class="container">
     <div class="row">
@@ -40,7 +42,7 @@
         </div>
 
         <div class="d-md-none d-block text-center app">
-          <img src="assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto"/>
+          <img src="assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto" />
         </div>
       </div>
     </div>
@@ -61,14 +63,14 @@
   <div id="video">
     <i class="bi bi-play-circle" (click)="openDialog()"></i>
   </div>
-  
+
 </section>
 
 <section style="background-color: #239f3a;">
   <br>
 </section>
-<swiper class="swiper" [loop]="true" [spaceBetween]="0" [autoplay]="true" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
-  [breakpoints]="{
+<swiper class="swiper" [loop]="true" [spaceBetween]="0" [autoplay]="true" (swiper)="onSwiper($event)"
+  (slideChange)="onSlideChange()" [breakpoints]="{
     '0': {
       slidesPerView: 2
     },
@@ -97,7 +99,7 @@
           <h1><b>{{ "NUTRILIFE.CARD2" | translate }}</b></h1>
         </div>
       </div>
-     <!--  <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" /> -->
+      <!--  <img src="assets/nutrition/Grupo de máscara -2.jpg" class="img-fluid" /> -->
       <img src="assets/nutrition/2.jpeg" class="img-fluid" />
     </div>
   </ng-template>
@@ -108,7 +110,7 @@
           <h1><b>{{ "NUTRILIFE.CARD3" | translate }}</b></h1>
         </div>
       </div>
-<!--       <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" /> -->
+      <!--       <img src="assets/nutrition/Grupo de máscara 14.jpg" class="img-fluid" /> -->
       <img src="assets/nutrition/3.jpeg" class="img-fluid" />
     </div>
   </ng-template>
@@ -119,7 +121,7 @@
           <h1><b>{{ "NUTRILIFE.CARD4" | translate }}</b></h1>
         </div>
       </div>
-<!--       <img src="assets/nutrition/Product.jpg" class="img-fluid" /> -->
+      <!--       <img src="assets/nutrition/Product.jpg" class="img-fluid" /> -->
       <img src="assets/nutrition/4.jpeg" class="img-fluid" />
     </div>
   </ng-template>
