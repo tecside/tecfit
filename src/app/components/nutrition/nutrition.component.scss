@@ -78,6 +78,22 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+#mobile {
+  display: none;
+  background-color: #239f3a;
+  text-align: center;
+}
+
+@media(max-width: 800px) {
+  #mobile {
+    display: block;
+
+    button {
+      margin: 2rem 0rem;
+    }
+  }
+}
+
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../../assets/nutrition/first.jpg");

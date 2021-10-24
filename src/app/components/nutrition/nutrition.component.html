@@ -4,6 +4,11 @@
     <h1>Nutrilife</h1>
   </section>
 </header>
+<section id="mobile">
+
+  <button>{{ "NAVBAR.BTN" | translate }}</button>
+
+</section>
 <section class="info-app">
   <div class="container">
     <div class="row">
@@ -35,7 +40,7 @@
         </div>
 
         <div class="d-md-none d-block text-center app">
-          <img src="assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto" />
+          <img src="assets/nutrition/Imagem 40.jpg" class="img-fluid mx-auto"/>
         </div>
       </div>
     </div>
@@ -65,7 +70,7 @@
 <swiper class="swiper" [loop]="true" [spaceBetween]="0" [autoplay]="true" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
   [breakpoints]="{
     '0': {
-      slidesPerView: 3
+      slidesPerView: 2
     },
     '768': {
       slidesPerView: 4
