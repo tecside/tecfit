@@ -13,7 +13,7 @@ header {
   h3 {
     padding: 20px;
     font-size: 2.2rem;
-   
+
     color: #fff;
   }
 }
@@ -24,7 +24,7 @@ hr {
   background-color: gray;
 }
 
-section {
+#web {
   display: flex;
   margin: 30px;
 
@@ -60,13 +60,62 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 700px;
-
 }
 
+#mobile {
+  display: none;
+  width: 100%;
+  text-align: center;
+  line-height: 2rem;
+  background-color: black;
+  color: white;
+  
+  h2 {
+    font-size: 1.6rem;
+    padding: 2rem 20px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0px 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #white-section {
+    padding-top: 2rem;
+    background-color: white;
+    color: black;
+
+    ul {
+      padding: 0px;
+      li {
+        list-style-type: none;
+        p {
+          padding: 0px;
+        margin: 0px;
+        padding-bottom: 0.8rem;
+        }
+        
+      }
+    }
+  }
+}
 
 @media (max-width: 900px) {
   #right {
     border: hidden;
     border-color: white white white white;
+  }
+
+  #final-section {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #web {
+    display: none;
   }
 }
