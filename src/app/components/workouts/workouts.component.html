@@ -2,7 +2,7 @@
   <app-navbar></app-navbar>
 </header>
 <main>
-  <section id="treinos-banner">
+  <section id="treinos-banner" class="web">
     <div class="glitch">
       <div class="glitch__item"></div>
       <div class="glitch__item"></div>
@@ -12,48 +12,18 @@
     </div>
     <h5 style="position: absolute;">{{ "WORKOUTS.TITLE" | translate }}</h5>
   </section>
-  <!-- <section id="treinos-banner">
-    <h5>{{ "WORKOUTS.TITLE" | translate }}</h5>
-  </section> -->
+
+  <section class="mobile">
+    <img src="../../../assets/workout/banner.jpg" class="img-fluid mt-5" alt="">
+  </section>
 
   <section class="section-challenge">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <!-- <h2 class="text-md-center mb-md-5 -md mt-5">{{ "WORKOUTS.CHALENGE" | translate }}</h2> -->
+        <div class="col-md-6 web">
           <img class="text-md-center mb-md-5 -md" width="65%" src="assets/workout/chalenge.png" alt="chalenge">
         </div>
-        <div class="col-md-6">
-          
-          <!-- <div class="d-flex right-side">
-            <div class="border-b">
-              <p>01 - {{ "WORKOUTS.POINT1" | translate }}</p>
-            </div>
-          </div>
-
-          <div class="d-flex right-side mt-5">
-            <div class="border-b">
-              <p>02 - {{ "WORKOUTS.POINT2" | translate }}</p>
-            </div>
-          </div>
-
-          <div class="d-flex right-side mt-5">
-            <div class="border-b">
-              <p>03 - {{ "WORKOUTS.POINT3" | translate }}</p>
-            </div>
-          </div>
-
-          <div class="d-flex right-side mt-5">
-            <div class="border-b">
-              <p>04 - {{ "WORKOUTS.POINT4" | translate }}</p>
-            </div>
-          </div>
-
-          <div class="d-flex right-side mt-5">
-            <div class="border-b">
-              <p>05 - {{ "WORKOUTS.POINT5" | translate }}</p>
-            </div>
-          </div> -->
+        <div class="col-md-12 col-lg-6">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -118,15 +88,14 @@
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
   </section>
 
  <!--  <app-programs></app-programs> -->
- <app-new-programs></app-new-programs>
+ <app-new-programs class="web"></app-new-programs>
+ <app-new-programs-mobile-programs class="mobile"></app-new-programs-mobile-programs>
 
   <section class="info-app">
     <div class="container">
@@ -166,9 +135,6 @@
         <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
           <a href="#" c class="text-end me-5"><img src="assets/home/PlayStore.png" class="img-fluid " /></a>
           <a href="#" class="text-start ms-5"><img src="assets/home/AppStore.png" class="img-fluid" /></a>
-        </div>
-        <div class="text-center d-block mt-3 d-xl-none">
-          <button class="btn btn-primary">Comece uma jornada</button>
         </div>
       </div>
     </div>

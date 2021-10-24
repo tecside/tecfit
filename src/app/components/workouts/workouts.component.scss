@@ -199,9 +199,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
     border-radius: 5px;
   }
 
-  .btn-primary {
-  }
-
   .app {
     .img-fluid {
       max-width: 40%;
@@ -236,7 +233,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   justify-content: center;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url("/assets/workout/workout-image-video.jpg");
+    url("../../../assets/workout/workout-image-video.jpg");
   background-position: center;
   background-size: cover;
   margin-bottom: 2rem;
@@ -290,4 +287,27 @@ iframe {
 .accordion-header {
   border: 0px;
   border-bottom: 2px solid rgb(3, 3, 58);
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+
+  .section-challenge {
+    margin-top: 1rem;
+  }
+
+  .info-app {
+    padding-top: 0px;
+  }
+
+  .web {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block;
+  }
 }

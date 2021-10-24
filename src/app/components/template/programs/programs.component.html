@@ -5,41 +5,7 @@
     </h2>
     <br>
     <div id="swiper-div">
-        <!-- <swiper #slides class="swiper" (swiper)="onSwiper($event)" [spaceBetween]="60"
-            [breakpoints]="{
-            '700': {
-              slidesPerView: 2
-            },
-            '1000': {
-              slidesPerView: 3
-            },
-            '1200': {
-              slidesPerView: 4
-            }
-          }">
-            <ng-template swiperSlide>
-                <div id="loseW" class="card">
-                    <h2>{{ "HOME.LOSEW" | translate }}</h2>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div id="stamina" class="card">
-                    <h2>{{ "HOME.STAMINA" | translate }}</h2>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div id="mobility" class="card">
-                    <h2>{{ "HOME.MOBILITY" | translate }}</h2>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div id="gainM" class="card">
-                    <h2>{{ "HOME.GAINMUSCLE" | translate }}</h2>
-                </div>
-            </ng-template>
-        </swiper> -->
-
-        <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [navigation]="true" [loop]="true" [breakpoints]="{
+        <!-- <swiper [effect]="'coverflow'" [grabCursor]="true" [centeredSlides]="true" [navigation]="true" [loop]="true" [breakpoints]="{
                 '700': {
                   slidesPerView: 1
                 },
@@ -75,6 +41,7 @@
                     <h2>{{ "HOME.GAINMUSCLE" | translate }}</h2>
                 </div>
             </ng-template>
-        </swiper>
+        </swiper> -->
+        <app-new-programs-mobile></app-new-programs-mobile>
     </div>
 </section>
