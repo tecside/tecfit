@@ -197,12 +197,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 .section-video {
-  padding: 3rem;
+  /* padding: 3rem; */
   background-color: #239f3a;
   height: 50rem;
 
   @include respond(phone) {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     height: 30rem;
   }
 
