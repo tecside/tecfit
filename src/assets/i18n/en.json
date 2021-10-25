@@ -38,6 +38,7 @@
     "BENEFIT4": "You can create your workouts and share them with friends and family."
   },
   "WORKOUTS": {
+    "TITLE0": "PROGRAMS",
     "TITLE": "Achieve your fitness goal now, from your home",
     "CHALENGE": "Challenge Yourself",
     "POINT1": "Track your progress during your journey",
@@ -93,11 +94,12 @@
     "FORONLY": "For Only",
     "PERMONTH": "per Month"
   },
+
   "ABOUT": {
     "TITTLE": "History and Mission",
     "SECONDTITTLE": "First African Fitness App",
     "BEHINDTECFIT": "Behind Tecfit",
-    "BEHINDTECFITDESC1": "Tecfit is a digital health application founded in 2020. We provide workouts, customisable plans and resources to help people to maintain healthy habits. With a custom combination of at-home and gyms exercises, our goal is to give our users the ability to achieve their goals in different ways and at an affordable price.",
+    "BEHINDTECFITDESC1": "Tecfit is a digital health application founded in 2020. With a custom combination of at-home and gyms exercises, our goal is to give our users the ability to achieve their goals in different ways and at an affordable price.",
     "BEHINDTECFITDESC2": "Our idea started during the pandemic, but our goal is to continue to exist for the next decades. With this in mind, at Tecfit, we combine the best of the young and past generations to create an outstanding service.",
     "OURMISSION": "Our Mission",
     "MISSION1": "We're on a mission to help people to become mentally and physically healthier with challenging workouts. This means that we are striving to empower people, allow them to gain confidence while challenging them to surpass their limits.",
