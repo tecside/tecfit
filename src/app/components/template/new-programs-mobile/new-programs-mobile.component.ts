@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { EffectCoverflow, Pagination } from 'swiper';
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination, EffectCoverflow]);
 
 @Component({
   selector: 'app-new-programs-mobile',
