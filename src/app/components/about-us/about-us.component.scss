@@ -128,7 +128,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 
   .section-3 {
-    @include respond(bootstrap_768) {
+    @media(max-width: 900px) {
       background-color: black;
       padding: 3rem;
     }
@@ -158,15 +158,15 @@ ORDER: Base + typography > general layout + grid > page layout > components
       padding: 5% 10%;
       padding-top: 3%;
 
-      @include respond(tab-land) {
+      @media(max-width: 900px) {
         padding: 5% 5%;
       }
 
-      @include respond(tab-port) {
+      @media(max-width: 900px) {
         padding: 5px 5px;
       }
 
-      @include respond(bootstrap_768) {
+      @media(max-width: 900px) {
         color: white;
         h2 {
           color: white !important;
@@ -640,5 +640,41 @@ ORDER: Base + typography > general layout + grid > page layout > components
   #telson {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../assets/about-us/corporate-photos/persons/telson.jpg");
+  }
+}
+
+
+
+.section-1, .section-2, .section-5-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .section-1, .section-2,.section-5-mobile  {
+    display: block;
+  }
+  
+  #section-0, .section-5 {
+    display: none;
+  }
+
+  .section-6 {
+    padding: 0px !important;
+padding: 2rem 0px;
+
+    .mission {
+      padding: 0px;
+    }
+
+    h2 {
+      margin-top: 2rem;
+    }
+
+    p {
+      padding: 2rem;
+      text-align: center;
+      margin: auto;
+      font-size: 1rem !important;
+    }
   }
 }
