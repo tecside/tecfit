@@ -10,7 +10,18 @@
             depth: 300,
             modifier: 1,
             slideShadows: true
-          }" class="mySwiper">
+          }" 
+          [breakpoints]="{
+            '700': {
+              slidesPerView: 2
+            },
+            '1000': {
+              slidesPerView: 3
+            },
+            '1200': {
+              slidesPerView: 3
+            }}"
+            class="mySwiper">
       <ng-template swiperSlide>
         <div id="loseW" class="card">
           <h2>{{ "HOME.LOSEW" | translate }}</h2>
