@@ -2,27 +2,29 @@
   <app-navbar></app-navbar>
 </header>
 <main>
-  <section id="treinos-banner" class="web">
+  <section id="treinos-banner">
     <div class="glitch">
       <div class="glitch__item"></div>
       <div class="glitch__item"></div>
       <div class="glitch__item"></div>
       <div class="glitch__item"></div>
       <div class="glitch__item"></div>
+      <div class="glitch__title"><h2 class="mobile" style="font-size: 2rem;">{{ "WORKOUTS.TITLE0" | translate }}</h2></div>
     </div>
-    <h5 style="position: absolute;">{{ "WORKOUTS.TITLE" | translate }}</h5>
+    <h5 class="web" style="position: absolute;">{{ "WORKOUTS.TITLE" | translate }}</h5>
+    <!-- <h2 class="mobile" style="position: absolute; top: 35%; color: white; left: 23%; font-size: 2rem;">{{ "WORKOUTS.TITLE0" | translate }}</h2> -->
   </section>
-  <section class="mobile">
-    <img height="90%" src="assets/workout/bannerMobile.jpg" class="img-fluid mt-5" alt="">
+  <!-- <section class="mobile">
+    <img height="100vh" src="assets/workout/workouts.jpg" class="img-fluid mt-5" alt="">
     <h2 style="position: absolute; top: 35%; color: white; left: 23%; font-size: 2rem;">{{ "WORKOUTS.TITLE0" | translate }}</h2>
-  </section>
+  </section> -->
   <section class="section-challenge">
     <div class="container">
       <div class="row">
         <div class="col-md-6 web">
           <img class="text-md-center mb-md-5 -md" width="65%" src="assets/workout/chalenge.png" alt="chalenge">
         </div>
-        <div class="col-md-12 col-lg-6">
+        <div class="col-md-12 col-lg-12 col-xl-6">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="panelsStayOpen-headingOne">
@@ -109,8 +111,8 @@
             </p>
           </div>
           <div class="d-xl-flex mt-5 justify-content-between d-none ">
-            <a href="#"><img src="assets/home/PlayStore.png" class="img-fluid" /></a>
             <a href="#" class="text-end"><img src="assets/home/AppStore.png" class="img-fluid" /></a>
+            <a href="#"><img src="assets/home/PlayStore.png" class="img-fluid" /></a>
           </div>
           <!-- <div class="text-center mt-5 d-xl-block d-none">
             <button class="btn btn-primary">Comece uma jornada</button>
@@ -132,8 +134,8 @@
       </div>
       <div class="col-md-12">
         <div class="d-flex info-app-mobile justify-content-center d-xl-none mt-5">
-          <a href="#" c class="text-end me-5"><img src="assets/home/PlayStore.png" class="img-fluid " /></a>
-          <a href="#" class="text-start ms-5"><img src="assets/home/AppStore.png" class="img-fluid" /></a>
+          <a href="#" class="text-end me-5"><img src="assets/home/AppStore.png" class="img-fluid" /></a>
+          <a href="#" c class="text-start ms-5"><img src="assets/home/PlayStore.png" class="img-fluid " /></a>
         </div>
       </div>
     </div>

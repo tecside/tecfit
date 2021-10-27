@@ -294,20 +294,39 @@ iframe {
 }
 
 @media (max-width: 1200px) {
-
   .section-challenge {
-    margin-top: 1rem;
+    margin-top: 125vh;
   }
 
   .info-app {
     padding-top: 0px;
   }
+}
 
+@media (max-width: 1200px) {
+  .section-challenge {
+    margin-top: 105vh;
+  }
+}
+
+@media (max-width: 1200px) {
   .web {
     display: none !important;
   }
 
   .mobile {
     display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  .section-challenge {
+    margin-top: 70vh !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-challenge {
+    margin-top: 85vh !important;
   }
 }

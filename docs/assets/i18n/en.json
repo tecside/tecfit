@@ -22,7 +22,15 @@
     "GAINMUSCLE": "Gain Muscle",
     "TAKEPROGRAMS": "Take programs tailored to your fitness goals",
     "DESC2": "Fitness programs are not one size fits all, and Soba is aware of this. So instead, transform your health, fitness and mindset with a program tailored to your goals.",
-    "BTN3": "Discover"
+    "BTN3": "Discover",
+    "PHONETITLE1": "More than 150 workouts",
+    "PHONEDESC1": "A range of 6-12 weeks programs requiring zero to minimal equipment. Access now workouts that can be made at home, in the gym or on the move.",
+    "PHONETITLE2": "Healthy meal plans",
+    "PHONEDESC2": "Nutrilife is a healthier lifestyle tailored to different patterns and objectives. Find more than 50 exquisite and tasteful recipes that will help you to achieve your goals.",
+    "PHONETITLE3": "Anytime. Anywhere",
+    "PHONEDESC3": "Train on your terms on any device, whether you are at home or in the run and use the share option to invite friends and relatives to access the training program made by you.",
+    "PHONETITLE4": "Train together. Or train separately.",
+    "PHONEDESC4": "With separate accounts, you can all enjoy your own workout program and tailored meal plans."
   },
   "AMBASSADOR": {
     "TOP": "Ambassadors",
