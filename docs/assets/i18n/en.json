@@ -67,36 +67,44 @@
   "PLANS": {
     "TITLE": "Transform your health, fitness and mindset",
     "PLAN1": {
-      "TITLE": "Wagadu Plan",
-      "POINT1": "Custom training plans",
-      "POINT2": "Unlimited Recipes",
+      "TITLE": "Student plan",
+      "POINT1": "Discount for eligible students",
+      "POINT2": "Custom workouts",
       "POINT3": "Calorie tracker",
-      "PRICE": "XX €"
+      "POINT4": "Tool to create workouts",
+      "PRICE": "2.99 €"
     },
     "PLAN2": {
-      "TITLE": "Songhai Plan",
-      "SUBTITLE": "Family Subscription",
-      "POINT1": "Custom training plans",
-      "POINT2": "Unlimited Recipes",
+      "TITLE": "Individual plan",
+      "POINT1": "Custom workouts",
+      "POINT2": "Unlimited recipes",
       "POINT3": "Calorie tracker",
-      "POINT4": "Training creator tool",
-      "PRICE": "XX €"
+      "POINT4": " Tool to create workouts",
+      "PRICE": "4.99 €"
     },
     "PLAN3": {
-      "TITLE": "Kush Plan",
-      "SUBTITLE": "Student Subscription",
-      "POINT1": "Custom training plans",
-      "POINT2": "Unlimited Recipes",
-      "POINT3": "Calorie tracker",
-      "POINT4": "Training creator tool",
-      "PRICE": "XX €"
+      "TITLE": "Duo Plan",
+      "POINT1": "Custom workouts",
+      "POINT2": "Unlimited recipes",
+      "POINT3": "Tool to create workouts",
+      "POINT4": "Account for two people",
+      "PRICE": "6.99 €"
     },
     "PLAN4": {
-      "TITLE": "Mutapa Plan",
-      "POINT1": "100 recipes",
-      "POINT2": "Calorie Tracker",
-      "POINT3": "Training creator tool",
-      "PRICE": "XX €"
+      "TITLE": "Family plan",
+      "POINT1": "Custom workouts",
+      "POINT2": "Unlimited recipes",
+      "POINT3": "Calorie tracker",
+      "POINT4": "Tool to create workouts",
+      "POINT5": "Account for 5 people",
+      "PRICE": "9.99 €"
+    },
+    "PLAN5": {
+      "TITLE": "Freemium plan",
+      "POINT1": "7 days of personalized training",
+      "POINT2": "15 recipes",
+      "POINT3": "Tool to create workouts",
+      "PRICE": "0.00 €"
     },
     "SEEMORE": "See More",
     "FORONLY": "For Only",

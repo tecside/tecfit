@@ -67,37 +67,47 @@
   "PLANS": {
     "TITLE": "Transforme sua saúde, condicionamento físico e mentalidade",
     "PLAN1": {
-      "TITLE": "Plano Wagadu",
-      "POINT1": "Planos de treino personalizados",
-      "POINT2": "Receitas ilimitadas",
-      "POINT3": "Rastreador de calorias",
-      "PRICE": "XX €"
+      "TITLE": "Plano estudante",
+      "POINT1": "Desconto para estudantes elegíveis",
+      "POINT2": "Treinos personalizados",
+      "POINT3": "Receitas ilimitadas",
+      "POINT4": "Rastreador de calorias",
+      "POINT5": "Tool para criar treinos",
+      "PRICE": "2.99 €"
     },
     "PLAN2": {
-      "TITLE": "Plano Songhai",
-      "SUBTITLE": "Subscrição Família",
-      "POINT1": "Planos de treino personalizados",
+      "TITLE": "Plano individual",
+      "POINT1": "Treinos personalizados",
       "POINT2": "Receitas ilimitadas",
       "POINT3": "Rastreador de calorias",
-      "POINT4": "Ferramenta de criação de treino",
-      "PRICE": "XX €"
+      "POINT4": "Tool para criar treinos",
+      "PRICE": "4.99 €"
     },
     "PLAN3": {
-      "TITLE": "Plano Kush",
-      "SUBTITLE": "Subscrição Aluno",
-      "POINT1": "Planos de treino personalizados",
+      "TITLE": "Plano dupla",
+      "POINT1": "Treinos personalizados",
       "POINT2": "Receitas ilimitadas",
       "POINT3": "Rastreador de calorias",
-      "POINT4": "Ferramenta de criação de treino",
-      "PRICE": "XX €"
+      "POINT4": "Tool para criar treinos",
+      "POINT5": "Conta para duas pessoas",
+      "PRICE": "6.99 €"
     },
     "PLAN4": {
-      "TITLE": "Plano Mutapa",
-      "SUBTITLE": "Subscrição Grátis",
-      "POINT1": "100 receitas",
-      "POINT2": "Rastreador de calorias",
-      "POINT3": "Ferramenta de criação de treino",
-      "PRICE": "XX €"
+      "TITLE": "Plano família",
+      "POINT1": "Treinos personalizados",
+      "POINT2": "Receitas ilimitadas",
+      "POINT3": "Rastreador de calorias",
+      "POINT4": "Tool para criar treinos",
+      "POINT5": "Conta para 5 pessoas",
+      "PRICE": "9.99 €"
+    },
+    "PLAN5": {
+      "TITLE": "Plano freefit",
+      "POINT1": "7 dias de treinos personalizados",
+      "POINT2": "15 receitas",
+      "POINT3": "Rastrador de calorias",
+      "POINT4": "Tool para cirar treinos",
+      "PRICE": "0.00 €"
     },
     "SEEMORE": "Mais Detalhes",
     "FORONLY": "A partir de",

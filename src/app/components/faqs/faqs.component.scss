@@ -54,6 +54,13 @@ section {
 }
 
 @media (max-width: 900px) {
+  header {
+    div {
+      background-image: url("../../../assets/ambassador/firstMobile.jpg");
+      height: 100vh;
+    }
+  }
+  
   #right {
     border: hidden;
     border-color: white white white white;
