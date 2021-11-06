@@ -20,6 +20,10 @@
     "STAMINA": "Stamina",
     "MOBILITY": "Mobility",
     "GAINMUSCLE": "Gain Muscle",
+    "RUNNING":"Running",
+    "HIIT": "HIIT",
+    "STREGHNT": "Streghnt",
+    "CORE": "Core",
     "TAKEPROGRAMS": "Take programs tailored to your fitness goals",
     "DESC2": "Fitness programs are not one size fits all, and Soba is aware of this. So instead, transform your health, fitness and mindset with a program tailored to your goals.",
     "BTN3": "Discover",
@@ -130,6 +134,7 @@
     "ENQUERY3-2": "your journey",
     "ENQUERY4-1": "Customer",
     "ENQUERY4-2": "support",
+    "MEET": "Meet the Team",
     "WORDS": {
       "WORD1": "ENERGY", 
       "WORD2": "STAMINA", 

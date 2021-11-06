@@ -20,24 +20,36 @@ section {
     height: 80vh;
   }
 
-  #loseW {
+  #card-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../../assets/programs/1.jpeg");
   }
 
-  #stamina {
+  #card-2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../../assets/programs/2.jpeg");
   }
 
-  #mobility {
+  #card-3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../../assets/programs/3.jpeg");
   }
 
-  #gainM {
+  #card-4 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("../../../../assets/programs/4.jpeg");
+  }
+  #card-5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/5.jpeg");
+  }
+  #card-6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/6.jpeg");
+  }
+  #card-7 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/programs/7.jpeg");
   }
 }
 

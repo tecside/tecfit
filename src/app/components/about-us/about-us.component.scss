@@ -528,10 +528,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       border-color: #001658;
 
       @include respond(phone) {
-        border-radius: 7px;
         font-size: 0.9rem;
+        /* border-radius: 7px;
         width: 9rem;
-        padding: 0.35rem;
+        padding: 0.35rem; */
       }
     }
 
@@ -541,6 +541,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
       display: block;
 
       @include respond(bootstrap_768) {
+        display: none;
         width: 40%;
       }
 

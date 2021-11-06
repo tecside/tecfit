@@ -4,7 +4,7 @@
         &nbsp;&nbsp; {{ "HOME.OURPROGRAMS" | translate }}
     </h2>
     <div id="swiper-div">
-        <swiper [grabCursor]="true" [pagination]="true" [navigation]="true" [spaceBetween] = "20" [loop]="true" [breakpoints]="{
+        <swiper [grabCursor]="true" [pagination]="true" [navigation]="true" [spaceBetween] = "20" [loop]="false" [breakpoints]="{
                 '700': {
                   slidesPerView: 2
                 },
@@ -15,23 +15,38 @@
                   slidesPerView: 5
                 }}" class="mySwiper">
             <ng-template swiperSlide>
-                <div id="loseW" class="card">
+                <div id="card-1" class="card">
+                    <h2>{{ "HOME.GAINMUSCLE" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="card-2" class="card">
                     <h2>{{ "HOME.LOSEW" | translate }}</h2>
                 </div>
             </ng-template>
             <ng-template swiperSlide>
-                <div id="stamina" class="card">
-                    <h2>{{ "HOME.STAMINA" | translate }}</h2>
-                </div>
-            </ng-template>
-            <ng-template swiperSlide>
-                <div id="mobility" class="card">
+                <div id="card-3" class="card">
                     <h2>{{ "HOME.MOBILITY" | translate }}</h2>
                 </div>
             </ng-template>
             <ng-template swiperSlide>
-                <div id="gainM" class="card">
-                    <h2>{{ "HOME.GAINMUSCLE" | translate }}</h2>
+                <div id="card-4" class="card">
+                    <h2>{{ "HOME.RUNNING" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="card-5" class="card">
+                    <h2>{{ "HOME.HIIT" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="card-6" class="card">
+                    <h2>{{ "HOME.STREGHNT" | translate }}</h2>
+                </div>
+            </ng-template>
+            <ng-template swiperSlide>
+                <div id="card-7" class="card">
+                    <h2>{{ "HOME.CORE" | translate }}</h2>
                 </div>
             </ng-template>
         </swiper>

@@ -17,6 +17,10 @@
     "BTN2": "Entrar",
     "OURPROGRAMS": "Nossos Programas",
     "LOSEW": "Perder Peso",
+    "HIIT": "HIIT",
+    "STREGHNT": "Força",
+    "CORE": "Core",
+    "RUNNING":"Corrida",
     "STAMINA": "Stamina",
     "MOBILITY": "Mobilidade",
     "GAINMUSCLE": "Ganhar Musculo",
@@ -132,6 +136,7 @@
     "ENQUERY3-2": "tua jornada",
     "ENQUERY4-1": "Suporte ao",
     "ENQUERY4-2": "cliente",
+    "MEET": "Conheça a Equipa",
     "WORDS": {
       "WORD1": "ENERGIA", 
       "WORD2": "STAMINA", 
