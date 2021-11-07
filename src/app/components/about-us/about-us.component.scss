@@ -528,9 +528,10 @@ ORDER: Base + typography > general layout + grid > page layout > components
       border-color: #001658;
 
       @include respond(phone) {
-        font-size: 1rem;
-        height: 4rem;
+        font-size: 0.9rem;
+        padding: 0.7rem 0.5rem;
         /* border-radius: 7px;
+        height: 4rem;
         width: 9rem;
         padding: 0.35rem; */
       }
