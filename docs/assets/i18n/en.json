@@ -15,7 +15,7 @@
     "DESC1": "Get access to thousands of workouts inspired by African royals. Soba is here to help you find the perfect training program.",
     "BTN1": "Register",
     "BTN2": "Log In",
-    "OURPROGRAMS": "Training programs for every goal",
+    "OURPROGRAMS": "Workouts for every goal",
     "LOSEW": "Lose Weight",
     "STAMINA": "Stamina",
     "MOBILITY": "Mobility",
@@ -71,7 +71,7 @@
   "PLANS": {
     "TITLE": "Transform your health, fitness and mindset",
     "PLAN1": {
-      "TITLE": "Student plan",
+      "TITLE": "Student Plan",
       "POINT1": "Discount for eligible students",
       "POINT2": "Custom workouts",
       "POINT3": "Calorie tracker",
@@ -79,7 +79,7 @@
       "PRICE": "2.99 €"
     },
     "PLAN2": {
-      "TITLE": "Individual plan",
+      "TITLE": "Individual Plan",
       "POINT1": "Custom workouts",
       "POINT2": "Unlimited recipes",
       "POINT3": "Calorie tracker",
@@ -95,7 +95,7 @@
       "PRICE": "6.99 €"
     },
     "PLAN4": {
-      "TITLE": "Family plan",
+      "TITLE": "Family Plan",
       "POINT1": "Custom workouts",
       "POINT2": "Unlimited recipes",
       "POINT3": "Calorie tracker",
@@ -104,7 +104,7 @@
       "PRICE": "9.99 €"
     },
     "PLAN5": {
-      "TITLE": "Freemium plan",
+      "TITLE": "Freemium Plan",
       "POINT1": "7 days of personalized training",
       "POINT2": "15 recipes",
       "POINT3": "Tool to create workouts",
