@@ -51,8 +51,7 @@
 
 .glitch .glitch__item {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../../assets/workout/banner.jpg") no-repeat 50%
-    50% / cover;
+    url("../../../assets/workout/top.jpeg") no-repeat 50% 50% / cover;
   background-position: center;
   height: 75vh;
   width: 100%;
@@ -64,12 +63,11 @@
 @media (max-width: 1200px) {
   .glitch .glitch__item {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../../../assets/workout/female.jpg") no-repeat 50%
-    50% / cover !important;
+      url("../../../assets/workout/female.jpg") no-repeat 50% 50% / cover !important;
 
     background-position: center !important;
   }
-  
+
   .glitch {
     height: 170vh;
   }
@@ -142,7 +140,6 @@
   animation-name: glitch-anim-flash;
 }
 
-
 #buttons {
   position: relative;
   top: -50%;
@@ -155,14 +152,13 @@
     padding: 1rem 0px;
     text-transform: uppercase;
   }
-  
+
   button:hover {
     color: #000000;
     background-color: rgba($color: #fff, $alpha: 0.6);
     border: 1px solid white;
   }
 }
-
 
 @keyframes glitch-anim-flash {
   0%,

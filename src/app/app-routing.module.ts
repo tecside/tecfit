@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { FaqsComponent } from './components/faqs/faqs.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { CookiesComponent } from './components/cookies/cookies.component';
+import { PriceComponent } from './components/price/price.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,7 @@ const routes: Routes = [
     component: NutritionComponent,
   },
   {
-    
+
     path: "terms",
     component: TermsComponent,
   },
@@ -38,10 +39,10 @@ const routes: Routes = [
     path: "ambassador",
     component: AmbassadorComponent,
   },
-  /* {
+  {
     path: "login",
     component: LoginComponent,
-  }, */
+  },
   {
     path: "partnership",
     component: PartnershipComponent,
@@ -53,6 +54,10 @@ const routes: Routes = [
   {
     path: "contacts",
     component: ContactsComponent,
+  },
+  {
+    path: "prices",
+    component: PriceComponent,
   },
   {
     path: "cookies",

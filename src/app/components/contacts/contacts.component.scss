@@ -1,129 +1,28 @@
-header {
-  div {
-    background-image: url("../../../assets/ambassador/first.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+main {
+  margin-left: 4rem;
+  margin-right: 4rem;
 
-  h3 {
-    padding: 20px;
-    font-size: 2.2rem;
-
-    color: #fff;
-  }
-}
-
-hr {
-  orientation: unset;
-  height: 100px;
-  background-color: gray;
-}
-
-#web {
-  display: flex;
-  margin: 30px;
-
-  h2 {
-    font-size: 1.7rem;
-    font-weight: 300;
-    color: #001658;
-  }
-
-  p,
-  li,
-  h5 {
-    text-align: left;
-    font-size: 1.2rem;
-    line-height: 25px;
-  }
-
-  p {
-    line-height: 35px;
+  a {
+    text-decoration: underline;
     font-size: 1rem;
+    color: gray;
   }
 
-  #right {
-    padding-top: 30px;
-    width: 100%;
-    border: solid 1px;
-    border-color: white white white black;
-  }
-}
-
-#final-section {
-  background-image: url("../../../assets/ambassador/last.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 700px;
-}
-
-#mobile {
-  display: none;
-  width: 100%;
-  text-align: center;
-  line-height: 2rem;
-  background-color: black;
-  color: white;
-  
   h2 {
-    font-size: 1.6rem;
-    padding: 2rem 20px;
+    color: #01012e;
+    font-size: 2rem;
   }
 
-  p {
+  .desc {
     font-size: 1.2rem;
-    margin: 0px 2rem;
-    padding-bottom: 2rem;
+    font-weight: 600;
+  }
+  .info {
+    font-size: 1.2;
+    color: #01012e;
   }
 
-  #white-section {
-    padding-top: 2rem;
-    background-color: white;
-    color: black;
-
-    ul {
-      padding: 0px;
-      li {
-        list-style-type: none;
-        p {
-          padding: 0px;
-        margin: 0px;
-        padding-bottom: 0.8rem;
-        }
-        
-      }
-    }
-  }
-}
-
-@media (max-width: 900px) {
-
-  header {
-    div {
-      background-image: url("../../../assets/ambassador/firstMobile.jpg");
-      height: 100vh;
-    }
-  }
-  
-  #right {
-    border: hidden;
-    border-color: white white white white;
-  }
-
-  #final-section {
-    display: none;
-  }
-
-  #mobile {
-    display: block;
-  }
-
-  .web, #web {
-    display: none;
+  button {
+    width: 13rem;
   }
 }

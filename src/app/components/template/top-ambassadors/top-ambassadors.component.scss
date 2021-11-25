@@ -1,0 +1,19 @@
+section {
+  background-color: black;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 19.9%;
+    z-index: 1000;
+    span {
+      color: black;
+    }
+  }
+
+  .col {
+    padding: 0px;
+  }
+}

@@ -1,53 +1,37 @@
 <header>
     <app-navbar></app-navbar>
-    <br><br>
-    <div>
-        <h3>{{ "CONTACTS.TOP" | translate }}</h3>
-    </div>
+    <br><br><br><br>
 </header>
 <main>
-    <section class="row" id="web">
-        <div id="left" class="col">
-            <br>
-            <h2>{{ "CONTACTS.TITLE" | translate }}</h2>
-            <p>{{ "CONTACTS.TEXT1" | translate }}</p>
-        </div>
-        
-        <div id="right" class="col">
-            <h5><i class="bi bi-phone"></i>&nbsp;&nbsp; Enquires and info</h5>
-            <ul>
-                <li><p>Email: info@tecfitgorup.com</p></li>
-                <li><p>Mobile: +244912345678</p></li>
-                <li><p>7 am- 6 pm</p></li>
-                <li><p>Mon-Sat</p></li>
-            </ul>
-        </div>
-    </section>
-    <section id="mobile">
-        <div id="black-section">
-            <h2>{{ "CONTACTS.TITLE" | translate }}</h2>
-            <p>{{ "CONTACTS.TEXT1" | translate }}</p>
-        </div>
-        <div id="white-section">
-            <h1><i class="bi bi-phone"></i>&nbsp;&nbsp; Enquires and info</h1>
-            <ul>
-                <li>
-                    <p>Email: info@tecfitgorup.com</p>
-                </li>
-                <li>
-                    <p>Mobile: +244 999 999 999</p>
-                </li>
-                <li>
-                    <p>7 am- 6 pm</p>
-                </li>
-                <li>
-                    <p>Mon-Sat</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <div id="final-section">
+
+    <a class="mt-5 mb-4" href="/">Home</a>
+
+    <h2 class="mt-4 mb-4">Get in touch with us</h2>
+
+    <p class="mb-5 desc">
+        You can find our switchboard number below. Please scroll down to contact the responsible team for more specific
+        questions.
+    </p>
+
+    <h2 class="mt-5">Tecside Limitada</h2>
+    <div class="info">
+        <p>Edifício Vany 5 piso.</p>
+        <p>Luanda, Angola</p>
+        <p>+244 912345678</p>
     </div>
+    <br>
+    <p class="mb-5">The company is a limited liability company, established under Angolan law, with a share capital of
+        AOA 100.000
+    </p>
+    <p class="mb-4">
+        Registration number: 2086-28072020-GO
+    </p>
+    <p class="mb-4">
+        VAT Number: 5000549241
+    </p>
+    <button>Learn More</button>
+
 </main>
+<app-contacts-form></app-contacts-form>
 <app-footer>
 </app-footer>

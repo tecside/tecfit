@@ -2,7 +2,7 @@
   <app-navbar></app-navbar>
 </header>
 <main class="about">
-  <section class="section-1">
+  <!-- <section class="section-1">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -20,23 +20,27 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section id="section-0" class="container-fluid" style="padding: 0px;">
+  <!-- <section id="section-0" class="container-fluid" style="padding: 0px;">
     <img style="margin-top: 3.5rem;" src="assets/about-us/top.jpeg" class="img-fluid" alt="">
-  </section>
+  </section> -->
 
-  <section class="section-3">
+  <app-top-about-us></app-top-about-us>
+
+  <app-aboutus-what-we-belive-in></app-aboutus-what-we-belive-in>
+
+  <!-- <section class="section-3">
     <div class="container-fluid">
       <div class="row">
-        <!-- <div class="col-md-6 col-12">
+        <div class="col-md-6 col-12">
           <div class="box-text" style="display: flex; align-items: center; justify-content: center; height: 100%;">
             <b>
               <h1 style="font-size: 4rem; line-height: 5rem;">#THATS WHY <br>
                 WE MADE TECFIT</h1>
             </b>
           </div>
-        </div> -->
+        </div>
         <div class="col-md-12 col-12">
           <div class="box-text">
             <h2 class="mb-3">{{ "ABOUT.BEHINDTECFIT" | translate }}</h2>
@@ -50,7 +54,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- <section class="section-4">
     <div class="container">
@@ -69,7 +73,7 @@
   </section> -->
 
   <section class="section-4">
-    <swiper [breakpoints]="{
+    <!-- <swiper [breakpoints]="{
       '400': {
         slidesPerView: 2
       },
@@ -103,7 +107,7 @@
       <ng-template swiperSlide>
         <h2>{{ "ABOUT.WORDS.WORD7" | translate }}</h2>
       </ng-template>
-    </swiper>
+    </swiper> -->
   </section>
 
   <section class="section-5">
@@ -130,11 +134,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="mb-3">{{ "ABOUT.OURMISSION" | translate }}</h2>
+          <h2 class="mb-5">{{ "ABOUT.OURMISSION" | translate }}</h2>
         </div>
         <div class="mb-4 mission">
           <!-- <i class="bi bi-pin-map"></i>  -->
-          <p style="line-height: 35px;">{{ "ABOUT.MISSION1" | translate }}</p>
+          <p style="line-height: 4rem;">{{ "ABOUT.MISSION1" | translate }}</p>
         </div>
       </div>
     </div>
@@ -144,7 +148,8 @@
     <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
-          <h2 class="d-sm-none d-block text-center" style="font-size: 2rem; font-weight: 400;">{{ "ABOUT.CONTACTUS" | translate }}</h2>
+          <h2 class="d-sm-none d-block text-center" style="font-size: 2rem; font-weight: 400;">{{ "ABOUT.CONTACTUS" |
+            translate }}</h2>
           <p class="d-sm-none d-block text-center" style="font-size: 1rem;">{{ "ABOUT.CHOOSEENQUIRY" | translate }}</p>
           <div class="d-flex justify-content-around align-items-center juify-content-between">
             <!-- <img class="img-fluid" src="assets/about-us/corporate-photos/third2.png" /> -->
@@ -169,6 +174,11 @@
       </div>
     </div>
   </section>
+
+  <app-fitblog></app-fitblog>
+
+  <app-joinus></app-joinus>
+
 
   <!-- <h2 style="margin-left: 1rem; font-size: 1.5rem; text-align: center; font-weight: bold;color: #001658;">{{ "ABOUT.MEET" | translate }}</h2>
   <br>

@@ -54,10 +54,15 @@
     "TITLE": "Achieve your fitness goal now, from your home",
     "CHALENGE": "Challenge Yourself",
     "POINT1": "Track your progress during your journey",
+    "DESC1": "Track your progress and be part of a supportive community with your unique story.",
     "POINT2": "See live stats and track progress week on week",
+    "DESC2": "Connect your device to the app and follow your progress week on week.",
     "POINT3": "Find your ideal Training Journey",
+    "DESC3": "Soba offers a variety of training programs that suits all needs And levels.",
     "POINT4": "Integrate your trainings into your schedule",
-    "POINT5": "Receive customized training sessions"
+    "DESC4": "Workouts can be adjusted to any timetable and place.",
+    "POINT5": "Receive customized training sessions",
+    "DESC5": "Soba evaluates your fitness and goals, paving the way for your success."
   },
   "NUTRILIFE": {
     "TITLE1": "Be the fitness Masterchef.",
@@ -66,7 +71,7 @@
     "CARD2": "Unique Results",
     "CARD3": "Tasty Food",
     "CARD4": "Tailored Meals",
-    "TEXT": "Nutrilife is the perfect combination of tasteful and healthy meals. Our goal is to prove that more nutritious food does not necessarily mean tasteless food. With Multiprotein, you can create your shopping list, track what you have been eaten and more importantly, be the fitness MasterChef."
+    "TEXT": "Nutrilife is the perfect combination of tasteful and healthy meals. Our goal is to prove that more nutritious food does not necessarily mean tasteless food. With Nutrilife, you can create your shopping list, track what you have been eaten and more importantly, be the fitness MasterChef."
   },
   "PLANS": {
     "TITLE": "Transform your health, fitness and mindset",
@@ -194,13 +199,21 @@
     "TOP": "FAQS",
     "FREQUENTQUESTIONS": "Frequently asked questions",
     "QUESTION1": "Account and details",
+    "ANSWER1": "",
     "QUESTION2": "Get to know the app",
+    "ANSWER2": "",
     "QUESTION3": "Soba experience",
+    "ANSWER3": "",
     "QUESTION4": "Training experience",
+    "ANSWER4": "",
     "QUESTION5": "Subscriptions ",
+    "ANSWER5": "",
     "QUESTION6": "Royals",
+    "ANSWER6": "",
     "QUESTION7": "Nutrition",
-    "QUESTION8": "Weight training"
+    "ANSWER7": "",
+    "QUESTION8": "Weight training",
+    "ANSWER8": ""
   },
   "CONTACTS": {
     "TOP": "Contacts",

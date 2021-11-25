@@ -54,10 +54,15 @@
     "TITLE": "Alcance o seu objetivo fitness agora, a partir da sua casa",
     "CHALENGE": "Desafie-se",
     "POINT1": "Acompanhe o seu progresso durante a essa jornada fantástica",
+    "DESC1": "Acompanha o teu progresso e faz parte de uma forte comunidade com a sua própria história.",
     "POINT2": "Veja estatísticas ao vivo e acompanhe o progresso semana após semana",
-    "POINT5": "Integre seu treino as suas ocupações",
-    "POINT4": "Receba sessões de treino personalizadas",
-    "POINT3": "Encontre a jornada de treinos perfeita para sí"
+    "DESC2": "Conecte o seu dispositivo a aplicação e acompanhe o seu progresso semana após semana.",
+    "POINT3": "Encontre a jornada de treinos perfeita para sí",
+    "DESC3": "O Soba oferece uma variedade de programas de treino adequados a qualquer nível ou objetivo.",
+    "POINT4": "Integra o seu plano de treino com a sua disponibilidade",
+    "DESC4": "Os treinos podem ser ajustados para qualquer hora e em qualquer lugar.",
+    "POINT5": "Receba planos de treino costumizados",
+    "DESC5": "O Soba avalia o seu estado atual e os seus objetivos, e traça o caminho para o teu sucesso."
   },
   "NUTRILIFE": {
     "TITLE1": "Seja o Fit e um Masterchef. Coma melhor. Alcança os seus objectivos.",
@@ -66,7 +71,7 @@
     "CARD2": "Resultados Únicos",
     "CARD3": "Comida Deleciosa",
     "CARD4": "Refeições Sob Medida",
-    "TEXT": "A Nutrilife é a combinação perfeita de refeições saborosas e saudáveis. Nosso objetivo é provar que alimentos mais nutritivos não significam necessariamente alimentos insípidos. Com a Multiprotein, você pode criar sua lista de compras, rastrear o que você comeu e o mais importante, ser um MasterChef de comidas saudáveis."
+    "TEXT": "A Nutrilife é a combinação perfeita de refeições saborosas e saudáveis. Nosso objetivo é provar que alimentos mais nutritivos não significam necessariamente alimentos insípidos. Com a Nutrilife, você pode criar sua lista de compras, rastrear o que você comeu e o mais importante, ser um MasterChef de comidas saudáveis."
   },
   "PLANS": {
     "TITLE": "Transforme sua saúde, condicionamento físico e mentalidade",
@@ -196,13 +201,21 @@
     "TOP": "FAQS",
     "FREQUENTQUESTIONS": "Perguntas frequentes",
     "QUESTION1": "Conta e detalhes",
+    "ANSWER1": "",
     "QUESTION2": "Conheça a aplicação",
+    "ANSWER2": "",
     "QUESTION3": "Experiência com o soba",
+    "ANSWER3": "",
     "QUESTION4": "Experiência de treino",
+    "ANSWER4": "",
     "QUESTION5": "Subscrições",
+    "ANSWER5": "",
     "QUESTION6": "Realeza",
+    "ANSWER6": "",
     "QUESTION7": "Nutrição",
-    "QUESTION8": "Treino com pesos"
+    "ANSWER7": "",
+    "QUESTION8": "Treino com pesos",
+    "ANSWER8": ""
   },
   "CONTACTS": {
     "TOP": "Contactos",

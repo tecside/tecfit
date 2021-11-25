@@ -50,6 +50,18 @@ import { ExemplosComponent } from './components/template/home/exemplos/exemplos.
 import { TopSlidesMobileComponent } from './components/template/home/top-slides-mobile/top-slides-mobile.component';
 import { NewProgramsMobileComponent } from './components/template/new-programs-mobile/new-programs-mobile.component';
 import { NewProgramsMobileProgramsComponent } from './components/template/new-programs-mobile-programs/new-programs-mobile-programs.component';
+import { LoginFooterComponent } from './components/login-footer/login-footer.component';
+import { FitblogComponent } from './components/template/fitblog/fitblog.component';
+import { TopAboutUsComponent } from './components/template/top-about-us/top-about-us.component';
+import { AboutusWhatWeBeliveInComponent } from './components/template/aboutus-what-we-belive-in/aboutus-what-we-belive-in.component';
+import { JoinusComponent } from './components/template/joinus/joinus.component';
+import { TopAmbassadorsComponent } from './components/template/top-ambassadors/top-ambassadors.component';
+import { AmbassadorsWhoAreTheyComponent } from './components/template/ambassadors-who-are-they/ambassadors-who-are-they.component';
+import { PriceComponent } from './components/price/price.component';
+import { PickYourPremiumComponent } from './components/template/pick-your-premium/pick-your-premium.component';
+import { DontMissASquatComponent } from './components/template/dont-miss-asquat/dont-miss-asquat.component';
+import { TrainAnytimeComponent } from './components/template/train-anytime/train-anytime.component';
+import { ContactsFormComponent } from './components/template/contacts-form/contacts-form.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -92,7 +104,19 @@ export function HttpLoaderFactory(http: HttpClient){
     ExemplosComponent,
     TopSlidesMobileComponent,
     NewProgramsMobileComponent,
-    NewProgramsMobileProgramsComponent
+    NewProgramsMobileProgramsComponent,
+    LoginFooterComponent,
+    FitblogComponent,
+    TopAboutUsComponent,
+    AboutusWhatWeBeliveInComponent,
+    JoinusComponent,
+    TopAmbassadorsComponent,
+    AmbassadorsWhoAreTheyComponent,
+    PriceComponent,
+    PickYourPremiumComponent,
+    DontMissASquatComponent,
+    TrainAnytimeComponent,
+    ContactsFormComponent
   ],
   imports: [
     BrowserModule,

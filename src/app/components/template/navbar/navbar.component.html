@@ -1,9 +1,8 @@
-
-
 <nav id="navbar" class="navbar navbar-dark bg-black fixed-top" style="background-color: black;">
-  <div style="width: 100%;" class="d-flex justify-content-between " >
+  <div style="width: 100%;" class="d-flex justify-content-between ">
     <div>
-      <button (click)="openNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': false}"  class="" type="button">
+      <button (click)="openNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': false}"
+        class="" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
@@ -11,33 +10,20 @@
     </div>
 
     <div class="center">
-      <a class="navbar-brand" href="/"
-        ><img
-          src="assets/navbar/tecfit-logo.png"
-          alt="logo"
-          class="logo"
-      /></a>
+      <a class="navbar-brand" href="/"><img src="assets/navbar/tecfit-logo.png" alt="logo" class="logo" /></a>
     </div>
 
     <div class="right-side">
       <ul class="navbar-nav rigth-list">
         <li class="nav-item flag">
           <div class="dropdown pe-2">
-            <button
-              class="dropdown-toggle"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+              aria-expanded="false">
               {{ translate.actualLang | uppercase }}
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
               <li *ngFor="let lang of translate.translate.getLangs()">
-                <button
-                  (click)="translate.changeLocale(lang)"
-                  class="dropdown-item"
-                >
+                <button (click)="translate.changeLocale(lang)" class="dropdown-item">
                   {{ lang | uppercase }}
                 </button>
               </li>
@@ -60,49 +46,46 @@
 
 <div id="mySidebar" [ngClass]="{'sidebar': true}">
   <div [ngClass]="{'opacity-0': !open}">
-    <a class="navbar-brand"  href="/">
-      <img
-          src="assets/navbar/tecfit-logo.png"
-          alt="logo"
-          class="logo"
-      />
+    <a class="navbar-brand" href="/">
+      <img src="assets/navbar/tecfit-logo.png" alt="logo" class="logo" />
     </a>
-  <button (click)="closeNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': true}"  class="" type="button">
-    <span [ngClass]="{'hamburger-box': true}">
-      <span [ngClass]="{'hamburger-inner': true}"></span>
-    </span>
-  </button>
-  <div [ngClass]="{'sidebar-itens': true}">
-    <a class="nav-link" href="about-us">{{ "NAVBAR.MENU1" | translate}}</a>
-    <a class="nav-link" href="programs">{{ "NAVBAR.MENU2" | translate }}</a>
-    <a class="nav-link" href="nutrition">{{ "NAVBAR.MENU3" | translate }}</a>
-    <a class="nav-link" href="ambassador">{{ "NAVBAR.MENU4" | translate }}</a>
-    <!-- <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a> -->
-    <a class="nav-link" href="#prices">{{ "NAVBAR.MENU6" | translate }}</a>
-  </div>
-  <div class="sidebar-footer d-flex justify-content-between">
-    <div class="sidebar-footer-left d-flex">
-      <a href=""><i class="bi bi-facebook"></i></a>
-      <a href=""> <i class="bi bi-instagram"></i></a>
-      
+    <button (click)="closeNav()" [ngClass]="{'hamburger':true, 'hamburguer--elastic': true, 'is-active': true}" class=""
+      type="button">
+      <span [ngClass]="{'hamburger-box': true}">
+        <span [ngClass]="{'hamburger-inner': true}"></span>
+      </span>
+    </button>
+    <div [ngClass]="{'sidebar-itens': true}">
+      <a class="nav-link" href="about-us">{{ "NAVBAR.MENU1" | translate}}</a>
+      <a class="nav-link" href="programs">{{ "NAVBAR.MENU2" | translate }}</a>
+      <a class="nav-link" href="nutrition">{{ "NAVBAR.MENU3" | translate }}</a>
+      <a class="nav-link" href="ambassador">{{ "NAVBAR.MENU4" | translate }}</a>
+      <!-- <a class="nav-link" href="#">{{ "NAVBAR.MENU5" | translate }}</a> -->
+      <a class="nav-link" href="prices">{{ "NAVBAR.MENU6" | translate }}</a>
     </div>
-    <div class="sidebar-footer-center">
-      <ul class=" d-flex">
-        <li><a href="terms">Privacy policy</a></li>
-        <li><a href="terms">Terms & conditions</a></li>
-        <li><a href="faqs">FAQS</a></li>
-        <li><a href="cookies">Cookies</a></li>
-      </ul>
-    </div>
-    <div class="sidebar-footer-right d-flex">
-      <a href=""><i class="bi bi-twitter"></i></a>
-      <a  href=""> <i class="bi bi-linkedin"></i></a>
-     
-    </div>
-  </div>
-  </div>
-   
+    <div class="sidebar-footer d-flex justify-content-between">
+      <div class="sidebar-footer-left d-flex">
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""> <i class="bi bi-instagram"></i></a>
 
-  
- 
+      </div>
+      <div class="sidebar-footer-center">
+        <ul class=" d-flex">
+          <li><a href="terms">Privacy policy</a></li>
+          <li><a href="terms">Terms & conditions</a></li>
+          <li><a href="faqs">FAQS</a></li>
+          <li><a href="cookies">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-footer-right d-flex">
+        <a href=""><i class="bi bi-twitter"></i></a>
+        <a href=""> <i class="bi bi-linkedin"></i></a>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
 </div>

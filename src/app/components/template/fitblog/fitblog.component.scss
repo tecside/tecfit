@@ -1,0 +1,34 @@
+section {
+  background-color: black;
+
+  .top {
+    h2,
+    p {
+      color: white;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    button {
+      background: transparent;
+      border: 1px solid white;
+      margin-top: 20px;
+    }
+  }
+
+  .cards {
+    .card {
+      height: 70vh;
+      margin: 0px 2rem;
+      background-color: black;
+
+      small,
+      h4 {
+        margin-top: 10px;
+        color: white;
+      }
+    }
+  }
+}

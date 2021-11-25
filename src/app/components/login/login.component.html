@@ -1,62 +1,30 @@
-<section>
-    <div class="container-fluid">
-        <div class="row">
-            <div id="form" class="col">
-                <div class="row">
-                    <div class="col mt-5 mb-5">
-                        <img  src="assets/login/logo.png" alt="tecfit-logo">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <h2>Train, Eat and achieve real results</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <h3>Enjoy thousands of workouts and recipes</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-5">
-                        <button>Log in with Facebook</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-5">
-                        <button>Log in with Google</button>
-                    </div>
-                </div>
-                <form method="post">
-                    <div class="row">
-                        <div class="col mb-5">
-                            <input type="email">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-1">
-                            <input type="password">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-2">
-                            <small><a href="">Forgot password?</a></small>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-2">
-                            <button type="submit">Log in</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col mb-2">
-                            <small><a href="/register">Register Here.</a></small>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div id="img" class="col">
-            </div>
+<section class="container">
+    <div class="row">
+        <div id="logo" class="col">
+            <img src="assets/login/logo.png" alt="Logo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-5">
+            <h1>Seja bem vindo</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-3">
+            <h2>Não possui uma conta ainda? <a href="#">Cadastrar-se</a></h2>
+        </div>
+    </div>
+    <form action="POST" class="row">
+        <div class="col mt-4 mb-4">
+            <input class="mb-4" type="email" placeholder="Email"><br>
+            <input class="mb-4" type="password" placeholder="Email"><br>
+            <button type="submit">Log in</button><br>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col mt-5">
+            <a href="#">Esqueceu a senha?</a>
         </div>
     </div>
 </section>
+<app-login-footer></app-login-footer>
