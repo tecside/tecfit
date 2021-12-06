@@ -1,0 +1,39 @@
+<section id="programs">
+    <br>
+    <h2 style="color: white; padding-bottom: 4rem;">
+        &nbsp;&nbsp; FitBlog
+    </h2>
+    <p class="mb-5" style="color: white; text-align: center; margin: 0px 2rem;">
+        The place where knowledge is shared in order to help you to achieve your goals
+    </p>
+    <swiper [effect]="'coverflow'" [pagination]="true" [navigation]="true" [grabCursor]="true" [centeredSlides]="false"
+        [spaceBetween]="0" [loop]="false" [coverflowEffect]="{
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: true
+          }" class="mySwiper">
+        <ng-template swiperSlide>
+            <div id="card-1" class="card">
+            </div>
+            <h2 class="mt-4 mb-0" style="font-size: 1rem; padding-bottom: 10px !important;">Composure</h2>
+            <h2 class="mt-0 mb-3" style="margin: 0px 2rem; font-size: 1.5rem;">How your composure
+                affects your results? </h2>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div id="card-2" class="card">
+            </div>
+            <h2 class="mt-4 mb-0" style="font-size: 1rem; padding-bottom: 10px !important;">Composure</h2>
+            <h2 class="mt-0 mb-3" style="margin: 0px 2rem; font-size: 1.5rem;">How your composure
+                affects your results? </h2>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div id="card-3" class="card">
+            </div>
+            <h2 class="mt-4 mb-0" style="font-size: 1rem; padding-bottom: 10px !important;">Composure</h2>
+            <h2 class="mt-0 mb-3" style="margin: 0px 2rem; font-size: 1.5rem;">How your composure
+                affects your results? </h2>
+        </ng-template>
+    </swiper>
+</section>

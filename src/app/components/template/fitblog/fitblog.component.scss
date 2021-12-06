@@ -32,3 +32,13 @@ section {
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .cards {
+    .card {
+      height: 50vh !important;
+      margin: 0px 2rem;
+      background-color: black;
+    }
+  }
+}

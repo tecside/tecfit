@@ -1,0 +1,49 @@
+section {
+  background-color: black;
+
+  h2 {
+    color: rgba($color: #fff, $alpha: 1);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem !important;
+    margin: 0px;
+  }
+
+  .card {
+    border-radius: 10px;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 85%;
+
+    margin-left: 30px;
+  }
+
+  @media (max-width: 400px) {
+    .card {
+      height: 40vh;
+    }
+  }
+
+  #card-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/fitBlog/composure.jpeg");
+  }
+
+  #card-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/fitBlog/food.jpeg");
+  }
+
+  #card-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../../../assets/fitBlog/motivation.jpeg");
+  }
+}

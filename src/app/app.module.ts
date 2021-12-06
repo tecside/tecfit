@@ -62,6 +62,7 @@ import { PickYourPremiumComponent } from './components/template/pick-your-premiu
 import { DontMissASquatComponent } from './components/template/dont-miss-asquat/dont-miss-asquat.component';
 import { TrainAnytimeComponent } from './components/template/train-anytime/train-anytime.component';
 import { ContactsFormComponent } from './components/template/contacts-form/contacts-form.component';
+import { FitblogMobileComponent } from './components/template/fitblog-mobile/fitblog-mobile.component';
 export function HttpLoaderFactory(http: HttpClient){
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json')
 }
@@ -116,7 +117,8 @@ export function HttpLoaderFactory(http: HttpClient){
     PickYourPremiumComponent,
     DontMissASquatComponent,
     TrainAnytimeComponent,
-    ContactsFormComponent
+    ContactsFormComponent,
+    FitblogMobileComponent
   ],
   imports: [
     BrowserModule,
